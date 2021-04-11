@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "ris3:blocks/kryptonian_log_top",
+    "up": "ris3:blocks/kryptonian_log_top",
+    "north": "ris3:blocks/kryptonian_log_side",
+    "east": "ris3:blocks/kryptonian_log_side",
+    "south": "ris3:blocks/kryptonian_log_side",
+    "west": "ris3:blocks/kryptonian_log_side",
+    "particle": "ris3:blocks/kryptonian_log_top"
+  }
+}

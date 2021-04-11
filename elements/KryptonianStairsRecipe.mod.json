@@ -1,0 +1,46 @@
+{
+  "_fv": 17,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 4,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:KryptonianPlanks"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:KryptonianPlanks"
+      },
+      {
+        "value": "CUSTOM:KryptonianPlanks"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:KryptonianPlanks"
+      },
+      {
+        "value": "CUSTOM:KryptonianPlanks"
+      },
+      {
+        "value": "CUSTOM:KryptonianPlanks"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:KryptonianStairs"
+    },
+    "name": "kryptonian_stairs_recipe",
+    "namespace": "mod"
+  }
+}

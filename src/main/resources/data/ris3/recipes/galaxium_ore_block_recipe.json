@@ -1,0 +1,42 @@
+{
+  "group": "ris3",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "ris3:galaxium_dust"
+    },
+    "1": {
+      "item": "ris3:galaxium_dust"
+    },
+    "2": {
+      "item": "ris3:galaxium_dust"
+    },
+    "3": {
+      "item": "ris3:galaxium_dust"
+    },
+    "4": {
+      "item": "ris3:galaxium_dust"
+    },
+    "5": {
+      "item": "ris3:galaxium_dust"
+    },
+    "6": {
+      "item": "ris3:galaxium_dust"
+    },
+    "7": {
+      "item": "ris3:galaxium_dust"
+    },
+    "8": {
+      "item": "ris3:galaxium_dust"
+    }
+  },
+  "result": {
+    "item": "ris3:galaxium_block",
+    "count": 1
+  }
+}

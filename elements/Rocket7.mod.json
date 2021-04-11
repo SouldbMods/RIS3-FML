@@ -1,0 +1,30 @@
+{
+  "_fv": 17,
+  "_type": "overlay",
+  "definition": {
+    "priority": "NORMAL",
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "ground.png",
+          "use1Xscale": false,
+          "name": "ground.png",
+          "x": -2,
+          "y": 169
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "rocketingui.png",
+          "use1Xscale": false,
+          "name": "rocketingui.png",
+          "x": 0,
+          "y": 124
+        }
+      }
+    ],
+    "baseTexture": ""
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "group": "ris3",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "forge:kryptonian_log"
+    }
+  ],
+  "result": {
+    "item": "ris3:kryptonian_planks",
+    "count": 4
+  }
+}

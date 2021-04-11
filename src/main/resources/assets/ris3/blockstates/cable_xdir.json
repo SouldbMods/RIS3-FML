@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "ris3:block/cable_xdir"
+    }
+  }
+}

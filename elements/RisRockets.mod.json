@@ -1,0 +1,11 @@
+{
+  "_fv": 17,
+  "_type": "tab",
+  "definition": {
+    "name": "Really In Space Discovery",
+    "icon": {
+      "value": "Items.REDSTONE"
+    },
+    "showSearch": false
+  }
+}

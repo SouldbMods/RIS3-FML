@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "ris3:blocks/kryptonian_log_side",
+    "particle": "ris3:blocks/kryptonian_log_side"
+  }
+}

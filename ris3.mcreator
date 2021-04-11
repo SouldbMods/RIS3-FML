@@ -1,0 +1,1102 @@
+{
+  "id_map": {},
+  "mod_elements": [
+    {
+      "name": "PlanetSelectScreenClass",
+      "type": "gui",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "planet_select_screen_class",
+      "path": "~/Boss-Tools killers"
+    },
+    {
+      "name": "Cable",
+      "type": "procedure",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cable",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Energy"
+    },
+    {
+      "name": "CableXStraight",
+      "type": "procedure",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cable_x_straight",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CableX",
+      "type": "procedure",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cable_x",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CableXdir",
+      "type": "block",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cable_xdir",
+      "path": "~/Energy"
+    },
+    {
+      "name": "Risblocks",
+      "type": "tab",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "risblocks",
+      "path": "~/Misc."
+    },
+    {
+      "name": "DirtBlocks",
+      "type": "tag",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dirt_blocks"
+    },
+    {
+      "name": "LogBlocks",
+      "type": "tag",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "log_blocks"
+    },
+    {
+      "name": "FenceBlocks",
+      "type": "tag",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fence_blocks"
+    },
+    {
+      "name": "WoodenFenceBlocks",
+      "type": "tag",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "wooden_fence_blocks"
+    },
+    {
+      "name": "WallBlocks",
+      "type": "tag",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "wall_blocks"
+    },
+    {
+      "name": "SmallFlowerBlocks",
+      "type": "tag",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "small_flower_blocks"
+    },
+    {
+      "name": "TallFlowerBlocks",
+      "type": "tag",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tall_flower_blocks"
+    },
+    {
+      "name": "ValidSpawnBlocks",
+      "type": "tag",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "valid_spawn_blocks"
+    },
+    {
+      "name": "ImpermeableBlocks",
+      "type": "tag",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "impermeable_blocks"
+    },
+    {
+      "name": "BeaconBaseBlockBlocks",
+      "type": "tag",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "beacon_base_block_blocks"
+    },
+    {
+      "name": "LeaveBlocks",
+      "type": "tag",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "leave_blocks"
+    },
+    {
+      "name": "ClimbableBlocks",
+      "type": "tag",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "climbable_blocks"
+    },
+    {
+      "name": "FireBlocks",
+      "type": "tag",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fire_blocks"
+    },
+    {
+      "name": "DragonImmuneBlocks",
+      "type": "tag",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dragon_immune_blocks"
+    },
+    {
+      "name": "WitherImmuneBlocks",
+      "type": "tag",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "wither_immune_blocks"
+    },
+    {
+      "name": "ArrowItems",
+      "type": "tag",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "arrow_items"
+    },
+    {
+      "name": "PlankItems",
+      "type": "tag",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "plank_items"
+    },
+    {
+      "name": "FlowerItems",
+      "type": "tag",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "flower_items"
+    },
+    {
+      "name": "SmallFlowerItems",
+      "type": "tag",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "small_flower_items"
+    },
+    {
+      "name": "TickFunctions",
+      "type": "tag",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tick_functions"
+    },
+    {
+      "name": "LoadFunctions",
+      "type": "tag",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "load_functions"
+    },
+    {
+      "name": "ArrowEntities",
+      "type": "tag",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "arrow_entities"
+    },
+    {
+      "name": "ImpactProjectileEntities",
+      "type": "tag",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "impact_projectile_entities"
+    },
+    {
+      "name": "BeehiveInhabitorEntities",
+      "type": "tag",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "beehive_inhabitor_entities"
+    },
+    {
+      "name": "RaiderEntities",
+      "type": "tag",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "raider_entities"
+    },
+    {
+      "name": "SkeletonEntities",
+      "type": "tag",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "skeleton_entities"
+    },
+    {
+      "name": "Rocket1",
+      "type": "overlay",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rocket_1",
+      "path": "~/Boss-Tools killers"
+    },
+    {
+      "name": "Rocket2",
+      "type": "overlay",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rocket_2"
+    },
+    {
+      "name": "Rocket3",
+      "type": "overlay",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rocket_3"
+    },
+    {
+      "name": "Rocket4",
+      "type": "overlay",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rocket_4"
+    },
+    {
+      "name": "Rocket5",
+      "type": "overlay",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rocket_5"
+    },
+    {
+      "name": "Rocket6",
+      "type": "overlay",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rocket_6"
+    },
+    {
+      "name": "Rocket7",
+      "type": "overlay",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rocket_7"
+    },
+    {
+      "name": "Rocket8",
+      "type": "overlay",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rocket_8"
+    },
+    {
+      "name": "Rocket9",
+      "type": "overlay",
+      "sortid": 41,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rocket_9"
+    },
+    {
+      "name": "Rocket10",
+      "type": "overlay",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rocket_10"
+    },
+    {
+      "name": "RIS3",
+      "type": "overlay",
+      "sortid": 43,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ris_3"
+    },
+    {
+      "name": "GalaxiumDust",
+      "type": "item",
+      "sortid": 44,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "galaxium_dust"
+    },
+    {
+      "name": "GalaxiumOre",
+      "type": "block",
+      "sortid": 45,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "galaxium_ore"
+    },
+    {
+      "name": "GalaxiumBlock",
+      "type": "block",
+      "sortid": 46,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "galaxium_block"
+    },
+    {
+      "name": "GalaxiumOreBlockRecipe",
+      "type": "recipe",
+      "sortid": 47,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "galaxium_ore_block_recipe"
+    },
+    {
+      "name": "GalaxiumBlockOreRecipe",
+      "type": "recipe",
+      "sortid": 48,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "galaxium_block_ore_recipe"
+    },
+    {
+      "name": "GalaxiumOreSmelting",
+      "type": "recipe",
+      "sortid": 49,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "galaxium_ore_smelting"
+    },
+    {
+      "name": "GalaxiumPickaxe",
+      "type": "tool",
+      "sortid": 50,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "galaxium_pickaxe"
+    },
+    {
+      "name": "GalaxiumAxe",
+      "type": "tool",
+      "sortid": 51,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "galaxium_axe"
+    },
+    {
+      "name": "GalaxiumSword",
+      "type": "tool",
+      "sortid": 52,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "galaxium_sword"
+    },
+    {
+      "name": "GalaxiumShovel",
+      "type": "tool",
+      "sortid": 53,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "galaxium_shovel"
+    },
+    {
+      "name": "GalaxiumHoe",
+      "type": "tool",
+      "sortid": 54,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "galaxium_hoe"
+    },
+    {
+      "name": "GalaxiumPickaxeRecipe",
+      "type": "recipe",
+      "sortid": 55,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "galaxium_pickaxe_recipe"
+    },
+    {
+      "name": "GalaxiumAxeRecipe",
+      "type": "recipe",
+      "sortid": 56,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "galaxium_axe_recipe"
+    },
+    {
+      "name": "GalaxiumSwordRecipe",
+      "type": "recipe",
+      "sortid": 57,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "galaxium_sword_recipe"
+    },
+    {
+      "name": "GalaxiumShovelRecipe",
+      "type": "recipe",
+      "sortid": 58,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "galaxium_shovel_recipe"
+    },
+    {
+      "name": "GalaxiumHoeRecipe",
+      "type": "recipe",
+      "sortid": 59,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "galaxium_hoe_recipe"
+    },
+    {
+      "name": "GalaxiumArmor",
+      "type": "armor",
+      "sortid": 60,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "galaxium_armor",
+      "metadata": {
+        "eh": true,
+        "el": true,
+        "eb": true,
+        "ec": true
+      }
+    },
+    {
+      "name": "GalaxiumArmorHelmetRecipe",
+      "type": "recipe",
+      "sortid": 61,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "galaxium_armor_helmet_recipe"
+    },
+    {
+      "name": "GalaxiumArmorBodyRecipe",
+      "type": "recipe",
+      "sortid": 62,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "galaxium_armor_body_recipe"
+    },
+    {
+      "name": "GalaxiumArmorLeggingsRecipe",
+      "type": "recipe",
+      "sortid": 63,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "galaxium_armor_leggings_recipe"
+    },
+    {
+      "name": "GalaxiumArmorBootsRecipe",
+      "type": "recipe",
+      "sortid": 64,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "galaxium_armor_boots_recipe"
+    },
+    {
+      "name": "RisArmour",
+      "type": "tab",
+      "sortid": 65,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ris_armour"
+    },
+    {
+      "name": "RIStools",
+      "type": "tab",
+      "sortid": 66,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ri_stools"
+    },
+    {
+      "name": "Natureris",
+      "type": "tab",
+      "sortid": 67,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "natureris"
+    },
+    {
+      "name": "Risores",
+      "type": "tab",
+      "sortid": 68,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "risores"
+    },
+    {
+      "name": "RISCombat",
+      "type": "tab",
+      "sortid": 69,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ris_combat"
+    },
+    {
+      "name": "KryptonianWood",
+      "type": "block",
+      "sortid": 70,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kryptonian_wood"
+    },
+    {
+      "name": "KryptonianLog",
+      "type": "block",
+      "sortid": 71,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kryptonian_log"
+    },
+    {
+      "name": "KryptonianPlanks",
+      "type": "block",
+      "sortid": 72,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kryptonian_planks"
+    },
+    {
+      "name": "KryptonianLeaves",
+      "type": "block",
+      "sortid": 73,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kryptonian_leaves"
+    },
+    {
+      "name": "KryptonianStairs",
+      "type": "block",
+      "sortid": 74,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kryptonian_stairs"
+    },
+    {
+      "name": "KryptonianSlab",
+      "type": "block",
+      "sortid": 75,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kryptonian_slab"
+    },
+    {
+      "name": "KryptonianFence",
+      "type": "block",
+      "sortid": 76,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kryptonian_fence"
+    },
+    {
+      "name": "KryptonianFenceGate",
+      "type": "block",
+      "sortid": 77,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kryptonian_fence_gate"
+    },
+    {
+      "name": "KryptonianItemsTag",
+      "type": "tag",
+      "sortid": 78,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kryptonian_items_tag"
+    },
+    {
+      "name": "KryptonianWoodRecipe",
+      "type": "recipe",
+      "sortid": 79,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kryptonian_wood_recipe"
+    },
+    {
+      "name": "KryptonianPlanksRecipe",
+      "type": "recipe",
+      "sortid": 80,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kryptonian_planks_recipe"
+    },
+    {
+      "name": "KryptonianStairsRecipe",
+      "type": "recipe",
+      "sortid": 81,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kryptonian_stairs_recipe"
+    },
+    {
+      "name": "KryptonianSlabRecipe",
+      "type": "recipe",
+      "sortid": 82,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kryptonian_slab_recipe"
+    },
+    {
+      "name": "KryptonianFenceRecipe",
+      "type": "recipe",
+      "sortid": 83,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kryptonian_fence_recipe"
+    },
+    {
+      "name": "KryptonianFenceGateRecipe",
+      "type": "recipe",
+      "sortid": 84,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kryptonian_fence_gate_recipe"
+    },
+    {
+      "name": "KryptonianStickRecipe",
+      "type": "recipe",
+      "sortid": 85,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kryptonian_stick_recipe"
+    },
+    {
+      "name": "Risenergy",
+      "type": "tab",
+      "sortid": 86,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "risenergy"
+    },
+    {
+      "name": "LaunchRocket",
+      "type": "keybind",
+      "sortid": 87,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "launch_rocket"
+    },
+    {
+      "name": "MartianSandDust",
+      "type": "item",
+      "sortid": 88,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "martian_sand_dust",
+      "path": "~/Dimensions"
+    },
+    {
+      "name": "MartianSand",
+      "type": "block",
+      "sortid": 88,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "martian_sand",
+      "path": "~/Dimensions"
+    },
+    {
+      "name": "Dustmars",
+      "type": "particle",
+      "sortid": 89,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dustmars",
+      "path": "~/Dimensions"
+    },
+    {
+      "name": "GravityPlanetOtherThanKrypton",
+      "type": "procedure",
+      "sortid": 90,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "gravity_planet_other_than_krypton",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Dimensions"
+    },
+    {
+      "name": "MarsBlocks",
+      "type": "tag",
+      "sortid": 91,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "mars_blocks",
+      "path": "~/Dimensions"
+    },
+    {
+      "name": "MarsStone",
+      "type": "block",
+      "sortid": 92,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "mars_stone",
+      "path": "~/Dimensions"
+    },
+    {
+      "name": "MarsFlat",
+      "type": "biome",
+      "sortid": 91,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "mars_flat",
+      "path": "~/Dimensions"
+    },
+    {
+      "name": "Mars",
+      "type": "dimension",
+      "sortid": 88,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "mars",
+      "metadata": {
+        "ep": false
+      },
+      "path": "~/Dimensions"
+    },
+    {
+      "name": "ResetGravityAllPlanets",
+      "type": "procedure",
+      "sortid": 93,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "reset_gravity_all_planets",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/Dimensions"
+    },
+    {
+      "name": "RisRockets",
+      "type": "tab",
+      "sortid": 94,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ris_rockets"
+    },
+    {
+      "name": "Rocketone",
+      "type": "mob",
+      "sortid": 94,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rocketone",
+      "path": "~/Dimensions"
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "EARTHORBIT",
+      "type": "logic",
+      "scope": "map",
+      "value": "false"
+    },
+    {
+      "name": "MARSORBIT",
+      "type": "logic",
+      "scope": "map",
+      "value": "false"
+    },
+    {
+      "name": "RocketGUIState",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    }
+  ],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "item.ris3.galaxium_armor_helmet": "Galaxium Helmet",
+      "block.ris3.kryptonian_fence": "Kryptonian Fence",
+      "itemGroup.tabri_stools": "Really In Space Tools",
+      "biome.ris3.mars_flat": "Mars Flat",
+      "item.ris3.galaxium_shovel": "Galaxium Shovel",
+      "itemGroup.tabrisblocks": "Really in space Blocks",
+      "block.ris3.galaxium_ore": "Galaxium Ore",
+      "key.ris3.launch_rocket": "Launch Rocket",
+      "item.ris3.galaxium_pickaxe": "Galaxium Pickaxe",
+      "item.ris3.galaxium_hoe": "Galaxium Hoe",
+      "itemGroup.tabnatureris": "Really In Space Nature",
+      "item.ris3.galaxium_armor_leggings": "Galaxium Leggings",
+      "block.ris3.kryptonian_slab": "Kryptonian Slab",
+      "itemGroup.tabrisores": "Really In Space Ores",
+      "item.ris3.galaxium_sword": "Galaxium Sword",
+      "item.ris3.galaxium_armor_chestplate": "Galaxium Chestplate",
+      "block.ris3.kryptonian_leaves": "Kryptonian Leaves",
+      "item.ris3.martian_sand_dust": "Martian Sand Dust",
+      "itemGroup.tabris_combat": "Really In Space Combat",
+      "item.ris3.galaxium_axe": "Galaxium Axe",
+      "block.ris3.cable_xdir": "Cable",
+      "block.ris3.kryptonian_wood": "Kryptonian Wood",
+      "item.ris3.rocketone_spawn_egg": "Tier One Rocket Spawn Egg",
+      "block.ris3.kryptonian_log": "Kryptonian Log",
+      "itemGroup.tabris_armour": "Really In Space Armour",
+      "block.ris3.kryptonian_stairs": "Kryptonian Stairs",
+      "itemGroup.tabris_rockets": "Really In Space Discovery",
+      "block.ris3.kryptonian_fence_gate": "Kryptonian Fence Gate",
+      "itemGroup.tabrisenergy": "Really In Space Energy \u0026 Macines",
+      "item.ris3.galaxium_dust": "Galaxium",
+      "entity.ris3.rocketone": "Tier One Rocket",
+      "item.ris3.mars": "Mars Portal Igniter",
+      "block.ris3.kryptonian_planks": "Kryptonian Planks",
+      "block.ris3.mars_stone": "Mars Stone",
+      "item.ris3.galaxium_armor_boots": "Galaxium Boots",
+      "block.ris3.martian_sand": "Martian Sand",
+      "block.ris3.galaxium_block": "Block of Galaxium"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "Dimensions",
+        "children": []
+      },
+      {
+        "name": "Energy",
+        "children": []
+      },
+      {
+        "name": "Blocks",
+        "children": []
+      },
+      {
+        "name": "Items",
+        "children": []
+      },
+      {
+        "name": "Boss-Tools killers",
+        "children": []
+      },
+      {
+        "name": "Misc.",
+        "children": []
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "ris3",
+    "modName": "Really In Space 3.0",
+    "version": "0.7.2",
+    "description": "Requires Patchuli and Geckolib 3.0 | For Forge and Fabric FML 1.16.4/5   Fabric 1.16.0/1/2/3/4/5",
+    "author": "Souldbminer",
+    "websiteURL": "youtube.com/c/souldbminer",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "modPicture": "earth",
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [
+      "patchouli",
+      "geckolib"
+    ],
+    "currentGenerator": "forge-1.16.5",
+    "credits": "MrScautHD",
+    "modElementsPackage": "xyz.souldb.ris3",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202100112313
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "block/fence_inventory",
+  "textures": {
+    "texture": "ris3:blocks/kryptonian_planks",
+    "particle": "ris3:blocks/kryptonian_planks"
+  }
+}

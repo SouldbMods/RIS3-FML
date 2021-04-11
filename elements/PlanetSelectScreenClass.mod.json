@@ -1,0 +1,184 @@
+{
+  "_fv": 17,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 431,
+    "height": 247,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": false,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "orbit2.png",
+          "use1Xscale": false,
+          "name": "orbit2.png",
+          "x": 115,
+          "y": 13
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Planets",
+          "color": {
+            "value": -16711936,
+            "falpha": 0.0
+          },
+          "name": "Planets",
+          "x": 198,
+          "y": 2
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "orbitone.png",
+          "use1Xscale": false,
+          "name": "orbitone.png",
+          "x": 71,
+          "y": -10
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "mars.png",
+          "use1Xscale": false,
+          "name": "mars.png",
+          "x": 108,
+          "y": 110
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "earth.png",
+          "use1Xscale": false,
+          "name": "earth.png",
+          "x": 147,
+          "y": 66
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "venusorbit.png",
+          "use1Xscale": false,
+          "name": "venusorbit.png",
+          "x": 140,
+          "y": 39
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "venus.png",
+          "use1Xscale": false,
+          "name": "venus.png",
+          "x": 205,
+          "y": 49
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "mercorbitnew.png",
+          "use1Xscale": false,
+          "name": "mercorbitnew.png",
+          "x": 190,
+          "y": 82
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "mercury.png",
+          "use1Xscale": false,
+          "name": "mercury.png",
+          "x": 197,
+          "y": 85
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "sun.png",
+          "use1Xscale": false,
+          "name": "sun.png",
+          "x": 215,
+          "y": 107
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Sun",
+          "width": 40,
+          "height": 20,
+          "name": "Sun",
+          "x": 17,
+          "y": 31
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Mercury",
+          "width": 60,
+          "height": 20,
+          "name": "Mercury",
+          "x": 17,
+          "y": 58
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Venus",
+          "width": 50,
+          "height": 20,
+          "name": "Venus",
+          "x": 18,
+          "y": 88
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Earth",
+          "width": 50,
+          "height": 20,
+          "name": "Earth",
+          "x": 18,
+          "y": 118
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Mars",
+          "width": 45,
+          "height": 20,
+          "name": "Mars",
+          "x": 18,
+          "y": 148
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Next Page >>",
+          "width": 85,
+          "height": 20,
+          "name": "Next Page >>",
+          "x": 341,
+          "y": 220
+        }
+      }
+    ]
+  }
+}

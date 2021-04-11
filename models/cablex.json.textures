@@ -1,0 +1,11 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "cabletex",
+        "missing": "cabletex"
+      },
+      "name": "default"
+    }
+  }
+}

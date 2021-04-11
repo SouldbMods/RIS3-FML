@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "ris3:martian_sand",
+    "ris3:galaxium_ore",
+    "ris3:galaxium_block",
+    "minecraft:frosted_ice"
+  ]
+}

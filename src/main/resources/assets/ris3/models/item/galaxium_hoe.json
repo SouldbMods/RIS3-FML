@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "ris3:items/galaxium_hoe"
+  }
+}

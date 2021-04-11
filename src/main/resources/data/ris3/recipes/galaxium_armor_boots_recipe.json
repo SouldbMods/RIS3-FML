@@ -1,0 +1,26 @@
+{
+  "group": "ris3",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "3 5"
+  ],
+  "key": {
+    "0": {
+      "item": "ris3:galaxium_dust"
+    },
+    "2": {
+      "item": "ris3:galaxium_dust"
+    },
+    "3": {
+      "item": "ris3:galaxium_dust"
+    },
+    "5": {
+      "item": "ris3:galaxium_dust"
+    }
+  },
+  "result": {
+    "item": "ris3:galaxium_armor_boots",
+    "count": 1
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "ris3:custom/cablex",
+  "textures": {
+    "all": "ris3:blocks/cabletex",
+    "particle": "ris3:blocks/cabletex",
+    "0": "ris3:blocks/cabletex",
+    "missing": "ris3:blocks/cabletex"
+  }
+}

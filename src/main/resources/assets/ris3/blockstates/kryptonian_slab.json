@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "ris3:block/kryptonian_slab"
+    },
+    "type=top": {
+      "model": "ris3:block/kryptonian_slab_top"
+    },
+    "type=double": {
+      "model": "ris3:block/kryptonian_slab_full"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "group": "ris3",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23"
+  ],
+  "key": {
+    "0": {
+      "item": "ris3:kryptonian_log"
+    },
+    "1": {
+      "item": "ris3:kryptonian_log"
+    },
+    "2": {
+      "item": "ris3:kryptonian_log"
+    },
+    "3": {
+      "item": "ris3:kryptonian_log"
+    }
+  },
+  "result": {
+    "item": "ris3:kryptonian_wood",
+    "count": 3
+  }
+}

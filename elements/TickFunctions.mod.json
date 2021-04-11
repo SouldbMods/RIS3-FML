@@ -1,0 +1,13 @@
+{
+  "_fv": 17,
+  "_type": "tag",
+  "definition": {
+    "type": "Functions",
+    "items": [],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "name": "tick",
+    "namespace": "minecraft"
+  }
+}

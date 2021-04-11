@@ -1,0 +1,20 @@
+{
+  "_fv": 17,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:KryptonianWood"
+      },
+      {
+        "value": "CUSTOM:KryptonianLog"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "name": "kryptonian_log",
+    "namespace": "forge"
+  }
+}

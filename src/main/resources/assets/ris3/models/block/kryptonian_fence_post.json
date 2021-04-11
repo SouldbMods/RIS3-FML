@@ -1,0 +1,7 @@
+{
+  "parent": "block/fence_post",
+  "textures": {
+    "texture": "ris3:blocks/kryptonian_planks",
+    "particle": "ris3:blocks/kryptonian_planks"
+  }
+}

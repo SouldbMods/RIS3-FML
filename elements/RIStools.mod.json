@@ -1,0 +1,11 @@
+{
+  "_fv": 17,
+  "_type": "tab",
+  "definition": {
+    "name": "Really In Space Tools",
+    "icon": {
+      "value": "CUSTOM:GalaxiumPickaxe"
+    },
+    "showSearch": false
+  }
+}

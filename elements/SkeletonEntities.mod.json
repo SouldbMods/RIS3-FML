@@ -1,0 +1,13 @@
+{
+  "_fv": 17,
+  "_type": "tag",
+  "definition": {
+    "type": "Entities",
+    "items": [],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "name": "skeletons",
+    "namespace": "minecraft"
+  }
+}

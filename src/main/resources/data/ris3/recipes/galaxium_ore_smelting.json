@@ -1,0 +1,12 @@
+{
+  "group": "ris3",
+  "type": "minecraft:smelting",
+  "experience": 0.7,
+  "cookingtime": 200,
+  "ingredient": {
+    "item": "ris3:galaxium_ore"
+  },
+  "result": {
+    "item": "ris3:galaxium_dust"
+  }
+}

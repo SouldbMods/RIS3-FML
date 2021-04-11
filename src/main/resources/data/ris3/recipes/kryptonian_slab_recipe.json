@@ -1,0 +1,22 @@
+{
+  "group": "ris3",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012"
+  ],
+  "key": {
+    "0": {
+      "item": "ris3:kryptonian_planks"
+    },
+    "1": {
+      "item": "ris3:kryptonian_planks"
+    },
+    "2": {
+      "item": "ris3:kryptonian_planks"
+    }
+  },
+  "result": {
+    "item": "ris3:kryptonian_slab",
+    "count": 6
+  }
+}

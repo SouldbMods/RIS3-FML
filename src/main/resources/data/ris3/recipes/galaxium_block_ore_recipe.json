@@ -1,0 +1,13 @@
+{
+  "group": "ris3",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "ris3:galaxium_block"
+    }
+  ],
+  "result": {
+    "item": "ris3:galaxium_dust",
+    "count": 9
+  }
+}

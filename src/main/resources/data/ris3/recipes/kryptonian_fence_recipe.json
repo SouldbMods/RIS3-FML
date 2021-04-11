@@ -1,0 +1,32 @@
+{
+  "group": "ris3",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345"
+  ],
+  "key": {
+    "0": {
+      "item": "ris3:kryptonian_planks"
+    },
+    "1": {
+      "item": "minecraft:stick"
+    },
+    "2": {
+      "item": "ris3:kryptonian_planks"
+    },
+    "3": {
+      "item": "ris3:kryptonian_planks"
+    },
+    "4": {
+      "item": "minecraft:stick"
+    },
+    "5": {
+      "item": "ris3:kryptonian_planks"
+    }
+  },
+  "result": {
+    "item": "ris3:kryptonian_fence",
+    "count": 3
+  }
+}

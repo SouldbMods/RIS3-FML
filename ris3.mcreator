@@ -1081,7 +1081,7 @@
     "version": "0.7.2",
     "description": "Requires Patchuli and Geckolib 3.0 | For Forge and Fabric FML 1.16.4/5   Fabric 1.16.0/1/2/3/4/5",
     "author": "Souldbminer",
-    "websiteURL": "youtube.com/c/souldbminer",
+    "websiteURL": "https://mcreator.net",
     "license": "Academic Free License v3.0",
     "disableForgeVersionCheck": true,
     "serverSideOnly": false,
@@ -1090,7 +1090,6 @@
     "dependencies": [],
     "dependants": [],
     "mcreatorDependencies": [
-      "patchouli",
       "geckolib"
     ],
     "currentGenerator": "forge-1.16.5",

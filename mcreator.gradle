@@ -1,16 +1,5 @@
 repositories {
   maven {
-    url = "https://maven.blamejared.com"
-  }
-}
-
-dependencies {
-  compileOnly fg.deobf("vazkii.patchouli:Patchouli:1.16.4-50:api")
-  runtimeOnly fg.deobf("vazkii.patchouli:Patchouli:1.16.4-50")
-}
-
-repositories {
-  maven {
     url = "https://repo.repsy.io/mvn/gandiber/geckolib"
   }
 }

@@ -43,7 +43,7 @@
     },
     "destroyTool": "Not specified",
     "customDrop": {
-      "value": "CUSTOM:MartianSand"
+      "value": "CUSTOM:MartianSandDust"
     },
     "dropAmount": 3,
     "useLootTableForDrops": false,

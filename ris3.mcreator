@@ -982,6 +982,16 @@
       "ids": {},
       "registry_name": "rocketone",
       "path": "~/Dimensions"
+    },
+    {
+      "name": "EarthMoons",
+      "type": "gui",
+      "sortid": 95,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "earth_moons",
+      "path": "~/Boss-Tools killers"
     }
   ],
   "variable_elements": [

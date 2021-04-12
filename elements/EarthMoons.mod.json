@@ -1,0 +1,147 @@
+{
+  "_fv": 17,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 431,
+    "height": 243,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": false,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "selbackround.png",
+          "use1Xscale": false,
+          "name": "selbackround.png",
+          "x": -25,
+          "y": -5
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "mercorbitnew.png",
+          "use1Xscale": false,
+          "name": "mercorbitnew.png",
+          "x": 191,
+          "y": 85
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "earth.png",
+          "use1Xscale": false,
+          "name": "earth.png",
+          "x": 218,
+          "y": 113
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "mercury.png",
+          "use1Xscale": false,
+          "name": "mercury.png",
+          "x": 200,
+          "y": 91
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Moon",
+          "width": 45,
+          "height": 20,
+          "name": "Moon",
+          "x": 17,
+          "y": 64
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "T1",
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "name": "T1",
+          "x": 73,
+          "y": 66
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Earth",
+          "color": {
+            "value": -16776961,
+            "falpha": 0.0
+          },
+          "name": "Earth",
+          "x": 207,
+          "y": 4
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "mercury.png",
+          "use1Xscale": false,
+          "name": "mercury.png",
+          "x": 298,
+          "y": 131
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Moon #2",
+          "width": 60,
+          "height": 20,
+          "name": "Moon #2",
+          "x": 17,
+          "y": 89
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "T2",
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "name": "T2",
+          "x": 83,
+          "y": 90
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "orbit2.png",
+          "use1Xscale": false,
+          "name": "orbit2.png",
+          "x": 125,
+          "y": 17
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "<<< Back",
+          "width": 120,
+          "height": 20,
+          "name": "<<< Back",
+          "x": -1,
+          "y": 219
+        }
+      }
+    ]
+  }
+}

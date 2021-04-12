@@ -2,6 +2,7 @@
 package xyz.souldb.ris3.block;
 
 import xyz.souldb.ris3.itemgroup.NaturerisItemGroup;
+import xyz.souldb.ris3.item.MartianSandDustItem;
 import xyz.souldb.ris3.Ris3ModElements;
 
 import net.minecraftforge.registries.ObjectHolder;
@@ -42,7 +43,7 @@ public class MartianSandBlock extends Ris3ModElements.ModElement {
 			List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 			if (!dropsOriginal.isEmpty())
 				return dropsOriginal;
-			return Collections.singletonList(new ItemStack(MartianSandBlock.block, (int) (3)));
+			return Collections.singletonList(new ItemStack(MartianSandDustItem.block, (int) (3)));
 		}
 	}
 }

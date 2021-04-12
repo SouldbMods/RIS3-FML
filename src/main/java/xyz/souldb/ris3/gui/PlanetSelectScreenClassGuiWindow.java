@@ -15,6 +15,7 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.client.gui.widget.button.Button;
+import net.minecraft.client.gui.widget.TextFieldWidget;
 import net.minecraft.client.gui.screen.inventory.ContainerScreen;
 import net.minecraft.client.Minecraft;
 
@@ -25,6 +26,7 @@ public class PlanetSelectScreenClassGuiWindow extends ContainerScreen<PlanetSele
 	private World world;
 	private int x, y, z;
 	private PlayerEntity entity;
+	TextFieldWidget SearchPlanets;
 	public PlanetSelectScreenClassGuiWindow(PlanetSelectScreenClassGui.GuiContainerMod container, PlayerInventory inventory, ITextComponent text) {
 		super(container, inventory, text);
 		this.world = container.world;
@@ -41,15 +43,18 @@ public class PlanetSelectScreenClassGuiWindow extends ContainerScreen<PlanetSele
 		this.renderBackground(ms);
 		super.render(ms, mouseX, mouseY, partialTicks);
 		this.renderHoveredTooltip(ms, mouseX, mouseY);
+		SearchPlanets.render(ms, mouseX, mouseY, partialTicks);
 	}
 
 	@Override
 	protected void drawGuiContainerBackgroundLayer(MatrixStack ms, float par1, int par2, int par3) {
 		GL11.glColor4f(1, 1, 1, 1);
+		Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("ris3:textures/selbackround.png"));
+		this.blit(ms, this.guiLeft + -21, this.guiTop + -10, 0, 0, 854, 480, 854, 480);
 		Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("ris3:textures/orbit2.png"));
-		this.blit(ms, this.guiLeft + 117, this.guiTop + 16, 0, 0, 200, 200, 200, 200);
+		this.blit(ms, this.guiLeft + 119, this.guiTop + 18, 0, 0, 200, 200, 200, 200);
 		Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("ris3:textures/orbitone.png"));
-		this.blit(ms, this.guiLeft + 73, this.guiTop + -6, 0, 0, 256, 256, 256, 256);
+		this.blit(ms, this.guiLeft + 70, this.guiTop + -12, 0, 0, 256, 256, 256, 256);
 		Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("ris3:textures/mars.png"));
 		this.blit(ms, this.guiLeft + 110, this.guiTop + 113, 0, 0, 16, 16, 16, 16);
 		Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("ris3:textures/earth.png"));
@@ -72,17 +77,25 @@ public class PlanetSelectScreenClassGuiWindow extends ContainerScreen<PlanetSele
 			this.minecraft.player.closeScreen();
 			return true;
 		}
+		if (SearchPlanets.isFocused())
+			return SearchPlanets.keyPressed(key, b, c);
 		return super.keyPressed(key, b, c);
 	}
 
 	@Override
 	public void tick() {
 		super.tick();
+		SearchPlanets.tick();
 	}
 
 	@Override
 	protected void drawGuiContainerForegroundLayer(MatrixStack ms, int mouseX, int mouseY) {
 		this.font.drawString(ms, "Planets", 200, 5, -16711936);
+		this.font.drawString(ms, "T11", 62, 36, -1);
+		this.font.drawString(ms, "T3", 81, 66, -1);
+		this.font.drawString(ms, "T2", 76, 93, -1);
+		this.font.drawString(ms, "T1", 74, 121, -1);
+		this.font.drawString(ms, "T1", 73, 153, -1);
 	}
 
 	@Override
@@ -119,5 +132,30 @@ public class PlanetSelectScreenClassGuiWindow extends ContainerScreen<PlanetSele
 			Ris3Mod.PACKET_HANDLER.sendToServer(new PlanetSelectScreenClassGui.ButtonPressedMessage(5, x, y, z));
 			PlanetSelectScreenClassGui.handleButtonAction(entity, 5, x, y, z);
 		}));
+		SearchPlanets = new TextFieldWidget(this.font, this.guiLeft + 305, this.guiTop + 8, 120, 20, new StringTextComponent("Search Planets...")) {
+			{
+				setSuggestion("Search Planets...");
+			}
+			@Override
+			public void writeText(String text) {
+				super.writeText(text);
+				if (getText().isEmpty())
+					setSuggestion("Search Planets...");
+				else
+					setSuggestion(null);
+			}
+
+			@Override
+			public void setCursorPosition(int pos) {
+				super.setCursorPosition(pos);
+				if (getText().isEmpty())
+					setSuggestion("Search Planets...");
+				else
+					setSuggestion(null);
+			}
+		};
+		PlanetSelectScreenClassGui.guistate.put("text:SearchPlanets", SearchPlanets);
+		SearchPlanets.setMaxStringLength(32767);
+		this.children.add(this.SearchPlanets);
 	}
 }

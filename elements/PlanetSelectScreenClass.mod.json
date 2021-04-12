@@ -13,11 +13,31 @@
       {
         "type": "image",
         "data": {
+          "image": "selbackround.png",
+          "use1Xscale": false,
+          "name": "selbackround.png",
+          "x": -23,
+          "y": -14
+        }
+      },
+      {
+        "type": "image",
+        "data": {
           "image": "orbit2.png",
           "use1Xscale": false,
           "name": "orbit2.png",
-          "x": 115,
-          "y": 13
+          "x": 117,
+          "y": 15
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "orbitone.png",
+          "use1Xscale": false,
+          "name": "orbitone.png",
+          "x": 68,
+          "y": -16
         }
       },
       {
@@ -31,16 +51,6 @@
           "name": "Planets",
           "x": 198,
           "y": 2
-        }
-      },
-      {
-        "type": "image",
-        "data": {
-          "image": "orbitone.png",
-          "use1Xscale": false,
-          "name": "orbitone.png",
-          "x": 71,
-          "y": -10
         }
       },
       {
@@ -177,6 +187,82 @@
           "name": "Next Page >>",
           "x": 341,
           "y": 220
+        }
+      },
+      {
+        "type": "textfield",
+        "data": {
+          "placeholder": "Search Planets...",
+          "width": 120,
+          "height": 20,
+          "name": "SearchPlanets",
+          "x": 303,
+          "y": 5
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "T11",
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "name": "T11",
+          "x": 60,
+          "y": 33
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "T3",
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "name": "T3",
+          "x": 79,
+          "y": 63
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "T2",
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "name": "T2",
+          "x": 74,
+          "y": 90
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "T1",
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "name": "T1",
+          "x": 72,
+          "y": 118
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "T1",
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "name": "T1",
+          "x": 71,
+          "y": 150
         }
       }
     ]

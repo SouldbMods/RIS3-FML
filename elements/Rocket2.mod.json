@@ -11,7 +11,7 @@
           "use1Xscale": false,
           "name": "ground.png",
           "x": -1,
-          "y": 169
+          "y": 168
         }
       },
       {
@@ -21,10 +21,23 @@
           "use1Xscale": false,
           "name": "rocketingui.png",
           "x": -1,
-          "y": 162
+          "y": 156
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "space.png",
+          "use1Xscale": false,
+          "name": "space.png",
+          "x": -3,
+          "y": 98
         }
       }
     ],
-    "baseTexture": ""
+    "baseTexture": "",
+    "displayCondition": {
+      "name": "Cr2"
+    }
   }
 }

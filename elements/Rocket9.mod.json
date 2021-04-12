@@ -20,11 +20,24 @@
           "image": "rocketingui.png",
           "use1Xscale": false,
           "name": "rocketingui.png",
-          "x": -2,
-          "y": 109
+          "x": -3,
+          "y": 107
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "space.png",
+          "use1Xscale": false,
+          "name": "space.png",
+          "x": -3,
+          "y": 106
         }
       }
     ],
-    "baseTexture": ""
+    "baseTexture": "",
+    "displayCondition": {
+      "name": "Cr9"
+    }
   }
 }

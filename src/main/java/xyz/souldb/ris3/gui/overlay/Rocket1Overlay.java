@@ -1,6 +1,7 @@
 
 package xyz.souldb.ris3.gui.overlay;
 
+import xyz.souldb.ris3.procedures.CheckRocket1Procedure;
 import xyz.souldb.ris3.Ris3ModElements;
 
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -17,6 +18,8 @@ import net.minecraft.client.Minecraft;
 
 import com.mojang.blaze3d.systems.RenderSystem;
 import com.mojang.blaze3d.platform.GlStateManager;
+
+import com.google.common.collect.ImmutableMap;
 
 @Ris3ModElements.ModElement.Tag
 public class Rocket1Overlay extends Ris3ModElements.ModElement {
@@ -40,7 +43,7 @@ public class Rocket1Overlay extends Ris3ModElements.ModElement {
 			double x = entity.getPosX();
 			double y = entity.getPosY();
 			double z = entity.getPosZ();
-			if (true) {
+			if (CheckRocket1Procedure.executeProcedure(ImmutableMap.of("world", world))) {
 				RenderSystem.disableDepthTest();
 				RenderSystem.depthMask(false);
 				RenderSystem.blendFuncSeparate(GlStateManager.SourceFactor.SRC_ALPHA, GlStateManager.DestFactor.ONE_MINUS_SRC_ALPHA,

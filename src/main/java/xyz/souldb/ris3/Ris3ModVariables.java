@@ -85,6 +85,7 @@ public class Ris3ModVariables {
 		public boolean EARTHORBIT = false;
 		public boolean MARSORBIT = false;
 		public double RocketGUIState = 0;
+		public double y = 0;
 		public MapVariables() {
 			super(DATA_NAME);
 		}
@@ -98,6 +99,7 @@ public class Ris3ModVariables {
 			EARTHORBIT = nbt.getBoolean("EARTHORBIT");
 			MARSORBIT = nbt.getBoolean("MARSORBIT");
 			RocketGUIState = nbt.getDouble("RocketGUIState");
+			y = nbt.getDouble("y");
 		}
 
 		@Override
@@ -105,6 +107,7 @@ public class Ris3ModVariables {
 			nbt.putBoolean("EARTHORBIT", EARTHORBIT);
 			nbt.putBoolean("MARSORBIT", MARSORBIT);
 			nbt.putDouble("RocketGUIState", RocketGUIState);
+			nbt.putDouble("y", y);
 			return nbt;
 		}
 

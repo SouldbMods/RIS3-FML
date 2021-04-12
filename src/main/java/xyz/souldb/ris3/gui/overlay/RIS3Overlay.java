@@ -1,6 +1,7 @@
 
 package xyz.souldb.ris3.gui.overlay;
 
+import xyz.souldb.ris3.procedures.Cr10Procedure;
 import xyz.souldb.ris3.Ris3ModElements;
 
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -17,6 +18,8 @@ import net.minecraft.client.Minecraft;
 
 import com.mojang.blaze3d.systems.RenderSystem;
 import com.mojang.blaze3d.platform.GlStateManager;
+
+import com.google.common.collect.ImmutableMap;
 
 @Ris3ModElements.ModElement.Tag
 public class RIS3Overlay extends Ris3ModElements.ModElement {
@@ -40,7 +43,7 @@ public class RIS3Overlay extends Ris3ModElements.ModElement {
 			double x = entity.getPosX();
 			double y = entity.getPosY();
 			double z = entity.getPosZ();
-			if (true) {
+			if (Cr10Procedure.executeProcedure(ImmutableMap.of("world", world))) {
 				Minecraft.getInstance().fontRenderer.drawString(event.getMatrixStack(), "You are Really In Space!", posX + -60, posY + -115, -65536);
 				RenderSystem.disableDepthTest();
 				RenderSystem.depthMask(false);
@@ -102,6 +105,8 @@ public class RIS3Overlay extends Ris3ModElements.ModElement {
 				RenderSystem.enableDepthTest();
 				RenderSystem.enableAlphaTest();
 				RenderSystem.color4f(1.0F, 1.0F, 1.0F, 1.0F);
+				Minecraft.getInstance().fontRenderer.drawString(event.getMatrixStack(), "Really In Space 3.0 By Souldbminer", posX + -80, posY + -102,
+						-16776961);
 			}
 		}
 	}

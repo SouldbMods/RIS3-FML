@@ -66,8 +66,24 @@
           "x": 299,
           "y": 39
         }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Really In Space 3.0 By Souldbminer",
+          "color": {
+            "value": -16776961,
+            "falpha": 0.0
+          },
+          "name": "Really In Space 3.0 By Souldbminer",
+          "x": 133,
+          "y": 18
+        }
       }
     ],
-    "baseTexture": ""
+    "baseTexture": "",
+    "displayCondition": {
+      "name": "Cr10"
+    }
   }
 }

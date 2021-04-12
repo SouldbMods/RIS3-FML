@@ -25,6 +25,9 @@
         }
       }
     ],
-    "baseTexture": ""
+    "baseTexture": "",
+    "displayCondition": {
+      "name": "CheckRocket1"
+    }
   }
 }

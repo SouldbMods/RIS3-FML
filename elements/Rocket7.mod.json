@@ -23,8 +23,21 @@
           "x": 0,
           "y": 124
         }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "space.png",
+          "use1Xscale": false,
+          "name": "space.png",
+          "x": -3,
+          "y": 98
+        }
       }
     ],
-    "baseTexture": ""
+    "baseTexture": "",
+    "displayCondition": {
+      "name": "Cr7"
+    }
   }
 }

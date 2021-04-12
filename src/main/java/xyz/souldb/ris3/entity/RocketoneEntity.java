@@ -94,7 +94,7 @@ public class RocketoneEntity extends Ris3ModElements.ModElement {
 				return new MobRenderer(renderManager, new Modelrk(), 0.5f) {
 					@Override
 					public ResourceLocation getEntityTexture(Entity entity) {
-						return new ResourceLocation("ris3:textures/rockettexture.png");
+						return new ResourceLocation("ris3:textures/rk.png");
 					}
 				};
 			});
@@ -116,13 +116,20 @@ public class RocketoneEntity extends Ris3ModElements.ModElement {
 		public CustomEntity(EntityType<CustomEntity> type, World world) {
 			super(type, world);
 			experienceValue = 0;
-			setNoAI(true);
+			setNoAI(false);
+			setCustomName(new StringTextComponent("Tier 1 Rocket"));
+			setCustomNameVisible(true);
 			enablePersistence();
 		}
 
 		@Override
 		public IPacket<?> createSpawnPacket() {
 			return NetworkHooks.getEntitySpawningPacket(this);
+		}
+
+		@Override
+		protected void registerGoals() {
+			super.registerGoals();
 		}
 
 		@Override

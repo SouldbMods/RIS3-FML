@@ -50,17 +50,17 @@ public class PlanetSelectScreenClassGuiWindow extends ContainerScreen<PlanetSele
 	protected void drawGuiContainerBackgroundLayer(MatrixStack ms, float par1, int par2, int par3) {
 		GL11.glColor4f(1, 1, 1, 1);
 		Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("ris3:textures/selbackround.png"));
-		this.blit(ms, this.guiLeft + -21, this.guiTop + -10, 0, 0, 854, 480, 854, 480);
+		this.blit(ms, this.guiLeft + -55, this.guiTop + -3, 0, 0, 854, 480, 854, 480);
 		Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("ris3:textures/orbit2.png"));
-		this.blit(ms, this.guiLeft + 119, this.guiTop + 18, 0, 0, 200, 200, 200, 200);
+		this.blit(ms, this.guiLeft + 122, this.guiTop + 20, 0, 0, 200, 200, 200, 200);
 		Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("ris3:textures/orbitone.png"));
-		this.blit(ms, this.guiLeft + 70, this.guiTop + -12, 0, 0, 256, 256, 256, 256);
+		this.blit(ms, this.guiLeft + 68, this.guiTop + -10, 0, 0, 256, 256, 256, 256);
 		Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("ris3:textures/mars.png"));
 		this.blit(ms, this.guiLeft + 110, this.guiTop + 113, 0, 0, 16, 16, 16, 16);
 		Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("ris3:textures/earth.png"));
 		this.blit(ms, this.guiLeft + 149, this.guiTop + 69, 0, 0, 16, 16, 16, 16);
 		Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("ris3:textures/venusorbit.png"));
-		this.blit(ms, this.guiLeft + 142, this.guiTop + 42, 0, 0, 160, 160, 160, 160);
+		this.blit(ms, this.guiLeft + 137, this.guiTop + 35, 0, 0, 160, 160, 160, 160);
 		Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("ris3:textures/venus.png"));
 		this.blit(ms, this.guiLeft + 207, this.guiTop + 52, 0, 0, 16, 16, 16, 16);
 		Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("ris3:textures/mercorbitnew.png"));
@@ -69,6 +69,12 @@ public class PlanetSelectScreenClassGuiWindow extends ContainerScreen<PlanetSele
 		this.blit(ms, this.guiLeft + 199, this.guiTop + 88, 0, 0, 16, 16, 16, 16);
 		Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("ris3:textures/sun.png"));
 		this.blit(ms, this.guiLeft + 217, this.guiTop + 110, 0, 0, 16, 16, 16, 16);
+		Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("ris3:textures/earthorbitmoon1.png"));
+		this.blit(ms, this.guiLeft + 137, this.guiTop + 55, 0, 0, 48, 48, 48, 48);
+		Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("ris3:textures/mooninclass.png"));
+		this.blit(ms, this.guiLeft + 159, this.guiTop + 54, 0, 0, 4, 4, 4, 4);
+		Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("ris3:textures/mooninclass.png"));
+		this.blit(ms, this.guiLeft + 153, this.guiTop + 100, 0, 0, 4, 4, 4, 4);
 	}
 
 	@Override

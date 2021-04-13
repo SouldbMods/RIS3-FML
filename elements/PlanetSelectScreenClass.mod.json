@@ -16,8 +16,8 @@
           "image": "selbackround.png",
           "use1Xscale": false,
           "name": "selbackround.png",
-          "x": -23,
-          "y": -14
+          "x": -57,
+          "y": -7
         }
       },
       {
@@ -26,8 +26,8 @@
           "image": "orbit2.png",
           "use1Xscale": false,
           "name": "orbit2.png",
-          "x": 117,
-          "y": 15
+          "x": 120,
+          "y": 17
         }
       },
       {
@@ -36,8 +36,8 @@
           "image": "orbitone.png",
           "use1Xscale": false,
           "name": "orbitone.png",
-          "x": 68,
-          "y": -16
+          "x": 66,
+          "y": -14
         }
       },
       {
@@ -79,8 +79,8 @@
           "image": "venusorbit.png",
           "use1Xscale": false,
           "name": "venusorbit.png",
-          "x": 140,
-          "y": 39
+          "x": 135,
+          "y": 32
         }
       },
       {
@@ -263,6 +263,36 @@
           "name": "T1",
           "x": 71,
           "y": 150
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "earthorbitmoon1.png",
+          "use1Xscale": false,
+          "name": "earthorbitmoon1.png",
+          "x": 135,
+          "y": 52
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "mooninclass.png",
+          "use1Xscale": false,
+          "name": "mooninclass.png",
+          "x": 157,
+          "y": 51
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "mooninclass.png",
+          "use1Xscale": false,
+          "name": "mooninclass.png",
+          "x": 151,
+          "y": 97
         }
       }
     ]

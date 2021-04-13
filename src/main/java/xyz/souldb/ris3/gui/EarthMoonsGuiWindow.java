@@ -47,13 +47,13 @@ public class EarthMoonsGuiWindow extends ContainerScreen<EarthMoonsGui.GuiContai
 	protected void drawGuiContainerBackgroundLayer(MatrixStack ms, float par1, int par2, int par3) {
 		GL11.glColor4f(1, 1, 1, 1);
 		Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("ris3:textures/selbackround.png"));
-		this.blit(ms, this.guiLeft + -23, this.guiTop + -3, 0, 0, 854, 480, 854, 480);
+		this.blit(ms, this.guiLeft + -23, this.guiTop + -4, 0, 0, 854, 480, 854, 480);
 		Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("ris3:textures/mercorbitnew.png"));
 		this.blit(ms, this.guiLeft + 193, this.guiTop + 86, 0, 0, 64, 64, 64, 64);
-		Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("ris3:textures/earth.png"));
-		this.blit(ms, this.guiLeft + 220, this.guiTop + 114, 0, 0, 16, 16, 16, 16);
 		Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("ris3:textures/mercury.png"));
 		this.blit(ms, this.guiLeft + 202, this.guiTop + 92, 0, 0, 16, 16, 16, 16);
+		Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("ris3:textures/earth.png"));
+		this.blit(ms, this.guiLeft + 220, this.guiTop + 114, 0, 0, 16, 16, 16, 16);
 		Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("ris3:textures/mercury.png"));
 		this.blit(ms, this.guiLeft + 300, this.guiTop + 132, 0, 0, 16, 16, 16, 16);
 		Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("ris3:textures/orbit2.png"));
@@ -79,6 +79,7 @@ public class EarthMoonsGuiWindow extends ContainerScreen<EarthMoonsGui.GuiContai
 		this.font.drawString(ms, "T1", 75, 67, -1);
 		this.font.drawString(ms, "Earth", 209, 5, -16776961);
 		this.font.drawString(ms, "T2", 85, 91, -1);
+		this.font.drawString(ms, "T1", 73, 40, -1);
 	}
 
 	@Override
@@ -102,6 +103,10 @@ public class EarthMoonsGuiWindow extends ContainerScreen<EarthMoonsGui.GuiContai
 		this.addButton(new Button(this.guiLeft + 1, this.guiTop + 220, 120, 20, new StringTextComponent("<<< Back"), e -> {
 			Ris3Mod.PACKET_HANDLER.sendToServer(new EarthMoonsGui.ButtonPressedMessage(2, x, y, z));
 			EarthMoonsGui.handleButtonAction(entity, 2, x, y, z);
+		}));
+		this.addButton(new Button(this.guiLeft + 20, this.guiTop + 40, 50, 20, new StringTextComponent("Earth"), e -> {
+			Ris3Mod.PACKET_HANDLER.sendToServer(new EarthMoonsGui.ButtonPressedMessage(3, x, y, z));
+			EarthMoonsGui.handleButtonAction(entity, 3, x, y, z);
 		}));
 	}
 }

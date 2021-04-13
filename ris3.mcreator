@@ -1176,6 +1176,29 @@
           }
         ]
       }
+    },
+    {
+      "name": "Marsmoons",
+      "type": "gui",
+      "sortid": 106,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "marsmoons",
+      "path": "~/Boss-Tools killers"
+    },
+    {
+      "name": "TakeOff",
+      "type": "procedure",
+      "sortid": 107,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "take_off",
+      "metadata": {
+        "dependencies": []
+      },
+      "path": "~/Boss-Tools killers"
     }
   ],
   "variable_elements": [

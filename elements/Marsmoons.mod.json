@@ -1,0 +1,161 @@
+{
+  "_fv": 17,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 434,
+    "height": 245,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": false,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "selbackround.png",
+          "use1Xscale": false,
+          "name": "selbackround.png",
+          "x": -22,
+          "y": -5
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "mars.png",
+          "use1Xscale": false,
+          "name": "mars.png",
+          "x": 203,
+          "y": 95
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "mercorbitnew.png",
+          "use1Xscale": false,
+          "name": "mercorbitnew.png",
+          "x": 179,
+          "y": 74
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "mercury.png",
+          "use1Xscale": false,
+          "name": "mercury.png",
+          "x": 185,
+          "y": 121
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "mercury.png",
+          "use1Xscale": false,
+          "name": "mercury.png",
+          "x": 225,
+          "y": 83
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Mars",
+          "width": 45,
+          "height": 20,
+          "name": "Mars",
+          "x": 12,
+          "y": 50
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "T2",
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "name": "T2",
+          "x": 61,
+          "y": 51
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Phobos",
+          "width": 55,
+          "height": 20,
+          "name": "Phobos",
+          "x": 13,
+          "y": 80
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "T3",
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "name": "T3",
+          "x": 71,
+          "y": 82
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Deimos",
+          "width": 55,
+          "height": 20,
+          "name": "Deimos",
+          "x": 14,
+          "y": 105
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "T3",
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "name": "T3",
+          "x": 73,
+          "y": 106
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Mars",
+          "color": {
+            "value": -65536,
+            "falpha": 0.0
+          },
+          "name": "Mars",
+          "x": 200,
+          "y": 1
+        }
+      },
+      {
+        "type": "textfield",
+        "data": {
+          "placeholder": "Search Moons",
+          "width": 120,
+          "height": 20,
+          "name": "SearchMoons",
+          "x": 3,
+          "y": 4
+        }
+      }
+    ]
+  }
+}

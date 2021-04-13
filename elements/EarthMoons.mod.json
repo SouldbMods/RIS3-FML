@@ -17,7 +17,7 @@
           "use1Xscale": false,
           "name": "selbackround.png",
           "x": -25,
-          "y": -5
+          "y": -6
         }
       },
       {
@@ -33,21 +33,21 @@
       {
         "type": "image",
         "data": {
-          "image": "earth.png",
-          "use1Xscale": false,
-          "name": "earth.png",
-          "x": 218,
-          "y": 113
-        }
-      },
-      {
-        "type": "image",
-        "data": {
           "image": "mercury.png",
           "use1Xscale": false,
           "name": "mercury.png",
           "x": 200,
           "y": 91
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "earth.png",
+          "use1Xscale": false,
+          "name": "earth.png",
+          "x": 218,
+          "y": 113
         }
       },
       {
@@ -140,6 +140,30 @@
           "name": "<<< Back",
           "x": -1,
           "y": 219
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Earth",
+          "width": 50,
+          "height": 20,
+          "name": "Earth",
+          "x": 18,
+          "y": 39
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "T1",
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "name": "T1",
+          "x": 71,
+          "y": 39
         }
       }
     ]

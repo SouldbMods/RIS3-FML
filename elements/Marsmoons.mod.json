@@ -155,6 +155,20 @@
           "x": 3,
           "y": 4
         }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "<<< Back",
+          "onClick": {
+            "name": "Gotoplanetsgui"
+          },
+          "width": 65,
+          "height": 20,
+          "name": "<<< Back",
+          "x": 1,
+          "y": 219
+        }
       }
     ]
   }

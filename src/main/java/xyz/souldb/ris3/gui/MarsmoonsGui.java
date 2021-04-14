@@ -1,6 +1,7 @@
 
 package xyz.souldb.ris3.gui;
 
+import xyz.souldb.ris3.procedures.GotoplanetsguiProcedure;
 import xyz.souldb.ris3.Ris3ModElements;
 
 import net.minecraftforge.items.ItemStackHandler;
@@ -174,6 +175,17 @@ public class MarsmoonsGui extends Ris3ModElements.ModElement {
 		// security measure to prevent arbitrary chunk generation
 		if (!world.isBlockLoaded(new BlockPos(x, y, z)))
 			return;
+		if (buttonID == 3) {
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("entity", entity);
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				GotoplanetsguiProcedure.executeProcedure($_dependencies);
+			}
+		}
 	}
 
 	private static void handleSlotAction(PlayerEntity entity, int slotID, int changeType, int meta, int x, int y, int z) {

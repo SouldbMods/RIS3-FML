@@ -133,5 +133,9 @@ public class MarsmoonsGuiWindow extends ContainerScreen<MarsmoonsGui.GuiContaine
 		MarsmoonsGui.guistate.put("text:SearchMoons", SearchMoons);
 		SearchMoons.setMaxStringLength(32767);
 		this.children.add(this.SearchMoons);
+		this.addButton(new Button(this.guiLeft + 4, this.guiTop + 221, 65, 20, new StringTextComponent("<<< Back"), e -> {
+			Ris3Mod.PACKET_HANDLER.sendToServer(new MarsmoonsGui.ButtonPressedMessage(3, x, y, z));
+			MarsmoonsGui.handleButtonAction(entity, 3, x, y, z);
+		}));
 	}
 }

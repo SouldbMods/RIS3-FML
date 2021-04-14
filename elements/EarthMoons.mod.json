@@ -135,6 +135,9 @@
         "type": "button",
         "data": {
           "text": "<<< Back",
+          "onClick": {
+            "name": "Gotoplanetsgui"
+          },
           "width": 120,
           "height": 20,
           "name": "<<< Back",

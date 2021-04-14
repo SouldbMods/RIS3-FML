@@ -114,7 +114,7 @@ public class PlanetSelectScreenClassGuiWindow extends ContainerScreen<PlanetSele
 	public void init(Minecraft minecraft, int width, int height) {
 		super.init(minecraft, width, height);
 		minecraft.keyboardListener.enableRepeatEvents(true);
-		this.addButton(new Button(this.guiLeft + 19, this.guiTop + 34, 40, 20, new StringTextComponent("Sun"), e -> {
+		this.addButton(new Button(this.guiLeft + 19, this.guiTop + 35, 40, 20, new StringTextComponent("Sun"), e -> {
 			Ris3Mod.PACKET_HANDLER.sendToServer(new PlanetSelectScreenClassGui.ButtonPressedMessage(0, x, y, z));
 			PlanetSelectScreenClassGui.handleButtonAction(entity, 0, x, y, z);
 		}));

@@ -1,0 +1,7 @@
+{
+  "parent": "ris3:custom/rktable.geo",
+  "textures": {
+    "all": "ris3:blocks/rktable",
+    "particle": "ris3:blocks/rktable"
+  }
+}

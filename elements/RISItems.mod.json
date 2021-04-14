@@ -1,0 +1,11 @@
+{
+  "_fv": 17,
+  "_type": "tab",
+  "definition": {
+    "name": "Really In Space Items",
+    "icon": {
+      "value": "Blocks.TORCH"
+    },
+    "showSearch": false
+  }
+}

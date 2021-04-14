@@ -1,7 +1,7 @@
 {
-  "parent": "ris3:custom/rktable.geo",
+  "parent": "block/cube_all",
   "textures": {
-    "all": "ris3:blocks/rktable",
-    "particle": "ris3:blocks/rktable"
+    "all": "ris3:blocks/rockettablete",
+    "particle": "ris3:blocks/rockettablete"
   }
 }

@@ -1,10 +1,11 @@
 {
-  "block.ris3.kryptonian_fence": "Kryptonian Fence",
   "item.ris3.galaxium_armor_helmet": "Galaxium Helmet",
+  "block.ris3.kryptonian_fence": "Kryptonian Fence",
   "itemGroup.tabri_stools": "Really In Space Tools",
   "biome.ris3.mars_flat": "Mars Flat",
   "item.ris3.galaxium_shovel": "Galaxium Shovel",
   "itemGroup.tabrisblocks": "Really in space Blocks",
+  "itemGroup.tabris_items": "Really In Space Items",
   "block.ris3.galaxium_ore": "Galaxium Ore",
   "key.ris3.launch_rocket": "Launch Rocket",
   "item.ris3.galaxium_pickaxe": "Galaxium Pickaxe",
@@ -23,6 +24,7 @@
   "block.ris3.kryptonian_wood": "Kryptonian Wood",
   "item.ris3.rocketone_spawn_egg": "Tier One Rocket Spawn Egg",
   "block.ris3.rocket_table": "Rocket Table",
+  "item.ris3.iron_plate": "Iron Plate",
   "block.ris3.kryptonian_log": "Kryptonian Log",
   "itemGroup.tabris_armour": "Really In Space Armour",
   "block.ris3.kryptonian_stairs": "Kryptonian Stairs",
@@ -34,6 +36,7 @@
   "item.ris3.mars": "Mars Portal Igniter",
   "block.ris3.kryptonian_planks": "Kryptonian Planks",
   "block.ris3.mars_stone": "Mars Stone",
+  "item.ris3.rocket_plate": "Rocket Plate",
   "item.ris3.galaxium_armor_boots": "Galaxium Boots",
   "block.ris3.martian_sand": "Martian Sand",
   "block.ris3.galaxium_block": "Block of Galaxium"

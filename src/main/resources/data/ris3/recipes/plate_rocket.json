@@ -1,0 +1,19 @@
+{
+  "group": "ris3",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "ris3:iron_plate"
+    },
+    {
+      "item": "ris3:iron_plate"
+    },
+    {
+      "item": "ris3:iron_plate"
+    }
+  ],
+  "result": {
+    "item": "ris3:rocket_plate",
+    "count": 1
+  }
+}

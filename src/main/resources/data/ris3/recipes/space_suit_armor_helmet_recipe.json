@@ -1,0 +1,29 @@
+{
+  "group": "ris3",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:white_wool"
+    },
+    "1": {
+      "item": "minecraft:white_wool"
+    },
+    "2": {
+      "item": "minecraft:white_wool"
+    },
+    "3": {
+      "item": "minecraft:white_wool"
+    },
+    "5": {
+      "item": "minecraft:white_wool"
+    }
+  },
+  "result": {
+    "item": "ris3:space_suit_armor_helmet",
+    "count": 1
+  }
+}

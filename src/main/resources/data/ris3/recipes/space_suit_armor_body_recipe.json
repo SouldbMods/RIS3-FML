@@ -1,0 +1,39 @@
+{
+  "group": "ris3",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:white_wool"
+    },
+    "2": {
+      "item": "minecraft:white_wool"
+    },
+    "3": {
+      "item": "minecraft:white_wool"
+    },
+    "4": {
+      "item": "minecraft:white_wool"
+    },
+    "5": {
+      "item": "minecraft:white_wool"
+    },
+    "6": {
+      "item": "minecraft:white_wool"
+    },
+    "7": {
+      "item": "minecraft:white_wool"
+    },
+    "8": {
+      "item": "minecraft:white_wool"
+    }
+  },
+  "result": {
+    "item": "ris3:space_suit_armor_chestplate",
+    "count": 1
+  }
+}

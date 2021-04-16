@@ -1,0 +1,22 @@
+{
+  "group": "ris3",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "ris3:martian_sand_dust"
+    },
+    {
+      "item": "ris3:martian_sand_dust"
+    },
+    {
+      "item": "ris3:martian_sand_dust"
+    },
+    {
+      "item": "ris3:martian_sand_dust"
+    }
+  ],
+  "result": {
+    "item": "ris3:martian_sand",
+    "count": 1
+  }
+}

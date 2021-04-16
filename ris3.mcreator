@@ -1321,6 +1321,67 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "plate_rocket"
+    },
+    {
+      "name": "SpaceSuitArmor",
+      "type": "armor",
+      "sortid": 114,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "space_suit_armor",
+      "metadata": {
+        "eh": true,
+        "el": true,
+        "eb": true,
+        "ec": true
+      }
+    },
+    {
+      "name": "SpaceSuitArmorHelmetRecipe",
+      "type": "recipe",
+      "sortid": 115,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "space_suit_armor_helmet_recipe"
+    },
+    {
+      "name": "SpaceSuitArmorBodyRecipe",
+      "type": "recipe",
+      "sortid": 116,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "space_suit_armor_body_recipe"
+    },
+    {
+      "name": "SpaceSuitArmorLeggingsRecipe",
+      "type": "recipe",
+      "sortid": 117,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "space_suit_armor_leggings_recipe"
+    },
+    {
+      "name": "SpaceSuitArmorBootsRecipe",
+      "type": "recipe",
+      "sortid": 118,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "space_suit_armor_boots_recipe"
+    },
+    {
+      "name": "MarsSand",
+      "type": "recipe",
+      "sortid": 119,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "mars_sand",
+      "path": "~/Dimensions"
     }
   ],
   "variable_elements": [
@@ -1370,7 +1431,9 @@
       "item.ris3.galaxium_sword": "Galaxium Sword",
       "item.ris3.galaxium_armor_chestplate": "Galaxium Chestplate",
       "block.ris3.kryptonian_leaves": "Kryptonian Leaves",
+      "item.ris3.space_suit_armor_chestplate": "Space Suit Chestplate",
       "item.ris3.martian_sand_dust": "Martian Sand Dust",
+      "item.ris3.space_suit_armor_boots": "Space Suit Boots",
       "itemGroup.tabris_combat": "Really In Space Combat",
       "item.ris3.galaxium_axe": "Galaxium Axe",
       "block.ris3.cable_xdir": "Cable",
@@ -1386,13 +1449,15 @@
       "itemGroup.tabrisenergy": "Really In Space Energy \u0026 Macines",
       "item.ris3.galaxium_dust": "Galaxium",
       "entity.ris3.rocketone": "Tier One Rocket",
+      "item.ris3.space_suit_armor_helmet": "Space Suit Helmet",
       "item.ris3.mars": "Mars Portal Igniter",
       "block.ris3.kryptonian_planks": "Kryptonian Planks",
       "block.ris3.mars_stone": "Mars Stone",
       "item.ris3.rocket_plate": "Rocket Plate",
       "item.ris3.galaxium_armor_boots": "Galaxium Boots",
       "block.ris3.martian_sand": "Martian Sand",
-      "block.ris3.galaxium_block": "Block of Galaxium"
+      "block.ris3.galaxium_block": "Block of Galaxium",
+      "item.ris3.space_suit_armor_leggings": "Space Suit Leggings"
     }
   },
   "foldersRoot": {

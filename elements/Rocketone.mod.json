@@ -5,7 +5,7 @@
     "mobName": "Tier One Rocket",
     "mobLabel": "Tier 1 Rocket",
     "mobModelName": "Modelrk",
-    "mobModelTexture": "rk.png",
+    "mobModelTexture": "rktexture.png",
     "mobModelGlowTexture": "",
     "modelWidth": 0.6,
     "modelHeight": 1.8,

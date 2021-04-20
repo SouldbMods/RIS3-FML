@@ -94,7 +94,7 @@ public class RocketoneEntity extends Ris3ModElements.ModElement {
 				return new MobRenderer(renderManager, new Modelrk(), 0.5f) {
 					@Override
 					public ResourceLocation getEntityTexture(Entity entity) {
-						return new ResourceLocation("ris3:textures/rktexture.png");
+						return new ResourceLocation("ris3:textures/rksd.png");
 					}
 				};
 			});

@@ -313,12 +313,15 @@
       {
         "type": "button",
         "data": {
-          "text": "Parts",
+          "text": "Craft",
+          "onClick": {
+            "name": "Rocket1Recipie"
+          },
           "width": 50,
           "height": 20,
-          "name": "Parts",
-          "x": 123,
-          "y": 17
+          "name": "Craft",
+          "x": 251,
+          "y": 75
         }
       },
       {
@@ -342,9 +345,6 @@
           "y": 55
         }
       }
-    ],
-    "onTick": {
-      "name": "Rocket1Recipie"
-    }
+    ]
   }
 }

@@ -1,6 +1,6 @@
 package xyz.souldb.ris3.procedures;
 
-import xyz.souldb.ris3.item.AluminiumPlateItem;
+import xyz.souldb.ris3.item.LEDItem;
 import xyz.souldb.ris3.entity.RocketoneEntity;
 import xyz.souldb.ris3.Ris3ModElements;
 import xyz.souldb.ris3.Ris3Mod;
@@ -58,7 +58,7 @@ public class SpawnT1RocketProcedure extends Ris3ModElements.ModElement {
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
 		if (entity instanceof LivingEntity) {
-			ItemStack _setstack = new ItemStack(AluminiumPlateItem.block, (int) (1));
+			ItemStack _setstack = new ItemStack(LEDItem.block, (int) (1));
 			_setstack.setCount((int) 1);
 			((LivingEntity) entity).setHeldItem(Hand.MAIN_HAND, _setstack);
 			if (entity instanceof ServerPlayerEntity)

@@ -54,6 +54,8 @@ public class RkguiGuiWindow extends ContainerScreen<RkguiGui.GuiContainerMod> {
 		this.blit(ms, this.guiLeft + 158, this.guiTop + 141, 0, 0, 16, 16, 16, 16);
 		Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("ris3:textures/rocketingui.png"));
 		this.blit(ms, this.guiLeft + 23, this.guiTop + 141, 0, 0, 16, 16, 16, 16);
+		Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("ris3:textures/arrow.png"));
+		this.blit(ms, this.guiLeft + 131, this.guiTop + 61, 0, 0, 24, 16, 24, 16);
 	}
 
 	@Override

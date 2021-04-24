@@ -3,10 +3,10 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "housing",
+    "texture": "rocketitem",
     "customModelName": "Normal",
-    "name": "Rocket Housing",
-    "rarity": "UNCOMMON",
+    "name": "Tier 1 Rocket",
+    "rarity": "EPIC",
     "creativeTab": {
       "value": "CUSTOM:RisRockets"
     },
@@ -19,7 +19,7 @@
       "value": ""
     },
     "destroyAnyBlock": false,
-    "immuneToFire": true,
+    "immuneToFire": false,
     "stayInGridWhenCrafting": false,
     "damageOnCrafting": false,
     "enableMeleeDamage": false,
@@ -28,6 +28,9 @@
     "hasGlow": false,
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
-    "inventoryStackSize": 64
+    "inventoryStackSize": 64,
+    "onRightClickedOnBlock": {
+      "name": "SpawnT1Rocket"
+    }
   }
 }

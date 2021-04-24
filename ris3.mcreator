@@ -1394,22 +1394,350 @@
       "path": "~/Dimensions"
     },
     {
-      "name": "Housing",
+      "name": "AluminiumIngot",
       "type": "item",
-      "sortid": 121,
+      "sortid": 122,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "housing"
+      "registry_name": "aluminium_ingot"
     },
     {
-      "name": "Hard",
-      "type": "enchantment",
-      "sortid": 121,
+      "name": "AluminiumOre",
+      "type": "block",
+      "sortid": 123,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "hard"
+      "registry_name": "aluminium_ore"
+    },
+    {
+      "name": "AluminiumBlock",
+      "type": "block",
+      "sortid": 124,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "aluminium_block"
+    },
+    {
+      "name": "AluminiumOreBlockRecipe",
+      "type": "recipe",
+      "sortid": 125,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "aluminium_ore_block_recipe"
+    },
+    {
+      "name": "AluminiumBlockOreRecipe",
+      "type": "recipe",
+      "sortid": 126,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "aluminium_block_ore_recipe"
+    },
+    {
+      "name": "AluminiumOreSmelting",
+      "type": "recipe",
+      "sortid": 127,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "aluminium_ore_smelting"
+    },
+    {
+      "name": "AluminiumPickaxe",
+      "type": "tool",
+      "sortid": 128,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "aluminium_pickaxe"
+    },
+    {
+      "name": "AluminiumAxe",
+      "type": "tool",
+      "sortid": 129,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "aluminium_axe"
+    },
+    {
+      "name": "AluminiumSword",
+      "type": "tool",
+      "sortid": 130,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "aluminium_sword"
+    },
+    {
+      "name": "AluminiumShovel",
+      "type": "tool",
+      "sortid": 131,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "aluminium_shovel"
+    },
+    {
+      "name": "AluminiumHoe",
+      "type": "tool",
+      "sortid": 132,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "aluminium_hoe"
+    },
+    {
+      "name": "AluminiumPickaxeRecipe",
+      "type": "recipe",
+      "sortid": 133,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "aluminium_pickaxe_recipe"
+    },
+    {
+      "name": "AluminiumAxeRecipe",
+      "type": "recipe",
+      "sortid": 134,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "aluminium_axe_recipe"
+    },
+    {
+      "name": "AluminiumSwordRecipe",
+      "type": "recipe",
+      "sortid": 135,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "aluminium_sword_recipe"
+    },
+    {
+      "name": "AluminiumShovelRecipe",
+      "type": "recipe",
+      "sortid": 136,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "aluminium_shovel_recipe"
+    },
+    {
+      "name": "AluminiumHoeRecipe",
+      "type": "recipe",
+      "sortid": 137,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "aluminium_hoe_recipe"
+    },
+    {
+      "name": "AluminiumArmor",
+      "type": "armor",
+      "sortid": 138,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "aluminium_armor",
+      "metadata": {
+        "eh": true,
+        "el": true,
+        "eb": true,
+        "ec": true
+      }
+    },
+    {
+      "name": "AluminiumArmorHelmetRecipe",
+      "type": "recipe",
+      "sortid": 139,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "aluminium_armor_helmet_recipe"
+    },
+    {
+      "name": "AluminiumArmorBodyRecipe",
+      "type": "recipe",
+      "sortid": 140,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "aluminium_armor_body_recipe"
+    },
+    {
+      "name": "AluminiumArmorLeggingsRecipe",
+      "type": "recipe",
+      "sortid": 141,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "aluminium_armor_leggings_recipe"
+    },
+    {
+      "name": "AluminiumArmorBootsRecipe",
+      "type": "recipe",
+      "sortid": 142,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "aluminium_armor_boots_recipe"
+    },
+    {
+      "name": "LED",
+      "type": "item",
+      "sortid": 122,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "led",
+      "path": "~/Misc."
+    },
+    {
+      "name": "Aluminiumrod",
+      "type": "item",
+      "sortid": 143,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "aluminiumrod"
+    },
+    {
+      "name": "AluminiumPlate",
+      "type": "item",
+      "sortid": 144,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "aluminium_plate"
+    },
+    {
+      "name": "AluminumShaper",
+      "type": "gui",
+      "sortid": 145,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "aluminum_shaper"
+    },
+    {
+      "name": "Engene",
+      "type": "item",
+      "sortid": 146,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "engene"
+    },
+    {
+      "name": "FuelTank",
+      "type": "item",
+      "sortid": 147,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fuel_tank"
+    },
+    {
+      "name": "FuelPipe",
+      "type": "item",
+      "sortid": 148,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fuel_pipe"
+    },
+    {
+      "name": "Rocket",
+      "type": "item",
+      "sortid": 149,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rocket",
+      "path": "~/Misc."
+    },
+    {
+      "name": "SpawnT1Rocket",
+      "type": "procedure",
+      "sortid": 150,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "spawn_t_1_rocket",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Misc."
+    },
+    {
+      "name": "Rocket1Recipie",
+      "type": "procedure",
+      "sortid": 122,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rocket_1_recipie",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Rocketthree",
+      "type": "mob",
+      "sortid": 151,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rocketthree",
+      "path": "~/Dimensions"
     }
   ],
   "variable_elements": [
@@ -1443,9 +1771,12 @@
     "en_us": {
       "item.ris3.galaxium_armor_helmet": "Galaxium Helmet",
       "biome.ris3.mars_flat": "Mars Flat",
+      "item.ris3.aluminium_hoe": "Aluminium Hoe",
       "itemGroup.tabrisblocks": "Really in space Blocks",
       "itemGroup.tabris_items": "Really In Space Items",
+      "item.ris3.rocket": "Tier 1 Rocket",
       "item.ris3.rockettwo_spawn_egg": "Tier 2 Rocket Spawn Egg",
+      "item.ris3.aluminiumrod": "Aluminium rod",
       "item.ris3.galaxium_hoe": "Galaxium Hoe",
       "itemGroup.tabnatureris": "Really In Space Nature",
       "item.ris3.galaxium_armor_leggings": "Galaxium Leggings",
@@ -1453,24 +1784,34 @@
       "entity.ris3.rockettwo": "Tier 2 Rocket",
       "item.ris3.galaxium_armor_chestplate": "Galaxium Chestplate",
       "item.ris3.martian_sand_dust": "Martian Sand Dust",
-      "enchantment.ris3.hard": "Hard Plate",
       "item.ris3.galaxium_axe": "Galaxium Axe",
       "block.ris3.kryptonian_wood": "Kryptonian Wood",
-      "itemGroup.tabris_armour": "Really In Space Armour",
+      "item.ris3.aluminium_armor_leggings": "Aluminium Leggings",
       "itemGroup.tabris_rockets": "Really In Space Discovery",
+      "itemGroup.tabris_armour": "Really In Space Armour",
       "block.ris3.kryptonian_fence_gate": "Kryptonian Fence Gate",
+      "item.ris3.fuel_tank": "Fuel Tank",
       "entity.ris3.rocketone": "Tier One Rocket",
       "item.ris3.space_suit_armor_helmet": "Space Suit Helmet",
       "item.ris3.mars": "Mars Portal Igniter",
-      "block.ris3.mars_stone": "Mars Stone",
+      "block.ris3.aluminium_block": "Block of Aluminium",
+      "item.ris3.aluminium_axe": "Aluminium Axe",
+      "item.ris3.aluminium_armor_helmet": "Aluminium Helmet",
       "item.ris3.rocket_plate": "Rocket Plate",
+      "block.ris3.mars_stone": "Mars Stone",
       "block.ris3.martian_sand": "Martian Sand",
       "item.ris3.space_suit_armor_leggings": "Space Suit Leggings",
+      "item.ris3.aluminium_ingot": "Aluminium",
+      "entity.ris3.rocketthree": "Tier 3 Rocket",
       "block.ris3.kryptonian_fence": "Kryptonian Fence",
       "itemGroup.tabri_stools": "Really In Space Tools",
+      "item.ris3.aluminium_shovel": "Aluminium Shovel",
       "item.ris3.galaxium_shovel": "Galaxium Shovel",
+      "item.ris3.aluminium_pickaxe": "Aluminium Pickaxe",
+      "item.ris3.aluminium_plate": "Aluminium Plate",
       "block.ris3.galaxium_ore": "Galaxium Ore",
       "key.ris3.launch_rocket": "Launch Rocket",
+      "item.ris3.rocketthree_spawn_egg": "Tier 3 Rocket Spawn Egg",
       "item.ris3.galaxium_pickaxe": "Galaxium Pickaxe",
       "block.ris3.kryptonian_slab": "Kryptonian Slab",
       "item.ris3.galaxium_sword": "Galaxium Sword",
@@ -1480,16 +1821,22 @@
       "itemGroup.tabris_combat": "Really In Space Combat",
       "block.ris3.cable_xdir": "Cable",
       "item.ris3.rocketone_spawn_egg": "Tier One Rocket Spawn Egg",
+      "item.ris3.fuel_pipe": "Fuel Pipe",
       "block.ris3.rocket_table": "Rocket Table",
-      "item.ris3.housing": "Rocket Housing",
+      "item.ris3.engene": "Engene",
       "item.ris3.iron_plate": "Iron Plate",
       "block.ris3.kryptonian_log": "Kryptonian Log",
       "block.ris3.kryptonian_stairs": "Kryptonian Stairs",
       "itemGroup.tabrisenergy": "Really In Space Energy \u0026 Macines",
       "item.ris3.galaxium_dust": "Galaxium",
+      "item.ris3.led": "LED",
       "block.ris3.kryptonian_planks": "Kryptonian Planks",
       "item.ris3.galaxium_armor_boots": "Galaxium Boots",
-      "block.ris3.galaxium_block": "Block of Galaxium"
+      "item.ris3.aluminium_sword": "Aluminium Sword",
+      "block.ris3.galaxium_block": "Block of Galaxium",
+      "block.ris3.aluminium_ore": "Aluminium Ore",
+      "item.ris3.aluminium_armor_boots": "Aluminium Boots",
+      "item.ris3.aluminium_armor_chestplate": "Aluminium Chestplate"
     }
   },
   "foldersRoot": {
@@ -1523,8 +1870,8 @@
   },
   "workspaceSettings": {
     "modid": "ris3",
-    "modName": "Really In Space 3 b1",
-    "version": "b1",
+    "modName": "Really In Space 3 b3",
+    "version": "b3",
     "description": "Requires Patchuli and Geckolib 3.0 | For Forge and Fabric FML 1.16.4/5   Fabric 1.16.0/1/2/3/4/5",
     "author": "Souldbminer",
     "websiteURL": "https://youtube.com/c/souldbminer",

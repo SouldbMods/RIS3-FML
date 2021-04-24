@@ -32,6 +32,7 @@ import net.minecraft.util.Hand;
 import net.minecraft.util.Direction;
 import net.minecraft.util.DamageSource;
 import net.minecraft.util.ActionResultType;
+import net.minecraft.pathfinding.FlyingPathNavigator;
 import net.minecraft.network.PacketBuffer;
 import net.minecraft.network.IPacket;
 import net.minecraft.nbt.INBT;
@@ -44,6 +45,7 @@ import net.minecraft.entity.projectile.ArrowEntity;
 import net.minecraft.entity.player.ServerPlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.entity.ai.controller.FlyingMovementController;
 import net.minecraft.entity.ai.attributes.GlobalEntityTypeAttributes;
 import net.minecraft.entity.ai.attributes.Attributes;
 import net.minecraft.entity.ai.attributes.AttributeModifierMap;
@@ -57,6 +59,7 @@ import net.minecraft.enchantment.EnchantmentHelper;
 import net.minecraft.client.renderer.model.ModelRenderer;
 import net.minecraft.client.renderer.entity.model.EntityModel;
 import net.minecraft.client.renderer.entity.MobRenderer;
+import net.minecraft.block.BlockState;
 
 import javax.annotation.Nullable;
 import javax.annotation.Nonnull;
@@ -106,6 +109,7 @@ public class RocketoneEntity extends Ris3ModElements.ModElement {
 		ammma = ammma.createMutableAttribute(Attributes.MAX_HEALTH, 10);
 		ammma = ammma.createMutableAttribute(Attributes.ARMOR, 0);
 		ammma = ammma.createMutableAttribute(Attributes.ATTACK_DAMAGE, 3);
+		ammma = ammma.createMutableAttribute(Attributes.FLYING_SPEED, 0.3);
 		GlobalEntityTypeAttributes.put(entity, ammma.create());
 	}
 	public static class CustomEntity extends CreatureEntity {
@@ -120,6 +124,8 @@ public class RocketoneEntity extends Ris3ModElements.ModElement {
 			setCustomName(new StringTextComponent("Tier 1 Rocket"));
 			setCustomNameVisible(true);
 			enablePersistence();
+			this.moveController = new FlyingMovementController(this, 10, true);
+			this.navigator = new FlyingPathNavigator(this, this.world);
 		}
 
 		@Override
@@ -150,6 +156,11 @@ public class RocketoneEntity extends Ris3ModElements.ModElement {
 		@Override
 		public net.minecraft.util.SoundEvent getDeathSound() {
 			return (net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.generic.death"));
+		}
+
+		@Override
+		public boolean onLivingFall(float l, float d) {
+			return false;
 		}
 
 		@Override
@@ -251,6 +262,20 @@ public class RocketoneEntity extends Ris3ModElements.ModElement {
 			double z = this.getPosZ();
 			Entity entity = this;
 			return retval;
+		}
+
+		@Override
+		protected void updateFallState(double y, boolean onGroundIn, BlockState state, BlockPos pos) {
+		}
+
+		@Override
+		public void setNoGravity(boolean ignored) {
+			super.setNoGravity(true);
+		}
+
+		public void livingTick() {
+			super.livingTick();
+			this.setNoGravity(true);
 		}
 	}
 

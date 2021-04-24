@@ -1,6 +1,7 @@
 
 package xyz.souldb.ris3.gui;
 
+import xyz.souldb.ris3.procedures.Rocket1RecipieProcedure;
 import xyz.souldb.ris3.Ris3ModElements;
 import xyz.souldb.ris3.Ris3Mod;
 
@@ -13,7 +14,9 @@ import net.minecraftforge.fml.network.IContainerFactory;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.fml.DeferredWorkQueue;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.event.TickEvent;
 import net.minecraftforge.event.RegistryEvent;
+import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
@@ -47,6 +50,7 @@ public class RkguiGui extends Ris3ModElements.ModElement {
 				GUISlotChangedMessage::handler);
 		containerType = new ContainerType<>(new GuiContainerModFactory());
 		FMLJavaModLoadingContext.get().getModEventBus().register(new ContainerRegisterHandler());
+		MinecraftForge.EVENT_BUS.register(this);
 	}
 	private static class ContainerRegisterHandler {
 		@SubscribeEvent
@@ -57,6 +61,26 @@ public class RkguiGui extends Ris3ModElements.ModElement {
 	@OnlyIn(Dist.CLIENT)
 	public void initElements() {
 		DeferredWorkQueue.runLater(() -> ScreenManager.registerFactory(containerType, RkguiGuiWindow::new));
+	}
+
+	@SubscribeEvent
+	public void onPlayerTick(TickEvent.PlayerTickEvent event) {
+		PlayerEntity entity = event.player;
+		if (event.phase == TickEvent.Phase.END && entity.openContainer instanceof GuiContainerMod) {
+			World world = entity.world;
+			double x = entity.getPosX();
+			double y = entity.getPosY();
+			double z = entity.getPosZ();
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("entity", entity);
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				Rocket1RecipieProcedure.executeProcedure($_dependencies);
+			}
+		}
 	}
 	public static class GuiContainerModFactory implements IContainerFactory {
 		public GuiContainerMod create(int id, PlayerInventory inv, PacketBuffer extraData) {
@@ -75,7 +99,7 @@ public class RkguiGui extends Ris3ModElements.ModElement {
 			super(containerType, id);
 			this.entity = inv.player;
 			this.world = inv.player.world;
-			this.internal = new ItemStackHandler(20);
+			this.internal = new ItemStackHandler(21);
 			BlockPos pos = null;
 			if (extraData != null) {
 				pos = extraData.readBlockPos();
@@ -153,6 +177,12 @@ public class RkguiGui extends Ris3ModElements.ModElement {
 			}));
 			this.customSlots.put(19, this.addSlot(new SlotItemHandler(internal, 19, 123, 133) {
 			}));
+			this.customSlots.put(20, this.addSlot(new SlotItemHandler(internal, 20, 157, 63) {
+				@Override
+				public boolean isItemValid(ItemStack stack) {
+					return false;
+				}
+			}));
 			int si;
 			int sj;
 			for (si = 0; si < 3; ++si)
@@ -178,18 +208,18 @@ public class RkguiGui extends Ris3ModElements.ModElement {
 			if (slot != null && slot.getHasStack()) {
 				ItemStack itemstack1 = slot.getStack();
 				itemstack = itemstack1.copy();
-				if (index < 20) {
-					if (!this.mergeItemStack(itemstack1, 20, this.inventorySlots.size(), true)) {
+				if (index < 21) {
+					if (!this.mergeItemStack(itemstack1, 21, this.inventorySlots.size(), true)) {
 						return ItemStack.EMPTY;
 					}
 					slot.onSlotChange(itemstack1, itemstack);
-				} else if (!this.mergeItemStack(itemstack1, 0, 20, false)) {
-					if (index < 20 + 27) {
-						if (!this.mergeItemStack(itemstack1, 20 + 27, this.inventorySlots.size(), true)) {
+				} else if (!this.mergeItemStack(itemstack1, 0, 21, false)) {
+					if (index < 21 + 27) {
+						if (!this.mergeItemStack(itemstack1, 21 + 27, this.inventorySlots.size(), true)) {
 							return ItemStack.EMPTY;
 						}
 					} else {
-						if (!this.mergeItemStack(itemstack1, 20, 20 + 27, false)) {
+						if (!this.mergeItemStack(itemstack1, 21, 21 + 27, false)) {
 							return ItemStack.EMPTY;
 						}
 					}

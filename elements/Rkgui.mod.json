@@ -320,7 +320,31 @@
           "x": 123,
           "y": 17
         }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "arrow.png",
+          "use1Xscale": false,
+          "name": "arrow.png",
+          "x": 249,
+          "y": 54
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 20,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #20",
+          "x": 274,
+          "y": 55
+        }
       }
-    ]
+    ],
+    "onTick": {
+      "name": "Rocket1Recipie"
+    }
   }
 }

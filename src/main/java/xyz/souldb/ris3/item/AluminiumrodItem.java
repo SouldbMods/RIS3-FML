@@ -1,7 +1,7 @@
 
 package xyz.souldb.ris3.item;
 
-import xyz.souldb.ris3.itemgroup.RisRocketsItemGroup;
+import xyz.souldb.ris3.itemgroup.RISItemsItemGroup;
 import xyz.souldb.ris3.Ris3ModElements;
 
 import net.minecraftforge.registries.ObjectHolder;
@@ -12,11 +12,11 @@ import net.minecraft.item.Item;
 import net.minecraft.block.BlockState;
 
 @Ris3ModElements.ModElement.Tag
-public class HousingItem extends Ris3ModElements.ModElement {
-	@ObjectHolder("ris3:housing")
+public class AluminiumrodItem extends Ris3ModElements.ModElement {
+	@ObjectHolder("ris3:aluminiumrod")
 	public static final Item block = null;
-	public HousingItem(Ris3ModElements instance) {
-		super(instance, 121);
+	public AluminiumrodItem(Ris3ModElements instance) {
+		super(instance, 143);
 	}
 
 	@Override
@@ -25,8 +25,8 @@ public class HousingItem extends Ris3ModElements.ModElement {
 	}
 	public static class ItemCustom extends Item {
 		public ItemCustom() {
-			super(new Item.Properties().group(RisRocketsItemGroup.tab).maxStackSize(64).isImmuneToFire().rarity(Rarity.UNCOMMON));
-			setRegistryName("housing");
+			super(new Item.Properties().group(RISItemsItemGroup.tab).maxStackSize(64).rarity(Rarity.COMMON));
+			setRegistryName("aluminiumrod");
 		}
 
 		@Override

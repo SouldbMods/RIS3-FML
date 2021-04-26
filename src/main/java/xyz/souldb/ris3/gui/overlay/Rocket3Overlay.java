@@ -43,44 +43,24 @@ public class Rocket3Overlay extends Ris3ModElements.ModElement {
 			double x = entity.getPosX();
 			double y = entity.getPosY();
 			double z = entity.getPosZ();
+			RenderSystem.disableDepthTest();
+			RenderSystem.depthMask(false);
+			RenderSystem.blendFuncSeparate(GlStateManager.SourceFactor.SRC_ALPHA, GlStateManager.DestFactor.ONE_MINUS_SRC_ALPHA,
+					GlStateManager.SourceFactor.ONE, GlStateManager.DestFactor.ZERO);
+			RenderSystem.color4f(1.0F, 1.0F, 1.0F, 1.0F);
+			RenderSystem.disableAlphaTest();
 			if (Cr3Procedure.executeProcedure(ImmutableMap.of("world", world))) {
-				RenderSystem.disableDepthTest();
-				RenderSystem.depthMask(false);
-				RenderSystem.blendFuncSeparate(GlStateManager.SourceFactor.SRC_ALPHA, GlStateManager.DestFactor.ONE_MINUS_SRC_ALPHA,
-						GlStateManager.SourceFactor.ONE, GlStateManager.DestFactor.ZERO);
-				RenderSystem.color4f(1.0F, 1.0F, 1.0F, 1.0F);
-				RenderSystem.disableAlphaTest();
 				Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("ris3:textures/ground.png"));
 				Minecraft.getInstance().ingameGUI.blit(event.getMatrixStack(), posX + -215, posY + 49, 0, 0, 16, 16, 16, 16);
-				RenderSystem.depthMask(true);
-				RenderSystem.enableDepthTest();
-				RenderSystem.enableAlphaTest();
-				RenderSystem.color4f(1.0F, 1.0F, 1.0F, 1.0F);
-				RenderSystem.disableDepthTest();
-				RenderSystem.depthMask(false);
-				RenderSystem.blendFuncSeparate(GlStateManager.SourceFactor.SRC_ALPHA, GlStateManager.DestFactor.ONE_MINUS_SRC_ALPHA,
-						GlStateManager.SourceFactor.ONE, GlStateManager.DestFactor.ZERO);
-				RenderSystem.color4f(1.0F, 1.0F, 1.0F, 1.0F);
-				RenderSystem.disableAlphaTest();
 				Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("ris3:textures/rocketingui.png"));
 				Minecraft.getInstance().ingameGUI.blit(event.getMatrixStack(), posX + -214, posY + 37, 0, 0, 16, 16, 16, 16);
-				RenderSystem.depthMask(true);
-				RenderSystem.enableDepthTest();
-				RenderSystem.enableAlphaTest();
-				RenderSystem.color4f(1.0F, 1.0F, 1.0F, 1.0F);
-				RenderSystem.disableDepthTest();
-				RenderSystem.depthMask(false);
-				RenderSystem.blendFuncSeparate(GlStateManager.SourceFactor.SRC_ALPHA, GlStateManager.DestFactor.ONE_MINUS_SRC_ALPHA,
-						GlStateManager.SourceFactor.ONE, GlStateManager.DestFactor.ZERO);
-				RenderSystem.color4f(1.0F, 1.0F, 1.0F, 1.0F);
-				RenderSystem.disableAlphaTest();
 				Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("ris3:textures/space.png"));
 				Minecraft.getInstance().ingameGUI.blit(event.getMatrixStack(), posX + -216, posY + -13, 0, 0, 16, 16, 16, 16);
-				RenderSystem.depthMask(true);
-				RenderSystem.enableDepthTest();
-				RenderSystem.enableAlphaTest();
-				RenderSystem.color4f(1.0F, 1.0F, 1.0F, 1.0F);
 			}
+			RenderSystem.depthMask(true);
+			RenderSystem.enableDepthTest();
+			RenderSystem.enableAlphaTest();
+			RenderSystem.color4f(1.0F, 1.0F, 1.0F, 1.0F);
 		}
 	}
 }

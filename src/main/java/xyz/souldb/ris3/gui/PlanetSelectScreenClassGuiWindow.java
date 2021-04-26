@@ -3,8 +3,6 @@ package xyz.souldb.ris3.gui;
 
 import xyz.souldb.ris3.Ris3Mod;
 
-import org.lwjgl.opengl.GL11;
-
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
@@ -19,6 +17,7 @@ import net.minecraft.client.gui.widget.TextFieldWidget;
 import net.minecraft.client.gui.screen.inventory.ContainerScreen;
 import net.minecraft.client.Minecraft;
 
+import com.mojang.blaze3d.systems.RenderSystem;
 import com.mojang.blaze3d.matrix.MatrixStack;
 
 @OnlyIn(Dist.CLIENT)
@@ -47,8 +46,10 @@ public class PlanetSelectScreenClassGuiWindow extends ContainerScreen<PlanetSele
 	}
 
 	@Override
-	protected void drawGuiContainerBackgroundLayer(MatrixStack ms, float par1, int par2, int par3) {
-		GL11.glColor4f(1, 1, 1, 1);
+	protected void drawGuiContainerBackgroundLayer(MatrixStack ms, float partialTicks, int gx, int gy) {
+		RenderSystem.color4f(1, 1, 1, 1);
+		RenderSystem.enableBlend();
+		RenderSystem.defaultBlendFunc();
 		Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("ris3:textures/selbackround.png"));
 		this.blit(ms, this.guiLeft + -55, this.guiTop + -3, 0, 0, 854, 480, 854, 480);
 		Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("ris3:textures/orbit2.png"));
@@ -75,6 +76,7 @@ public class PlanetSelectScreenClassGuiWindow extends ContainerScreen<PlanetSele
 		this.blit(ms, this.guiLeft + 159, this.guiTop + 54, 0, 0, 4, 4, 4, 4);
 		Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("ris3:textures/mooninclass.png"));
 		this.blit(ms, this.guiLeft + 153, this.guiTop + 100, 0, 0, 4, 4, 4, 4);
+		RenderSystem.disableBlend();
 	}
 
 	@Override
@@ -115,28 +117,40 @@ public class PlanetSelectScreenClassGuiWindow extends ContainerScreen<PlanetSele
 		super.init(minecraft, width, height);
 		minecraft.keyboardListener.enableRepeatEvents(true);
 		this.addButton(new Button(this.guiLeft + 19, this.guiTop + 35, 40, 20, new StringTextComponent("Sun"), e -> {
-			Ris3Mod.PACKET_HANDLER.sendToServer(new PlanetSelectScreenClassGui.ButtonPressedMessage(0, x, y, z));
-			PlanetSelectScreenClassGui.handleButtonAction(entity, 0, x, y, z);
+			if (true) {
+				Ris3Mod.PACKET_HANDLER.sendToServer(new PlanetSelectScreenClassGui.ButtonPressedMessage(0, x, y, z));
+				PlanetSelectScreenClassGui.handleButtonAction(entity, 0, x, y, z);
+			}
 		}));
 		this.addButton(new Button(this.guiLeft + 19, this.guiTop + 61, 60, 20, new StringTextComponent("Mercury"), e -> {
-			Ris3Mod.PACKET_HANDLER.sendToServer(new PlanetSelectScreenClassGui.ButtonPressedMessage(1, x, y, z));
-			PlanetSelectScreenClassGui.handleButtonAction(entity, 1, x, y, z);
+			if (true) {
+				Ris3Mod.PACKET_HANDLER.sendToServer(new PlanetSelectScreenClassGui.ButtonPressedMessage(1, x, y, z));
+				PlanetSelectScreenClassGui.handleButtonAction(entity, 1, x, y, z);
+			}
 		}));
 		this.addButton(new Button(this.guiLeft + 20, this.guiTop + 91, 50, 20, new StringTextComponent("Venus"), e -> {
-			Ris3Mod.PACKET_HANDLER.sendToServer(new PlanetSelectScreenClassGui.ButtonPressedMessage(2, x, y, z));
-			PlanetSelectScreenClassGui.handleButtonAction(entity, 2, x, y, z);
+			if (true) {
+				Ris3Mod.PACKET_HANDLER.sendToServer(new PlanetSelectScreenClassGui.ButtonPressedMessage(2, x, y, z));
+				PlanetSelectScreenClassGui.handleButtonAction(entity, 2, x, y, z);
+			}
 		}));
 		this.addButton(new Button(this.guiLeft + 20, this.guiTop + 121, 50, 20, new StringTextComponent("Earth"), e -> {
-			Ris3Mod.PACKET_HANDLER.sendToServer(new PlanetSelectScreenClassGui.ButtonPressedMessage(3, x, y, z));
-			PlanetSelectScreenClassGui.handleButtonAction(entity, 3, x, y, z);
+			if (true) {
+				Ris3Mod.PACKET_HANDLER.sendToServer(new PlanetSelectScreenClassGui.ButtonPressedMessage(3, x, y, z));
+				PlanetSelectScreenClassGui.handleButtonAction(entity, 3, x, y, z);
+			}
 		}));
 		this.addButton(new Button(this.guiLeft + 20, this.guiTop + 151, 45, 20, new StringTextComponent("Mars"), e -> {
-			Ris3Mod.PACKET_HANDLER.sendToServer(new PlanetSelectScreenClassGui.ButtonPressedMessage(4, x, y, z));
-			PlanetSelectScreenClassGui.handleButtonAction(entity, 4, x, y, z);
+			if (true) {
+				Ris3Mod.PACKET_HANDLER.sendToServer(new PlanetSelectScreenClassGui.ButtonPressedMessage(4, x, y, z));
+				PlanetSelectScreenClassGui.handleButtonAction(entity, 4, x, y, z);
+			}
 		}));
 		this.addButton(new Button(this.guiLeft + 343, this.guiTop + 223, 85, 20, new StringTextComponent("Next Page >>"), e -> {
-			Ris3Mod.PACKET_HANDLER.sendToServer(new PlanetSelectScreenClassGui.ButtonPressedMessage(5, x, y, z));
-			PlanetSelectScreenClassGui.handleButtonAction(entity, 5, x, y, z);
+			if (true) {
+				Ris3Mod.PACKET_HANDLER.sendToServer(new PlanetSelectScreenClassGui.ButtonPressedMessage(5, x, y, z));
+				PlanetSelectScreenClassGui.handleButtonAction(entity, 5, x, y, z);
+			}
 		}));
 		SearchPlanets = new TextFieldWidget(this.font, this.guiLeft + 305, this.guiTop + 8, 120, 20, new StringTextComponent("Search Planets...")) {
 			{

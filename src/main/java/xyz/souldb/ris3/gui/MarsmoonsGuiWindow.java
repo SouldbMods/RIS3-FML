@@ -3,8 +3,6 @@ package xyz.souldb.ris3.gui;
 
 import xyz.souldb.ris3.Ris3Mod;
 
-import org.lwjgl.opengl.GL11;
-
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
@@ -19,6 +17,7 @@ import net.minecraft.client.gui.widget.TextFieldWidget;
 import net.minecraft.client.gui.screen.inventory.ContainerScreen;
 import net.minecraft.client.Minecraft;
 
+import com.mojang.blaze3d.systems.RenderSystem;
 import com.mojang.blaze3d.matrix.MatrixStack;
 
 @OnlyIn(Dist.CLIENT)
@@ -47,8 +46,10 @@ public class MarsmoonsGuiWindow extends ContainerScreen<MarsmoonsGui.GuiContaine
 	}
 
 	@Override
-	protected void drawGuiContainerBackgroundLayer(MatrixStack ms, float par1, int par2, int par3) {
-		GL11.glColor4f(1, 1, 1, 1);
+	protected void drawGuiContainerBackgroundLayer(MatrixStack ms, float partialTicks, int gx, int gy) {
+		RenderSystem.color4f(1, 1, 1, 1);
+		RenderSystem.enableBlend();
+		RenderSystem.defaultBlendFunc();
 		Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("ris3:textures/selbackround.png"));
 		this.blit(ms, this.guiLeft + -18, this.guiTop + -2, 0, 0, 854, 480, 854, 480);
 		Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("ris3:textures/mars.png"));
@@ -59,6 +60,7 @@ public class MarsmoonsGuiWindow extends ContainerScreen<MarsmoonsGui.GuiContaine
 		this.blit(ms, this.guiLeft + 188, this.guiTop + 123, 0, 0, 16, 16, 16, 16);
 		Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("ris3:textures/mercury.png"));
 		this.blit(ms, this.guiLeft + 228, this.guiTop + 85, 0, 0, 16, 16, 16, 16);
+		RenderSystem.disableBlend();
 	}
 
 	@Override
@@ -97,16 +99,22 @@ public class MarsmoonsGuiWindow extends ContainerScreen<MarsmoonsGui.GuiContaine
 		super.init(minecraft, width, height);
 		minecraft.keyboardListener.enableRepeatEvents(true);
 		this.addButton(new Button(this.guiLeft + 15, this.guiTop + 52, 45, 20, new StringTextComponent("Mars"), e -> {
-			Ris3Mod.PACKET_HANDLER.sendToServer(new MarsmoonsGui.ButtonPressedMessage(0, x, y, z));
-			MarsmoonsGui.handleButtonAction(entity, 0, x, y, z);
+			if (true) {
+				Ris3Mod.PACKET_HANDLER.sendToServer(new MarsmoonsGui.ButtonPressedMessage(0, x, y, z));
+				MarsmoonsGui.handleButtonAction(entity, 0, x, y, z);
+			}
 		}));
 		this.addButton(new Button(this.guiLeft + 16, this.guiTop + 82, 55, 20, new StringTextComponent("Phobos"), e -> {
-			Ris3Mod.PACKET_HANDLER.sendToServer(new MarsmoonsGui.ButtonPressedMessage(1, x, y, z));
-			MarsmoonsGui.handleButtonAction(entity, 1, x, y, z);
+			if (true) {
+				Ris3Mod.PACKET_HANDLER.sendToServer(new MarsmoonsGui.ButtonPressedMessage(1, x, y, z));
+				MarsmoonsGui.handleButtonAction(entity, 1, x, y, z);
+			}
 		}));
 		this.addButton(new Button(this.guiLeft + 17, this.guiTop + 107, 55, 20, new StringTextComponent("Deimos"), e -> {
-			Ris3Mod.PACKET_HANDLER.sendToServer(new MarsmoonsGui.ButtonPressedMessage(2, x, y, z));
-			MarsmoonsGui.handleButtonAction(entity, 2, x, y, z);
+			if (true) {
+				Ris3Mod.PACKET_HANDLER.sendToServer(new MarsmoonsGui.ButtonPressedMessage(2, x, y, z));
+				MarsmoonsGui.handleButtonAction(entity, 2, x, y, z);
+			}
 		}));
 		SearchMoons = new TextFieldWidget(this.font, this.guiLeft + 6, this.guiTop + 6, 120, 20, new StringTextComponent("Search Moons")) {
 			{
@@ -134,8 +142,10 @@ public class MarsmoonsGuiWindow extends ContainerScreen<MarsmoonsGui.GuiContaine
 		SearchMoons.setMaxStringLength(32767);
 		this.children.add(this.SearchMoons);
 		this.addButton(new Button(this.guiLeft + 4, this.guiTop + 221, 65, 20, new StringTextComponent("<<< Back"), e -> {
-			Ris3Mod.PACKET_HANDLER.sendToServer(new MarsmoonsGui.ButtonPressedMessage(3, x, y, z));
-			MarsmoonsGui.handleButtonAction(entity, 3, x, y, z);
+			if (true) {
+				Ris3Mod.PACKET_HANDLER.sendToServer(new MarsmoonsGui.ButtonPressedMessage(3, x, y, z));
+				MarsmoonsGui.handleButtonAction(entity, 3, x, y, z);
+			}
 		}));
 	}
 }

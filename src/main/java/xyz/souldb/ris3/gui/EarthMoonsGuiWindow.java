@@ -3,8 +3,6 @@ package xyz.souldb.ris3.gui;
 
 import xyz.souldb.ris3.Ris3Mod;
 
-import org.lwjgl.opengl.GL11;
-
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
@@ -18,6 +16,7 @@ import net.minecraft.client.gui.widget.button.Button;
 import net.minecraft.client.gui.screen.inventory.ContainerScreen;
 import net.minecraft.client.Minecraft;
 
+import com.mojang.blaze3d.systems.RenderSystem;
 import com.mojang.blaze3d.matrix.MatrixStack;
 
 @OnlyIn(Dist.CLIENT)
@@ -44,8 +43,10 @@ public class EarthMoonsGuiWindow extends ContainerScreen<EarthMoonsGui.GuiContai
 	}
 
 	@Override
-	protected void drawGuiContainerBackgroundLayer(MatrixStack ms, float par1, int par2, int par3) {
-		GL11.glColor4f(1, 1, 1, 1);
+	protected void drawGuiContainerBackgroundLayer(MatrixStack ms, float partialTicks, int gx, int gy) {
+		RenderSystem.color4f(1, 1, 1, 1);
+		RenderSystem.enableBlend();
+		RenderSystem.defaultBlendFunc();
 		Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("ris3:textures/selbackround.png"));
 		this.blit(ms, this.guiLeft + -23, this.guiTop + -4, 0, 0, 854, 480, 854, 480);
 		Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("ris3:textures/mercorbitnew.png"));
@@ -58,6 +59,7 @@ public class EarthMoonsGuiWindow extends ContainerScreen<EarthMoonsGui.GuiContai
 		this.blit(ms, this.guiLeft + 300, this.guiTop + 132, 0, 0, 16, 16, 16, 16);
 		Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("ris3:textures/orbit2.png"));
 		this.blit(ms, this.guiLeft + 127, this.guiTop + 18, 0, 0, 200, 200, 200, 200);
+		RenderSystem.disableBlend();
 	}
 
 	@Override
@@ -93,20 +95,28 @@ public class EarthMoonsGuiWindow extends ContainerScreen<EarthMoonsGui.GuiContai
 		super.init(minecraft, width, height);
 		minecraft.keyboardListener.enableRepeatEvents(true);
 		this.addButton(new Button(this.guiLeft + 19, this.guiTop + 65, 45, 20, new StringTextComponent("Moon"), e -> {
-			Ris3Mod.PACKET_HANDLER.sendToServer(new EarthMoonsGui.ButtonPressedMessage(0, x, y, z));
-			EarthMoonsGui.handleButtonAction(entity, 0, x, y, z);
+			if (true) {
+				Ris3Mod.PACKET_HANDLER.sendToServer(new EarthMoonsGui.ButtonPressedMessage(0, x, y, z));
+				EarthMoonsGui.handleButtonAction(entity, 0, x, y, z);
+			}
 		}));
 		this.addButton(new Button(this.guiLeft + 19, this.guiTop + 90, 60, 20, new StringTextComponent("Moon #2"), e -> {
-			Ris3Mod.PACKET_HANDLER.sendToServer(new EarthMoonsGui.ButtonPressedMessage(1, x, y, z));
-			EarthMoonsGui.handleButtonAction(entity, 1, x, y, z);
+			if (true) {
+				Ris3Mod.PACKET_HANDLER.sendToServer(new EarthMoonsGui.ButtonPressedMessage(1, x, y, z));
+				EarthMoonsGui.handleButtonAction(entity, 1, x, y, z);
+			}
 		}));
 		this.addButton(new Button(this.guiLeft + 1, this.guiTop + 220, 120, 20, new StringTextComponent("<<< Back"), e -> {
-			Ris3Mod.PACKET_HANDLER.sendToServer(new EarthMoonsGui.ButtonPressedMessage(2, x, y, z));
-			EarthMoonsGui.handleButtonAction(entity, 2, x, y, z);
+			if (true) {
+				Ris3Mod.PACKET_HANDLER.sendToServer(new EarthMoonsGui.ButtonPressedMessage(2, x, y, z));
+				EarthMoonsGui.handleButtonAction(entity, 2, x, y, z);
+			}
 		}));
 		this.addButton(new Button(this.guiLeft + 20, this.guiTop + 40, 50, 20, new StringTextComponent("Earth"), e -> {
-			Ris3Mod.PACKET_HANDLER.sendToServer(new EarthMoonsGui.ButtonPressedMessage(3, x, y, z));
-			EarthMoonsGui.handleButtonAction(entity, 3, x, y, z);
+			if (true) {
+				Ris3Mod.PACKET_HANDLER.sendToServer(new EarthMoonsGui.ButtonPressedMessage(3, x, y, z));
+				EarthMoonsGui.handleButtonAction(entity, 3, x, y, z);
+			}
 		}));
 	}
 }

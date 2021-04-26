@@ -3,8 +3,6 @@ package xyz.souldb.ris3.gui;
 
 import xyz.souldb.ris3.Ris3Mod;
 
-import org.lwjgl.opengl.GL11;
-
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
@@ -18,6 +16,7 @@ import net.minecraft.client.gui.widget.button.Button;
 import net.minecraft.client.gui.screen.inventory.ContainerScreen;
 import net.minecraft.client.Minecraft;
 
+import com.mojang.blaze3d.systems.RenderSystem;
 import com.mojang.blaze3d.matrix.MatrixStack;
 
 @OnlyIn(Dist.CLIENT)
@@ -44,8 +43,10 @@ public class RkguiGuiWindow extends ContainerScreen<RkguiGui.GuiContainerMod> {
 	}
 
 	@Override
-	protected void drawGuiContainerBackgroundLayer(MatrixStack ms, float par1, int par2, int par3) {
-		GL11.glColor4f(1, 1, 1, 1);
+	protected void drawGuiContainerBackgroundLayer(MatrixStack ms, float partialTicks, int gx, int gy) {
+		RenderSystem.color4f(1, 1, 1, 1);
+		RenderSystem.enableBlend();
+		RenderSystem.defaultBlendFunc();
 		Minecraft.getInstance().getTextureManager().bindTexture(texture);
 		int k = (this.width - this.xSize) / 2;
 		int l = (this.height - this.ySize) / 2;
@@ -56,6 +57,7 @@ public class RkguiGuiWindow extends ContainerScreen<RkguiGui.GuiContainerMod> {
 		this.blit(ms, this.guiLeft + 23, this.guiTop + 141, 0, 0, 16, 16, 16, 16);
 		Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("ris3:textures/arrow.png"));
 		this.blit(ms, this.guiLeft + 131, this.guiTop + 61, 0, 0, 24, 16, 24, 16);
+		RenderSystem.disableBlend();
 	}
 
 	@Override
@@ -87,8 +89,10 @@ public class RkguiGuiWindow extends ContainerScreen<RkguiGui.GuiContainerMod> {
 		super.init(minecraft, width, height);
 		minecraft.keyboardListener.enableRepeatEvents(true);
 		this.addButton(new Button(this.guiLeft + 133, this.guiTop + 82, 50, 20, new StringTextComponent("Craft"), e -> {
-			Ris3Mod.PACKET_HANDLER.sendToServer(new RkguiGui.ButtonPressedMessage(0, x, y, z));
-			RkguiGui.handleButtonAction(entity, 0, x, y, z);
+			if (true) {
+				Ris3Mod.PACKET_HANDLER.sendToServer(new RkguiGui.ButtonPressedMessage(0, x, y, z));
+				RkguiGui.handleButtonAction(entity, 0, x, y, z);
+			}
 		}));
 	}
 }

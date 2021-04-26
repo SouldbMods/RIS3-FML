@@ -43,71 +43,31 @@ public class RIS3Overlay extends Ris3ModElements.ModElement {
 			double x = entity.getPosX();
 			double y = entity.getPosY();
 			double z = entity.getPosZ();
+			RenderSystem.disableDepthTest();
+			RenderSystem.depthMask(false);
+			RenderSystem.blendFuncSeparate(GlStateManager.SourceFactor.SRC_ALPHA, GlStateManager.DestFactor.ONE_MINUS_SRC_ALPHA,
+					GlStateManager.SourceFactor.ONE, GlStateManager.DestFactor.ZERO);
+			RenderSystem.color4f(1.0F, 1.0F, 1.0F, 1.0F);
+			RenderSystem.disableAlphaTest();
 			if (Cr10Procedure.executeProcedure(ImmutableMap.of("world", world))) {
 				Minecraft.getInstance().fontRenderer.drawString(event.getMatrixStack(), "You are Really In Space!", posX + -60, posY + -115, -65536);
-				RenderSystem.disableDepthTest();
-				RenderSystem.depthMask(false);
-				RenderSystem.blendFuncSeparate(GlStateManager.SourceFactor.SRC_ALPHA, GlStateManager.DestFactor.ONE_MINUS_SRC_ALPHA,
-						GlStateManager.SourceFactor.ONE, GlStateManager.DestFactor.ZERO);
-				RenderSystem.color4f(1.0F, 1.0F, 1.0F, 1.0F);
-				RenderSystem.disableAlphaTest();
 				Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("ris3:textures/earth.png"));
 				Minecraft.getInstance().ingameGUI.blit(event.getMatrixStack(), posX + -139, posY + -99, 0, 0, 16, 16, 16, 16);
-				RenderSystem.depthMask(true);
-				RenderSystem.enableDepthTest();
-				RenderSystem.enableAlphaTest();
-				RenderSystem.color4f(1.0F, 1.0F, 1.0F, 1.0F);
-				RenderSystem.disableDepthTest();
-				RenderSystem.depthMask(false);
-				RenderSystem.blendFuncSeparate(GlStateManager.SourceFactor.SRC_ALPHA, GlStateManager.DestFactor.ONE_MINUS_SRC_ALPHA,
-						GlStateManager.SourceFactor.ONE, GlStateManager.DestFactor.ZERO);
-				RenderSystem.color4f(1.0F, 1.0F, 1.0F, 1.0F);
-				RenderSystem.disableAlphaTest();
 				Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("ris3:textures/mars.png"));
 				Minecraft.getInstance().ingameGUI.blit(event.getMatrixStack(), posX + -181, posY + -52, 0, 0, 16, 16, 16, 16);
-				RenderSystem.depthMask(true);
-				RenderSystem.enableDepthTest();
-				RenderSystem.enableAlphaTest();
-				RenderSystem.color4f(1.0F, 1.0F, 1.0F, 1.0F);
-				RenderSystem.disableDepthTest();
-				RenderSystem.depthMask(false);
-				RenderSystem.blendFuncSeparate(GlStateManager.SourceFactor.SRC_ALPHA, GlStateManager.DestFactor.ONE_MINUS_SRC_ALPHA,
-						GlStateManager.SourceFactor.ONE, GlStateManager.DestFactor.ZERO);
-				RenderSystem.color4f(1.0F, 1.0F, 1.0F, 1.0F);
-				RenderSystem.disableAlphaTest();
 				Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("ris3:textures/mercury.png"));
 				Minecraft.getInstance().ingameGUI.blit(event.getMatrixStack(), posX + -35, posY + -68, 0, 0, 16, 16, 16, 16);
-				RenderSystem.depthMask(true);
-				RenderSystem.enableDepthTest();
-				RenderSystem.enableAlphaTest();
-				RenderSystem.color4f(1.0F, 1.0F, 1.0F, 1.0F);
-				RenderSystem.disableDepthTest();
-				RenderSystem.depthMask(false);
-				RenderSystem.blendFuncSeparate(GlStateManager.SourceFactor.SRC_ALPHA, GlStateManager.DestFactor.ONE_MINUS_SRC_ALPHA,
-						GlStateManager.SourceFactor.ONE, GlStateManager.DestFactor.ZERO);
-				RenderSystem.color4f(1.0F, 1.0F, 1.0F, 1.0F);
-				RenderSystem.disableAlphaTest();
 				Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("ris3:textures/sun.png"));
 				Minecraft.getInstance().ingameGUI.blit(event.getMatrixStack(), posX + 17, posY + -42, 0, 0, 16, 16, 16, 16);
-				RenderSystem.depthMask(true);
-				RenderSystem.enableDepthTest();
-				RenderSystem.enableAlphaTest();
-				RenderSystem.color4f(1.0F, 1.0F, 1.0F, 1.0F);
-				RenderSystem.disableDepthTest();
-				RenderSystem.depthMask(false);
-				RenderSystem.blendFuncSeparate(GlStateManager.SourceFactor.SRC_ALPHA, GlStateManager.DestFactor.ONE_MINUS_SRC_ALPHA,
-						GlStateManager.SourceFactor.ONE, GlStateManager.DestFactor.ZERO);
-				RenderSystem.color4f(1.0F, 1.0F, 1.0F, 1.0F);
-				RenderSystem.disableAlphaTest();
 				Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("ris3:textures/venus.png"));
 				Minecraft.getInstance().ingameGUI.blit(event.getMatrixStack(), posX + 86, posY + -81, 0, 0, 16, 16, 16, 16);
-				RenderSystem.depthMask(true);
-				RenderSystem.enableDepthTest();
-				RenderSystem.enableAlphaTest();
-				RenderSystem.color4f(1.0F, 1.0F, 1.0F, 1.0F);
 				Minecraft.getInstance().fontRenderer.drawString(event.getMatrixStack(), "Really In Space 3.0 By Souldbminer", posX + -80, posY + -102,
 						-16776961);
 			}
+			RenderSystem.depthMask(true);
+			RenderSystem.enableDepthTest();
+			RenderSystem.enableAlphaTest();
+			RenderSystem.color4f(1.0F, 1.0F, 1.0F, 1.0F);
 		}
 	}
 }

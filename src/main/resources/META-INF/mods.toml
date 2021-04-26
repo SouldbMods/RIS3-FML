@@ -26,6 +26,7 @@ Requires Patchuli and Geckolib 3.0 | For Forge and Fabric FML 1.16.4/5   Fabric 
 [[dependencies.ris3]]
     modId="geckolib"
     mandatory=false
+    versionRange="[0,)"
     ordering="NONE"
     side="BOTH"
 

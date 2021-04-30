@@ -49,7 +49,7 @@
     "toughness": 0.0,
     "knockbackResistance": 0.0,
     "equipSound": {
-      "value": ""
+      "value": "block.wood.place"
     },
     "repairItems": []
   }

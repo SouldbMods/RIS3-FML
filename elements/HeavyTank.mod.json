@@ -3,10 +3,10 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "tanklite",
+    "texture": "heavytank",
     "customModelName": "Normal",
-    "name": "Light Oxygen Tank",
-    "rarity": "UNCOMMON",
+    "name": "Huge Oxygen Tank",
+    "rarity": "EPIC",
     "creativeTab": {
       "value": "CUSTOM:RisRockets"
     },

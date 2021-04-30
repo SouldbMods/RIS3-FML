@@ -12,11 +12,11 @@ import net.minecraft.item.Item;
 import net.minecraft.block.BlockState;
 
 @Ris3ModElements.ModElement.Tag
-public class LightTankItem extends Ris3ModElements.ModElement {
-	@ObjectHolder("ris3:light_tank")
+public class HeavyTankItem extends Ris3ModElements.ModElement {
+	@ObjectHolder("ris3:heavy_tank")
 	public static final Item block = null;
-	public LightTankItem(Ris3ModElements instance) {
-		super(instance, 168);
+	public HeavyTankItem(Ris3ModElements instance) {
+		super(instance, 173);
 	}
 
 	@Override
@@ -25,8 +25,8 @@ public class LightTankItem extends Ris3ModElements.ModElement {
 	}
 	public static class ItemCustom extends Item {
 		public ItemCustom() {
-			super(new Item.Properties().group(RisRocketsItemGroup.tab).maxStackSize(1).rarity(Rarity.UNCOMMON));
-			setRegistryName("light_tank");
+			super(new Item.Properties().group(RisRocketsItemGroup.tab).maxStackSize(1).rarity(Rarity.EPIC));
+			setRegistryName("heavy_tank");
 		}
 
 		@Override

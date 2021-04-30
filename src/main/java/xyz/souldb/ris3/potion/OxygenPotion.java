@@ -51,12 +51,12 @@ public class OxygenPotion extends Ris3ModElements.ModElement {
 
 		@Override
 		public boolean shouldRenderInvText(EffectInstance effect) {
-			return false;
+			return true;
 		}
 
 		@Override
 		public boolean shouldRender(EffectInstance effect) {
-			return false;
+			return true;
 		}
 
 		@Override

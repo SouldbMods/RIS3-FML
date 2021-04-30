@@ -13,7 +13,7 @@
     "isBad": false,
     "isBenefitical": true,
     "registerPotionType": false,
-    "renderStatusInInventory": false,
+    "renderStatusInInventory": true,
     "renderStatusInHUD": false
   }
 }

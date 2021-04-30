@@ -1,0 +1,49 @@
+{
+  "_fv": 18,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 0,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #0",
+          "x": 158,
+          "y": 58
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "fire.png",
+          "use1Xscale": false,
+          "name": "fire.png",
+          "x": 158,
+          "y": 73
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "arrow.png",
+          "use1Xscale": false,
+          "name": "arrow.png",
+          "x": 199,
+          "y": 58
+        }
+      }
+    ]
+  }
+}

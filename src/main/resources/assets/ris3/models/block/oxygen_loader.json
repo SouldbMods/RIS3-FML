@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "ris3:blocks/oxy1",
+    "up": "ris3:blocks/oxy1",
+    "north": "ris3:blocks/oxy2",
+    "east": "ris3:blocks/oxy2",
+    "south": "ris3:blocks/oxy2",
+    "west": "ris3:blocks/oxy2",
+    "particle": "ris3:blocks/oxy1"
+  }
+}

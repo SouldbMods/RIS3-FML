@@ -1747,6 +1747,202 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "oxygen"
+    },
+    {
+      "name": "Oxygenlvl1",
+      "type": "overlay",
+      "sortid": 153,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "oxygenlvl_1",
+      "path": "~/OxygenUtils"
+    },
+    {
+      "name": "Oxygenunknown1",
+      "type": "overlay",
+      "sortid": 154,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "oxygenunknown_1",
+      "path": "~/OxygenUtils"
+    },
+    {
+      "name": "Oxygenunk11",
+      "type": "overlay",
+      "sortid": 155,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "oxygenunk_11",
+      "path": "~/OxygenUtils"
+    },
+    {
+      "name": "Oxygenlvl12",
+      "type": "overlay",
+      "sortid": 156,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "oxygenlvl_12",
+      "path": "~/OxygenUtils"
+    },
+    {
+      "name": "Oxygen2",
+      "type": "overlay",
+      "sortid": 157,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "oxygen_2",
+      "path": "~/OxygenUtils"
+    },
+    {
+      "name": "Oxygen22",
+      "type": "overlay",
+      "sortid": 158,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "oxygen_22",
+      "path": "~/OxygenUtils"
+    },
+    {
+      "name": "Oxygen3",
+      "type": "overlay",
+      "sortid": 159,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "oxygen_3",
+      "path": "~/OxygenUtils"
+    },
+    {
+      "name": "Oxygen33",
+      "type": "overlay",
+      "sortid": 160,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "oxygen_33",
+      "path": "~/OxygenUtils"
+    },
+    {
+      "name": "Oxygen4",
+      "type": "overlay",
+      "sortid": 161,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "oxygen_4",
+      "path": "~/OxygenUtils"
+    },
+    {
+      "name": "Oxygen44",
+      "type": "overlay",
+      "sortid": 162,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "oxygen_44",
+      "path": "~/OxygenUtils"
+    },
+    {
+      "name": "Oxygen5",
+      "type": "overlay",
+      "sortid": 163,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "oxygen_5",
+      "path": "~/OxygenUtils"
+    },
+    {
+      "name": "Oxygen55",
+      "type": "overlay",
+      "sortid": 164,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "oxygen_55",
+      "path": "~/OxygenUtils"
+    },
+    {
+      "name": "OxygenSet",
+      "type": "armor",
+      "sortid": 165,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "oxygen_set",
+      "metadata": {
+        "eh": false,
+        "el": false,
+        "eb": false,
+        "ec": true
+      },
+      "path": "~/OxygenUtils"
+    },
+    {
+      "name": "OpenOxygenSuit",
+      "type": "keybind",
+      "sortid": 166,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "open_oxygen_suit",
+      "path": "~/OxygenUtils"
+    },
+    {
+      "name": "OXygenuu",
+      "type": "gui",
+      "sortid": 167,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "o_xygenuu",
+      "path": "~/OxygenUtils"
+    },
+    {
+      "name": "LightTank",
+      "type": "item",
+      "sortid": 168,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "light_tank",
+      "path": "~/OxygenUtils"
+    },
+    {
+      "name": "OxygenLoader",
+      "type": "block",
+      "sortid": 169,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "oxygen_loader",
+      "path": "~/OxygenUtils"
+    },
+    {
+      "name": "Loadergui",
+      "type": "gui",
+      "sortid": 170,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "loadergui",
+      "path": "~/OxygenUtils"
+    },
+    {
+      "name": "Gengui",
+      "type": "gui",
+      "sortid": 171,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "gengui",
+      "path": "~/OxygenUtils"
     }
   ],
   "variable_elements": [
@@ -1778,15 +1974,17 @@
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "item.ris3.galaxium_armor_helmet": "Galaxium Helmet",
       "item.minecraft.potion.effect.oxygen": "Oxygen",
+      "item.ris3.galaxium_armor_helmet": "Galaxium Helmet",
       "biome.ris3.mars_flat": "Mars Flat",
       "item.ris3.aluminium_hoe": "Aluminium Hoe",
+      "item.ris3.oxygen_set_helmet": "Oxygen Set Helmet",
       "itemGroup.tabrisblocks": "Really in space Blocks",
-      "itemGroup.tabris_items": "Really In Space Items",
       "item.ris3.rocket": "Tier 1 Rocket",
+      "itemGroup.tabris_items": "Really In Space Items",
       "item.ris3.rockettwo_spawn_egg": "Tier 2 Rocket Spawn Egg",
       "item.ris3.aluminiumrod": "Aluminium rod",
+      "item.ris3.light_tank": "Light Oxygen Tank",
       "item.ris3.galaxium_hoe": "Galaxium Hoe",
       "itemGroup.tabnatureris": "Really In Space Nature",
       "item.ris3.galaxium_armor_leggings": "Galaxium Leggings",
@@ -1794,8 +1992,10 @@
       "entity.ris3.rockettwo": "Tier 2 Rocket",
       "item.ris3.galaxium_armor_chestplate": "Galaxium Chestplate",
       "item.ris3.martian_sand_dust": "Martian Sand Dust",
+      "key.ris3.open_oxygen_suit": "Oxygen Tanks",
       "item.ris3.galaxium_axe": "Galaxium Axe",
       "block.ris3.kryptonian_wood": "Kryptonian Wood",
+      "item.ris3.oxygen_set_chestplate": "Oxygen Set",
       "item.minecraft.lingering_potion.effect.oxygen": "Lingering Oxygen",
       "item.ris3.aluminium_armor_leggings": "Aluminium Leggings",
       "itemGroup.tabris_rockets": "Really In Space Discovery",
@@ -1808,6 +2008,7 @@
       "item.ris3.mars": "Mars Portal Igniter",
       "block.ris3.aluminium_block": "Block of Aluminium",
       "item.ris3.aluminium_axe": "Aluminium Axe",
+      "item.ris3.oxygen_set_leggings": "Oxygen Set Leggings",
       "item.ris3.aluminium_armor_helmet": "Aluminium Helmet",
       "item.ris3.rocket_plate": "Rocket Plate",
       "block.ris3.mars_stone": "Mars Stone",
@@ -1828,6 +2029,7 @@
       "item.ris3.rocketthree_spawn_egg": "Tier 3 Rocket Spawn Egg",
       "item.ris3.galaxium_pickaxe": "Galaxium Pickaxe",
       "block.ris3.kryptonian_slab": "Kryptonian Slab",
+      "block.ris3.oxygen_loader": "Oxygen Loader",
       "item.ris3.galaxium_sword": "Galaxium Sword",
       "block.ris3.kryptonian_leaves": "Kryptonian Leaves",
       "item.ris3.space_suit_armor_chestplate": "Space Suit Chestplate",
@@ -1837,6 +2039,7 @@
       "item.ris3.rocketone_spawn_egg": "Tier One Rocket Spawn Egg",
       "item.ris3.fuel_pipe": "Fuel Pipe",
       "block.ris3.rocket_table": "Rocket Table",
+      "item.ris3.oxygen_set_boots": "Oxygen Set Boots",
       "item.ris3.engene": "Engine",
       "item.ris3.iron_plate": "Iron Plate",
       "block.ris3.kryptonian_log": "Kryptonian Log",
@@ -1878,6 +2081,14 @@
       },
       {
         "name": "Misc.",
+        "children": []
+      },
+      {
+        "name": "OxygenUtils",
+        "children": []
+      },
+      {
+        "name": "rainbowpack",
         "children": []
       }
     ]

@@ -1,6 +1,8 @@
 
 package xyz.souldb.ris3.gui;
 
+import xyz.souldb.ris3.procedures.Fill2Procedure;
+import xyz.souldb.ris3.procedures.Fill1Procedure;
 import xyz.souldb.ris3.Ris3ModElements;
 import xyz.souldb.ris3.Ris3Mod;
 
@@ -113,9 +115,9 @@ public class OXygenuuGui extends Ris3ModElements.ModElement {
 					}
 				}
 			}
-			this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 25, 26) {
+			this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 29, 26) {
 			}));
-			this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 106, 26) {
+			this.customSlots.put(1, this.addSlot(new SlotItemHandler(internal, 1, 112, 26) {
 			}));
 			int si;
 			int sj;
@@ -364,6 +366,20 @@ public class OXygenuuGui extends Ris3ModElements.ModElement {
 		// security measure to prevent arbitrary chunk generation
 		if (!world.isBlockLoaded(new BlockPos(x, y, z)))
 			return;
+		if (buttonID == 0) {
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("entity", entity);
+				Fill1Procedure.executeProcedure($_dependencies);
+			}
+		}
+		if (buttonID == 1) {
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("entity", entity);
+				Fill2Procedure.executeProcedure($_dependencies);
+			}
+		}
 	}
 
 	private static void handleSlotAction(PlayerEntity entity, int slotID, int changeType, int meta, int x, int y, int z) {

@@ -20,7 +20,7 @@
           "disableStackInteraction": false,
           "dropItemsWhenNotBound": true,
           "name": "Slot #0",
-          "x": 150,
+          "x": 154,
           "y": 62
         }
       },
@@ -34,7 +34,7 @@
           "disableStackInteraction": false,
           "dropItemsWhenNotBound": true,
           "name": "Slot #1",
-          "x": 231,
+          "x": 237,
           "y": 62
         }
       },
@@ -42,6 +42,9 @@
         "type": "button",
         "data": {
           "text": "Fill",
+          "onClick": {
+            "name": "Fill1"
+          },
           "width": 45,
           "height": 20,
           "name": "Fill",
@@ -53,6 +56,9 @@
         "type": "button",
         "data": {
           "text": "Fill",
+          "onClick": {
+            "name": "Fill2"
+          },
           "width": 45,
           "height": 20,
           "name": "Fill",

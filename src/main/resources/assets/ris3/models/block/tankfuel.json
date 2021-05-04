@@ -1,0 +1,9 @@
+{
+  "parent": "ris3:custom/fuel_tank",
+  "textures": {
+    "all": "ris3:blocks/aluminium_ore_block",
+    "particle": "ris3:blocks/aluminium_ore_block",
+    "0": "ris3:blocks/aluminium_ore_block",
+    "missing": "ris3:blocks/aluminium_ore_block"
+  }
+}

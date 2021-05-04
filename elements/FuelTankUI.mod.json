@@ -1,0 +1,53 @@
+{
+  "_fv": 18,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "button",
+        "data": {
+          "text": "Load",
+          "width": 45,
+          "height": 20,
+          "name": "Load",
+          "x": 188,
+          "y": 81
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 0,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #0",
+          "x": 202,
+          "y": 60
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Fuel Tank",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Fuel Tank",
+          "x": 191,
+          "y": 41
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "aluminium_ore_block",
+        "missing": "aluminium_ore_block"
+      },
+      "name": "default"
+    }
+  }
+}

@@ -59,7 +59,7 @@ public class CoreOfFlightItem extends Ris3ModElements.ModElement {
 		@Override
 		public void addInformation(ItemStack itemstack, World world, List<ITextComponent> list, ITooltipFlag flag) {
 			super.addInformation(itemstack, world, list, flag);
-			list.add(new StringTextComponent("I beeve I can fly!"));
+			list.add(new StringTextComponent("I belive I can fly!"));
 		}
 
 		@Override

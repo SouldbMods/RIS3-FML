@@ -2001,24 +2001,6 @@
       "path": "~/OxygenUtils"
     },
     {
-      "name": "FlyOn",
-      "type": "procedure",
-      "sortid": 176,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "fly_on",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      },
-      "path": "~/OxygenUtils"
-    },
-    {
       "name": "FlyOff",
       "type": "procedure",
       "sortid": 177,
@@ -2031,6 +2013,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -2049,6 +2047,22 @@
           {
             "name": "entity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       },
@@ -2072,6 +2086,40 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "aliensettlment",
+      "path": "~/OxygenUtils"
+    },
+    {
+      "name": "FlyOn",
+      "type": "procedure",
+      "sortid": 180,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fly_on",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
       "path": "~/OxygenUtils"
     }
   ],

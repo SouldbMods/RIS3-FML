@@ -1999,6 +1999,80 @@
         ]
       },
       "path": "~/OxygenUtils"
+    },
+    {
+      "name": "FlyOn",
+      "type": "procedure",
+      "sortid": 176,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fly_on",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/OxygenUtils"
+    },
+    {
+      "name": "FlyOff",
+      "type": "procedure",
+      "sortid": 177,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fly_off",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/OxygenUtils"
+    },
+    {
+      "name": "FlyController",
+      "type": "procedure",
+      "sortid": 178,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fly_controller",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/OxygenUtils"
+    },
+    {
+      "name": "CoreOfFlight",
+      "type": "item",
+      "sortid": 176,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "core_of_flight",
+      "path": "~/OxygenUtils"
+    },
+    {
+      "name": "Aliensettlment",
+      "type": "loottable",
+      "sortid": 179,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "aliensettlment",
+      "path": "~/OxygenUtils"
     }
   ],
   "variable_elements": [
@@ -2037,6 +2111,12 @@
       "type": "number",
       "scope": "player_lifetime",
       "value": "0.0"
+    },
+    {
+      "name": "fly_state",
+      "type": "logic",
+      "scope": "player_lifetime",
+      "value": "false"
     }
   ],
   "sound_elements": [],
@@ -2097,6 +2177,7 @@
       "key.ris3.launch_rocket": "Launch Rocket",
       "item.ris3.rocketthree_spawn_egg": "Tier 3 Rocket Spawn Egg",
       "item.ris3.galaxium_pickaxe": "Galaxium Pickaxe",
+      "item.ris3.core_of_flight": "Core Of Flight",
       "block.ris3.kryptonian_slab": "Kryptonian Slab",
       "block.ris3.oxygen_loader": "Oxygen Loader",
       "item.ris3.galaxium_sword": "Galaxium Sword",

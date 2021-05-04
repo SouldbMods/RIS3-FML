@@ -214,6 +214,7 @@ public class Ris3ModVariables {
 			CompoundNBT nbt = new CompoundNBT();
 			nbt.putDouble("oxygen_tank_1_oxygen", instance.oxygen_tank_1_oxygen);
 			nbt.putDouble("oxygen_tank_2_oxygen", instance.oxygen_tank_2_oxygen);
+			nbt.putBoolean("fly_state", instance.fly_state);
 			return nbt;
 		}
 
@@ -222,12 +223,14 @@ public class Ris3ModVariables {
 			CompoundNBT nbt = (CompoundNBT) inbt;
 			instance.oxygen_tank_1_oxygen = nbt.getDouble("oxygen_tank_1_oxygen");
 			instance.oxygen_tank_2_oxygen = nbt.getDouble("oxygen_tank_2_oxygen");
+			instance.fly_state = nbt.getBoolean("fly_state");
 		}
 	}
 
 	public static class PlayerVariables {
 		public double oxygen_tank_1_oxygen = 0.0;
 		public double oxygen_tank_2_oxygen = 0.0;
+		public boolean fly_state = false;
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayerEntity)
 				Ris3Mod.PACKET_HANDLER.send(PacketDistributor.PLAYER.with(() -> (ServerPlayerEntity) entity), new PlayerVariablesSyncMessage(this));
@@ -262,6 +265,7 @@ public class Ris3ModVariables {
 		if (!event.isWasDeath()) {
 			clone.oxygen_tank_1_oxygen = original.oxygen_tank_1_oxygen;
 			clone.oxygen_tank_2_oxygen = original.oxygen_tank_2_oxygen;
+			clone.fly_state = original.fly_state;
 		}
 	}
 	public static class PlayerVariablesSyncMessage {
@@ -287,6 +291,7 @@ public class Ris3ModVariables {
 							.orElse(new PlayerVariables()));
 					variables.oxygen_tank_1_oxygen = message.data.oxygen_tank_1_oxygen;
 					variables.oxygen_tank_2_oxygen = message.data.oxygen_tank_2_oxygen;
+					variables.fly_state = message.data.fly_state;
 				}
 			});
 			context.setPacketHandled(true);

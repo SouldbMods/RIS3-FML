@@ -2024,7 +2024,19 @@
       "name": "y",
       "type": "number",
       "scope": "map",
-      "value": "0"
+      "value": "0.0"
+    },
+    {
+      "name": "oxygen_tank_1_oxygen",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0.0"
+    },
+    {
+      "name": "oxygen_tank_2_oxygen",
+      "type": "number",
+      "scope": "player_lifetime",
+      "value": "0.0"
     }
   ],
   "sound_elements": [],
@@ -2153,8 +2165,8 @@
   },
   "workspaceSettings": {
     "modid": "ris3",
-    "modName": "Really In Space 3 b3",
-    "version": "b3",
+    "modName": "Really In Space 3 b4",
+    "version": "b4",
     "description": "Requires Patchuli and Geckolib 3.0 | For Forge and Fabric FML 1.16.4/5   Fabric 1.16.0/1/2/3/4/5",
     "author": "Souldbminer",
     "websiteURL": "https://youtube.com/c/souldbminer",
@@ -2169,7 +2181,7 @@
       "geckolib"
     ],
     "currentGenerator": "forge-1.16.5",
-    "credits": "Nobody",
+    "credits": "dragonmaster, mrscauthd, pylo, mystiryouswolf, drcrazy",
     "modElementsPackage": "xyz.souldb.ris3",
     "lockBaseModFiles": false
   },

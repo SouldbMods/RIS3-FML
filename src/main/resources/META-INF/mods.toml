@@ -1,6 +1,6 @@
 modLoader="javafml"
 loaderVersion="[36,)"
-license="Academic Free License v3.0"
+license="Creative Commons ShareAlike 4.0 International (CC BY-SA 4.0) "
 
 [[mods]]
 modId="ris3"
@@ -11,7 +11,7 @@ displayURL="https://youtube.com/c/souldbminer"
 logoFile="logo.png"
 authors="Souldbminer"
 description='''
-Requires Patchuli and Geckolib 3.0 | For Forge and Fabric FML 1.16.4/5   Fabric 1.16.0/1/2/3/4/5
+Requires Geckolib 3.0 (My spellings suck)
 '''
 
 [[dependencies.ris3]]

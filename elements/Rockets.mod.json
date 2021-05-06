@@ -1,0 +1,23 @@
+{
+  "_fv": 18,
+  "_type": "tag",
+  "definition": {
+    "type": "Entities",
+    "items": [],
+    "blocks": [],
+    "functions": [],
+    "entities": [
+      {
+        "value": "CUSTOM:Rocketone"
+      },
+      {
+        "value": "CUSTOM:Rockettwo"
+      },
+      {
+        "value": "CUSTOM:Rocketthree"
+      }
+    ],
+    "name": "rockets",
+    "namespace": "mod"
+  }
+}

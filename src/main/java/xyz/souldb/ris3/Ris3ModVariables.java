@@ -215,6 +215,7 @@ public class Ris3ModVariables {
 			nbt.putDouble("oxygen_tank_1_oxygen", instance.oxygen_tank_1_oxygen);
 			nbt.putDouble("oxygen_tank_2_oxygen", instance.oxygen_tank_2_oxygen);
 			nbt.putBoolean("fly_state", instance.fly_state);
+			nbt.putBoolean("sword_wing_fly_state", instance.sword_wing_fly_state);
 			return nbt;
 		}
 
@@ -224,6 +225,7 @@ public class Ris3ModVariables {
 			instance.oxygen_tank_1_oxygen = nbt.getDouble("oxygen_tank_1_oxygen");
 			instance.oxygen_tank_2_oxygen = nbt.getDouble("oxygen_tank_2_oxygen");
 			instance.fly_state = nbt.getBoolean("fly_state");
+			instance.sword_wing_fly_state = nbt.getBoolean("sword_wing_fly_state");
 		}
 	}
 
@@ -231,6 +233,7 @@ public class Ris3ModVariables {
 		public double oxygen_tank_1_oxygen = 0.0;
 		public double oxygen_tank_2_oxygen = 0.0;
 		public boolean fly_state = false;
+		public boolean sword_wing_fly_state = false;
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayerEntity)
 				Ris3Mod.PACKET_HANDLER.send(PacketDistributor.PLAYER.with(() -> (ServerPlayerEntity) entity), new PlayerVariablesSyncMessage(this));
@@ -262,6 +265,7 @@ public class Ris3ModVariables {
 		PlayerVariables original = ((PlayerVariables) event.getOriginal().getCapability(PLAYER_VARIABLES_CAPABILITY, null)
 				.orElse(new PlayerVariables()));
 		PlayerVariables clone = ((PlayerVariables) event.getEntity().getCapability(PLAYER_VARIABLES_CAPABILITY, null).orElse(new PlayerVariables()));
+		clone.sword_wing_fly_state = original.sword_wing_fly_state;
 		if (!event.isWasDeath()) {
 			clone.oxygen_tank_1_oxygen = original.oxygen_tank_1_oxygen;
 			clone.oxygen_tank_2_oxygen = original.oxygen_tank_2_oxygen;
@@ -292,6 +296,7 @@ public class Ris3ModVariables {
 					variables.oxygen_tank_1_oxygen = message.data.oxygen_tank_1_oxygen;
 					variables.oxygen_tank_2_oxygen = message.data.oxygen_tank_2_oxygen;
 					variables.fly_state = message.data.fly_state;
+					variables.sword_wing_fly_state = message.data.sword_wing_fly_state;
 				}
 			});
 			context.setPacketHandled(true);

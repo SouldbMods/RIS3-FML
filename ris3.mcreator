@@ -2151,22 +2151,73 @@
       "path": "~/Dimensions"
     },
     {
-      "name": "Aotd",
-      "type": "tool",
-      "sortid": 184,
+      "name": "Dirt",
+      "type": "tag",
+      "sortid": 186,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "aotd"
+      "registry_name": "dirt",
+      "path": "~/Dimensions"
     },
     {
-      "name": "AOTE",
+      "name": "WingSword",
       "type": "tool",
-      "sortid": 185,
+      "sortid": 187,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "aote"
+      "registry_name": "wing_sword"
+    },
+    {
+      "name": "WingedSwordFlightTick",
+      "type": "procedure",
+      "sortid": 188,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "winged_sword_flight_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "WingSwordOnPlayerStoppedUsing",
+      "type": "procedure",
+      "sortid": 189,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "wing_sword_on_player_stopped_using",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -2211,6 +2262,12 @@
       "type": "logic",
       "scope": "player_lifetime",
       "value": "false"
+    },
+    {
+      "name": "sword_wing_fly_state",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
     }
   ],
   "sound_elements": [],
@@ -2221,9 +2278,7 @@
       "biome.ris3.mars_flat": "Mars Flat",
       "item.ris3.aluminium_hoe": "Aluminium Hoe",
       "item.ris3.oxygen_set_helmet": "Oxygen Set Helmet",
-      "item.ris3.aote": "Aspect Of The End",
       "itemGroup.tabrisblocks": "Really in space Blocks",
-      "item.ris3.aotd": "Aspect Of the dragons",
       "item.ris3.rocket": "Tier 1 Rocket",
       "itemGroup.tabris_items": "Really In Space Items",
       "item.ris3.rockettwo_spawn_egg": "Tier 2 Rocket Spawn Egg",
@@ -2276,6 +2331,7 @@
       "item.ris3.galaxium_pickaxe": "Galaxium Pickaxe",
       "item.ris3.core_of_flight": "Core Of Flight",
       "block.ris3.kryptonian_slab": "Kryptonian Slab",
+      "item.ris3.wing_sword": "Winged Sword",
       "block.ris3.oxygen_loader": "Oxygen Loader",
       "item.ris3.galaxium_sword": "Galaxium Sword",
       "item.ris3.heavy_tank": "Huge Oxygen Tank",

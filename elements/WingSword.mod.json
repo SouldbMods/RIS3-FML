@@ -5,9 +5,9 @@
     "renderType": 0,
     "texture": "aotd",
     "customModelName": "Normal",
-    "name": "Aspect Of the dragons",
+    "name": "Winged Sword",
     "specialInfo": [
-      "§6 LEGENDARY"
+      "§6LEGENDARY SWORD"
     ],
     "creativeTab": {
       "value": "CUSTOM:RISCombat"
@@ -17,13 +17,23 @@
     "efficiency": 4.0,
     "attackSpeed": 1.0,
     "enchantability": 2,
-    "damageVsEntity": 20.0,
-    "usageCount": 8192,
+    "damageVsEntity": 12.0,
+    "usageCount": 2300,
     "blocksAffected": [],
     "hasGlow": false,
-    "repairItems": [],
+    "repairItems": [
+      {
+        "value": "CUSTOM:CoreOfFlight"
+      }
+    ],
     "immuneToFire": true,
     "stayInGridWhenCrafting": false,
-    "damageOnCrafting": false
+    "damageOnCrafting": false,
+    "onItemInInventoryTick": {
+      "name": "WingSwordOnPlayerStoppedUsing"
+    },
+    "onItemInUseTick": {
+      "name": "WingedSwordFlightTick"
+    }
   }
 }

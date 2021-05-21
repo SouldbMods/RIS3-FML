@@ -83,7 +83,7 @@ public class FuelTankUIGuiWindow extends ContainerScreen<FuelTankUIGui.GuiContai
 	public void init(Minecraft minecraft, int width, int height) {
 		super.init(minecraft, width, height);
 		minecraft.keyboardListener.enableRepeatEvents(true);
-		this.addButton(new Button(this.guiLeft + 62, this.guiTop + 44, 45, 20, new StringTextComponent("Load"), e -> {
+		this.addButton(new Button(this.guiLeft + 63, this.guiTop + 42, 45, 20, new StringTextComponent("Load"), e -> {
 			if (true) {
 				Ris3Mod.PACKET_HANDLER.sendToServer(new FuelTankUIGui.ButtonPressedMessage(0, x, y, z));
 				FuelTankUIGui.handleButtonAction(entity, 0, x, y, z);

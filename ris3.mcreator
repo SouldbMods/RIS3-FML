@@ -847,15 +847,6 @@
       "registry_name": "risenergy"
     },
     {
-      "name": "LaunchRocket",
-      "type": "keybind",
-      "sortid": 87,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "launch_rocket"
-    },
-    {
       "name": "MartianSandDust",
       "type": "item",
       "sortid": 88,
@@ -1196,7 +1187,28 @@
       "ids": {},
       "registry_name": "take_off",
       "metadata": {
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
       },
       "path": "~/Boss-Tools killers"
     },
@@ -2213,11 +2225,391 @@
       "metadata": {
         "dependencies": [
           {
-            "name": "entity",
-            "type": "entity"
+            "name": "world",
+            "type": "world"
           }
         ]
       }
+    },
+    {
+      "name": "MetoriteStone",
+      "type": "block",
+      "sortid": 190,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "metorite_stone"
+    },
+    {
+      "name": "KryptonyteDust",
+      "type": "item",
+      "sortid": 191,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kryptonyte_dust"
+    },
+    {
+      "name": "KryptonyteOre",
+      "type": "block",
+      "sortid": 192,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kryptonyte_ore"
+    },
+    {
+      "name": "KryptonyteBlock",
+      "type": "block",
+      "sortid": 193,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kryptonyte_block"
+    },
+    {
+      "name": "KryptonyteOreBlockRecipe",
+      "type": "recipe",
+      "sortid": 194,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kryptonyte_ore_block_recipe"
+    },
+    {
+      "name": "KryptonyteBlockOreRecipe",
+      "type": "recipe",
+      "sortid": 195,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kryptonyte_block_ore_recipe"
+    },
+    {
+      "name": "KryptonyteOreSmelting",
+      "type": "recipe",
+      "sortid": 196,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kryptonyte_ore_smelting"
+    },
+    {
+      "name": "KryptonytePickaxe",
+      "type": "tool",
+      "sortid": 197,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kryptonyte_pickaxe"
+    },
+    {
+      "name": "KryptonyteAxe",
+      "type": "tool",
+      "sortid": 198,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kryptonyte_axe"
+    },
+    {
+      "name": "KryptonyteSword",
+      "type": "tool",
+      "sortid": 199,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kryptonyte_sword"
+    },
+    {
+      "name": "KryptonyteShovel",
+      "type": "tool",
+      "sortid": 200,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kryptonyte_shovel"
+    },
+    {
+      "name": "KryptonyteHoe",
+      "type": "tool",
+      "sortid": 201,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kryptonyte_hoe"
+    },
+    {
+      "name": "KryptonytePickaxeRecipe",
+      "type": "recipe",
+      "sortid": 202,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kryptonyte_pickaxe_recipe"
+    },
+    {
+      "name": "KryptonyteAxeRecipe",
+      "type": "recipe",
+      "sortid": 203,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kryptonyte_axe_recipe"
+    },
+    {
+      "name": "KryptonyteSwordRecipe",
+      "type": "recipe",
+      "sortid": 204,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kryptonyte_sword_recipe"
+    },
+    {
+      "name": "KryptonyteShovelRecipe",
+      "type": "recipe",
+      "sortid": 205,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kryptonyte_shovel_recipe"
+    },
+    {
+      "name": "KryptonyteHoeRecipe",
+      "type": "recipe",
+      "sortid": 206,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kryptonyte_hoe_recipe"
+    },
+    {
+      "name": "KryptonyteArmor",
+      "type": "armor",
+      "sortid": 207,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kryptonyte_armor",
+      "metadata": {
+        "eh": true,
+        "el": true,
+        "eb": true,
+        "ec": true
+      }
+    },
+    {
+      "name": "KryptonyteArmorHelmetRecipe",
+      "type": "recipe",
+      "sortid": 208,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kryptonyte_armor_helmet_recipe"
+    },
+    {
+      "name": "KryptonyteArmorBodyRecipe",
+      "type": "recipe",
+      "sortid": 209,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kryptonyte_armor_body_recipe"
+    },
+    {
+      "name": "KryptonyteArmorLeggingsRecipe",
+      "type": "recipe",
+      "sortid": 210,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kryptonyte_armor_leggings_recipe"
+    },
+    {
+      "name": "KryptonyteArmorBootsRecipe",
+      "type": "recipe",
+      "sortid": 211,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kryptonyte_armor_boots_recipe"
+    },
+    {
+      "name": "AstroidStone",
+      "type": "block",
+      "sortid": 212,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "astroid_stone"
+    },
+    {
+      "name": "VenusSoil",
+      "type": "block",
+      "sortid": 213,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "venus_soil",
+      "path": "~/Dimensions"
+    },
+    {
+      "name": "Venus",
+      "type": "biome",
+      "sortid": 214,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "venus",
+      "path": "~/Dimensions"
+    },
+    {
+      "name": "VenusDim",
+      "type": "dimension",
+      "sortid": 215,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "venus_dim",
+      "metadata": {
+        "ep": false
+      },
+      "path": "~/Dimensions"
+    },
+    {
+      "name": "TakeOffParticles",
+      "type": "procedure",
+      "sortid": 216,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "take_off_particles",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Boss-Tools killers"
+    },
+    {
+      "name": "TakeOffBindTick1",
+      "type": "procedure",
+      "sortid": 217,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "take_off_bind_tick_1",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Boss-Tools killers"
+    },
+    {
+      "name": "TakeOffBind",
+      "type": "keybind",
+      "sortid": 217,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "take_off_bind",
+      "path": "~/Boss-Tools killers"
+    },
+    {
+      "name": "GoToMars",
+      "type": "procedure",
+      "sortid": 218,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "go_to_mars",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Boss-Tools killers"
+    },
+    {
+      "name": "GoToMarsSelectScreen",
+      "type": "procedure",
+      "sortid": 219,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "go_to_mars_select_screen",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Boss-Tools killers"
     }
   ],
   "variable_elements": [
@@ -2268,95 +2660,142 @@
       "type": "logic",
       "scope": "player_persistent",
       "value": "false"
+    },
+    {
+      "name": "wingsword",
+      "type": "logic",
+      "scope": "map",
+      "value": "true"
+    },
+    {
+      "name": "x1",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "y1",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "z1",
+      "type": "number",
+      "scope": "map",
+      "value": "0"
+    },
+    {
+      "name": "thing",
+      "type": "logic",
+      "scope": "player_persistent",
+      "value": "false"
     }
   ],
   "sound_elements": [],
   "language_map": {
     "en_us": {
       "item.minecraft.potion.effect.oxygen": "Oxygen",
-      "item.ris3.galaxium_armor_helmet": "Galaxium Helmet",
+      "block.ris3.metorite_stone": "Metorite Stone",
       "biome.ris3.mars_flat": "Mars Flat",
       "item.ris3.aluminium_hoe": "Aluminium Hoe",
-      "item.ris3.oxygen_set_helmet": "Oxygen Set Helmet",
-      "itemGroup.tabrisblocks": "Really in space Blocks",
-      "item.ris3.rocket": "Tier 1 Rocket",
       "itemGroup.tabris_items": "Really In Space Items",
       "item.ris3.rockettwo_spawn_egg": "Tier 2 Rocket Spawn Egg",
-      "item.ris3.aluminiumrod": "Aluminium rod",
       "item.ris3.light_tank": "Light Oxygen Tank",
-      "item.ris3.galaxium_hoe": "Galaxium Hoe",
-      "itemGroup.tabnatureris": "Really In Space Nature",
+      "key.ris3.take_off_bind": "Take Off Tier 1 Rocket",
       "item.ris3.med_tank": "Medium Oxygen Tank",
-      "item.ris3.galaxium_armor_leggings": "Galaxium Leggings",
-      "itemGroup.tabrisores": "Really In Space Ores",
+      "item.ris3.kryptonyte_shovel": "Kryptonyte Shovel",
       "entity.ris3.rockettwo": "Tier 2 Rocket",
       "item.ris3.galaxium_armor_chestplate": "Galaxium Chestplate",
-      "item.ris3.martian_sand_dust": "Martian Sand Dust",
-      "key.ris3.open_oxygen_suit": "Oxygen Tanks",
-      "item.ris3.galaxium_axe": "Galaxium Axe",
+      "item.ris3.kryptonyte_armor_helmet": "Kryptonyte Helmet",
       "block.ris3.kryptonian_wood": "Kryptonian Wood",
       "block.ris3.tankfuel": "Fuel Tank",
       "item.ris3.oxygen_set_chestplate": "Oxygen Set",
       "item.minecraft.lingering_potion.effect.oxygen": "Lingering Oxygen",
       "item.ris3.aluminium_armor_leggings": "Aluminium Leggings",
-      "itemGroup.tabris_rockets": "Really In Space Discovery",
       "itemGroup.tabris_armour": "Really In Space Armour",
-      "block.ris3.kryptonian_fence_gate": "Kryptonian Fence Gate",
       "item.ris3.fuel_tank": "Fuel Tank",
-      "entity.ris3.rocketone": "Tier One Rocket",
+      "item.ris3.kryptonyte_dust": "Kryptonyte",
       "effect.oxygen": "Oxygen",
-      "item.ris3.space_suit_armor_helmet": "Space Suit Helmet",
-      "item.ris3.mars": "Mars Portal Igniter",
+      "entity.ris3.rocketone": "Tier One Rocket",
       "block.ris3.aluminium_block": "Block of Aluminium",
       "item.ris3.aluminium_axe": "Aluminium Axe",
-      "item.ris3.oxygen_set_leggings": "Oxygen Set Leggings",
-      "item.ris3.aluminium_armor_helmet": "Aluminium Helmet",
-      "item.ris3.rocket_plate": "Rocket Plate",
       "block.ris3.mars_stone": "Mars Stone",
       "block.ris3.martian_sand": "Martian Sand",
       "item.ris3.space_suit_armor_leggings": "Space Suit Leggings",
       "item.ris3.aluminium_ingot": "Aluminium",
-      "entity.ris3.rocketthree": "Tier 3 Rocket",
-      "item.minecraft.tipped_arrow.effect.oxygen": "Arrow of Oxygen",
       "block.ris3.kryptonian_fence": "Kryptonian Fence",
-      "itemGroup.tabri_stools": "Really In Space Tools",
       "item.ris3.aluminium_shovel": "Aluminium Shovel",
-      "item.minecraft.splash_potion.effect.oxygen": "Splash Oxygen",
-      "item.ris3.galaxium_shovel": "Galaxium Shovel",
-      "item.ris3.aluminium_pickaxe": "Aluminium Pickaxe",
       "item.ris3.aluminium_plate": "Aluminium Plate",
-      "block.ris3.galaxium_ore": "Galaxium Ore",
-      "key.ris3.launch_rocket": "Launch Rocket",
+      "item.ris3.kryptonyte_hoe": "Kryptonyte Hoe",
+      "item.ris3.kryptonyte_armor_chestplate": "Kryptonyte Chestplate",
       "item.ris3.rocketthree_spawn_egg": "Tier 3 Rocket Spawn Egg",
-      "item.ris3.galaxium_pickaxe": "Galaxium Pickaxe",
-      "item.ris3.core_of_flight": "Core Of Flight",
-      "block.ris3.kryptonian_slab": "Kryptonian Slab",
       "item.ris3.wing_sword": "Winged Sword",
       "block.ris3.oxygen_loader": "Oxygen Loader",
       "item.ris3.galaxium_sword": "Galaxium Sword",
-      "item.ris3.heavy_tank": "Huge Oxygen Tank",
       "block.ris3.kryptonian_leaves": "Kryptonian Leaves",
       "item.ris3.space_suit_armor_chestplate": "Space Suit Chestplate",
-      "item.ris3.space_suit_armor_boots": "Space Suit Boots",
-      "itemGroup.tabris_combat": "Really In Space Combat",
-      "block.ris3.cable_xdir": "Cable",
+      "block.ris3.astroid_stone": "Astroid Stone",
       "item.ris3.rocketone_spawn_egg": "Tier One Rocket Spawn Egg",
       "item.ris3.fuel_pipe": "Fuel Pipe",
-      "block.ris3.rocket_table": "Rocket Table",
-      "item.ris3.oxygen_set_boots": "Oxygen Set Boots",
-      "item.ris3.engene": "Engine",
-      "item.ris3.iron_plate": "Iron Plate",
       "block.ris3.kryptonian_log": "Kryptonian Log",
-      "block.ris3.kryptonian_stairs": "Kryptonian Stairs",
-      "itemGroup.tabrisenergy": "Really In Space Energy \u0026 Macines",
+      "item.ris3.kryptonyte_armor_leggings": "Kryptonyte Leggings",
       "item.ris3.galaxium_dust": "Galaxium",
       "item.ris3.led": "LED",
       "block.ris3.kryptonian_planks": "Kryptonian Planks",
       "item.ris3.galaxium_armor_boots": "Galaxium Boots",
       "item.ris3.aluminium_sword": "Aluminium Sword",
+      "item.ris3.venus_dim": "Venus Dim Portal Igniter",
+      "item.ris3.aluminium_armor_boots": "Aluminium Boots",
+      "item.ris3.galaxium_armor_helmet": "Galaxium Helmet",
+      "item.ris3.oxygen_set_helmet": "Oxygen Set Helmet",
+      "biome.ris3.venus": "Venus",
+      "block.ris3.kryptonyte_ore": "Kryptonyte Ore",
+      "itemGroup.tabrisblocks": "Really in space Blocks",
+      "item.ris3.rocket": "Tier 1 Rocket",
+      "item.ris3.aluminiumrod": "Aluminium rod",
+      "block.ris3.venus_soil": "Venus Soil",
+      "item.ris3.galaxium_hoe": "Galaxium Hoe",
+      "itemGroup.tabnatureris": "Really In Space Nature",
+      "item.ris3.galaxium_armor_leggings": "Galaxium Leggings",
+      "itemGroup.tabrisores": "Really In Space Ores",
+      "item.ris3.martian_sand_dust": "Martian Sand Dust",
+      "item.ris3.kryptonyte_sword": "Kryptonyte Sword",
+      "key.ris3.open_oxygen_suit": "Oxygen Tanks",
+      "item.ris3.galaxium_axe": "Galaxium Axe",
+      "item.ris3.kryptonyte_pickaxe": "Kryptonyte Pickaxe",
+      "itemGroup.tabris_rockets": "Really In Space Discovery",
+      "block.ris3.kryptonian_fence_gate": "Kryptonian Fence Gate",
+      "item.ris3.space_suit_armor_helmet": "Space Suit Helmet",
+      "item.ris3.mars": "Mars Portal Igniter",
+      "item.ris3.oxygen_set_leggings": "Oxygen Set Leggings",
+      "item.ris3.aluminium_armor_helmet": "Aluminium Helmet",
+      "item.ris3.rocket_plate": "Rocket Plate",
+      "item.ris3.kryptonyte_axe": "Kryptonyte Axe",
+      "entity.ris3.rocketthree": "Tier 3 Rocket",
+      "item.minecraft.tipped_arrow.effect.oxygen": "Arrow of Oxygen",
+      "block.ris3.kryptonyte_block": "Block of Kryptonyte",
+      "itemGroup.tabri_stools": "Really In Space Tools",
+      "item.minecraft.splash_potion.effect.oxygen": "Splash Oxygen",
+      "item.ris3.galaxium_shovel": "Galaxium Shovel",
+      "item.ris3.aluminium_pickaxe": "Aluminium Pickaxe",
+      "block.ris3.galaxium_ore": "Galaxium Ore",
+      "item.ris3.galaxium_pickaxe": "Galaxium Pickaxe",
+      "item.ris3.core_of_flight": "Core Of Flight",
+      "block.ris3.kryptonian_slab": "Kryptonian Slab",
+      "item.ris3.kryptonyte_armor_boots": "Kryptonyte Boots",
+      "item.ris3.heavy_tank": "Huge Oxygen Tank",
+      "item.ris3.space_suit_armor_boots": "Space Suit Boots",
+      "itemGroup.tabris_combat": "Really In Space Combat",
+      "block.ris3.cable_xdir": "Cable",
+      "block.ris3.rocket_table": "Rocket Table",
+      "item.ris3.oxygen_set_boots": "Oxygen Set Boots",
+      "item.ris3.engene": "Engine",
+      "item.ris3.iron_plate": "Iron Plate",
+      "block.ris3.kryptonian_stairs": "Kryptonian Stairs",
+      "itemGroup.tabrisenergy": "Really In Space Energy \u0026 Macines",
       "block.ris3.galaxium_block": "Block of Galaxium",
       "block.ris3.aluminium_ore": "Aluminium Ore",
-      "item.ris3.aluminium_armor_boots": "Aluminium Boots",
       "item.ris3.aluminium_armor_chestplate": "Aluminium Chestplate"
     }
   },

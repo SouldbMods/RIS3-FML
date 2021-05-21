@@ -81,7 +81,7 @@ public class WingSwordItem extends Ris3ModElements.ModElement {
 				}
 				{
 					Map<String, Object> $_dependencies = new HashMap<>();
-					$_dependencies.put("entity", entity);
+					$_dependencies.put("world", world);
 					WingSwordOnPlayerStoppedUsingProcedure.executeProcedure($_dependencies);
 				}
 			}

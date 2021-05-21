@@ -113,7 +113,7 @@ public class FuelTankUIGui extends Ris3ModElements.ModElement {
 					}
 				}
 			}
-			this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 77, 24) {
+			this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 77, 22) {
 			}));
 			int si;
 			int sj;

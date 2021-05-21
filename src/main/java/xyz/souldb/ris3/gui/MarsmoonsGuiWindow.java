@@ -82,7 +82,7 @@ public class MarsmoonsGuiWindow extends ContainerScreen<MarsmoonsGui.GuiContaine
 
 	@Override
 	protected void drawGuiContainerForegroundLayer(MatrixStack ms, int mouseX, int mouseY) {
-		this.font.drawString(ms, "T2", 64, 53, -1);
+		this.font.drawString(ms, "T1", 64, 53, -1);
 		this.font.drawString(ms, "T3", 74, 84, -1);
 		this.font.drawString(ms, "T3", 76, 108, -1);
 		this.font.drawString(ms, "Mars", 203, 3, -65536);

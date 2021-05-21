@@ -64,6 +64,9 @@
         "type": "button",
         "data": {
           "text": "Mars",
+          "onClick": {
+            "name": "GoToMars"
+          },
           "width": 45,
           "height": 20,
           "name": "Mars",
@@ -74,12 +77,12 @@
       {
         "type": "label",
         "data": {
-          "text": "T2",
+          "text": "T1",
           "color": {
             "value": -1,
             "falpha": 0.0
           },
-          "name": "T2",
+          "name": "T1",
           "x": 61,
           "y": 51
         }

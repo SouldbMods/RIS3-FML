@@ -17,8 +17,8 @@
           "width": 45,
           "height": 20,
           "name": "Load",
-          "x": 188,
-          "y": 81
+          "x": 189,
+          "y": 79
         }
       },
       {
@@ -32,7 +32,7 @@
           "dropItemsWhenNotBound": true,
           "name": "Slot #0",
           "x": 202,
-          "y": 60
+          "y": 58
         }
       },
       {

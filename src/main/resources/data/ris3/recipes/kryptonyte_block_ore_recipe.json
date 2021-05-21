@@ -1,0 +1,13 @@
+{
+  "group": "ris3",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "ris3:kryptonyte_block"
+    }
+  ],
+  "result": {
+    "item": "ris3:kryptonyte_dust",
+    "count": 9
+  }
+}

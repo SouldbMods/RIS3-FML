@@ -1,0 +1,12 @@
+{
+  "_fv": 18,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "SPACE",
+    "keyBindingName": "Take Off Tier 1 Rocket",
+    "keyBindingCategoryKey": "misc",
+    "onKeyPressed": {
+      "name": "TakeOffBindTick1"
+    }
+  }
+}

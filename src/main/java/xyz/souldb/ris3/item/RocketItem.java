@@ -35,7 +35,7 @@ public class RocketItem extends Ris3ModElements.ModElement {
 	}
 	public static class ItemCustom extends Item {
 		public ItemCustom() {
-			super(new Item.Properties().group(RisRocketsItemGroup.tab).maxStackSize(64).rarity(Rarity.EPIC));
+			super(new Item.Properties().group(RisRocketsItemGroup.tab).maxStackSize(1).rarity(Rarity.EPIC));
 			setRegistryName("rocket");
 		}
 

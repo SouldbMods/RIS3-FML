@@ -50,39 +50,39 @@ public class WingedSwordFlightTickProcedure extends Ris3ModElements.ModElement {
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
-		{
-			boolean _setval = (boolean) (true);
-			entity.getCapability(Ris3ModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-				capability.fly_state = _setval;
-				capability.syncPlayerVariables(entity);
-			});
-		}
-		if (((Entity) world
-				.getEntitiesWithinAABB(PlayerEntity.class,
-						new AxisAlignedBB(x - (1 / 2d), y - (1 / 2d), z - (1 / 2d), x + (1 / 2d), y + (1 / 2d), z + (1 / 2d)), null)
-				.stream().sorted(new Object() {
-					Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-						return Comparator.comparing((Function<Entity, Double>) (_entcnd -> _entcnd.getDistanceSq(_x, _y, _z)));
-					}
-				}.compareDistOf(x, y, z)).findFirst().orElse(null)) instanceof PlayerEntity) {
-			((PlayerEntity) ((Entity) world
+		Ris3ModVariables.MapVariables.get(world).wingsword = (boolean) (true);
+		Ris3ModVariables.MapVariables.get(world).syncData(world);
+		if (((Ris3ModVariables.MapVariables.get(world).wingsword) == (true))) {
+			if (entity instanceof PlayerEntity) {
+				((PlayerEntity) entity).abilities.setFlySpeed((float) 1F);
+			}
+			if (((Entity) world
 					.getEntitiesWithinAABB(PlayerEntity.class,
 							new AxisAlignedBB(x - (1 / 2d), y - (1 / 2d), z - (1 / 2d), x + (1 / 2d), y + (1 / 2d), z + (1 / 2d)), null)
 					.stream().sorted(new Object() {
 						Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
 							return Comparator.comparing((Function<Entity, Double>) (_entcnd -> _entcnd.getDistanceSq(_x, _y, _z)));
 						}
-					}.compareDistOf(x, y, z)).findFirst().orElse(null))).abilities.allowFlying = ((entity
-							.getCapability(Ris3ModVariables.PLAYER_VARIABLES_CAPABILITY, null)
-							.orElse(new Ris3ModVariables.PlayerVariables())).fly_state);
-			((PlayerEntity) ((Entity) world
-					.getEntitiesWithinAABB(PlayerEntity.class,
-							new AxisAlignedBB(x - (1 / 2d), y - (1 / 2d), z - (1 / 2d), x + (1 / 2d), y + (1 / 2d), z + (1 / 2d)), null)
-					.stream().sorted(new Object() {
-						Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-							return Comparator.comparing((Function<Entity, Double>) (_entcnd -> _entcnd.getDistanceSq(_x, _y, _z)));
-						}
-					}.compareDistOf(x, y, z)).findFirst().orElse(null))).sendPlayerAbilities();
+					}.compareDistOf(x, y, z)).findFirst().orElse(null)) instanceof PlayerEntity) {
+				((PlayerEntity) ((Entity) world
+						.getEntitiesWithinAABB(PlayerEntity.class,
+								new AxisAlignedBB(x - (1 / 2d), y - (1 / 2d), z - (1 / 2d), x + (1 / 2d), y + (1 / 2d), z + (1 / 2d)), null)
+						.stream().sorted(new Object() {
+							Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+								return Comparator.comparing((Function<Entity, Double>) (_entcnd -> _entcnd.getDistanceSq(_x, _y, _z)));
+							}
+						}.compareDistOf(x, y, z)).findFirst().orElse(null))).abilities.allowFlying = ((entity
+								.getCapability(Ris3ModVariables.PLAYER_VARIABLES_CAPABILITY, null)
+								.orElse(new Ris3ModVariables.PlayerVariables())).fly_state);
+				((PlayerEntity) ((Entity) world
+						.getEntitiesWithinAABB(PlayerEntity.class,
+								new AxisAlignedBB(x - (1 / 2d), y - (1 / 2d), z - (1 / 2d), x + (1 / 2d), y + (1 / 2d), z + (1 / 2d)), null)
+						.stream().sorted(new Object() {
+							Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+								return Comparator.comparing((Function<Entity, Double>) (_entcnd -> _entcnd.getDistanceSq(_x, _y, _z)));
+							}
+						}.compareDistOf(x, y, z)).findFirst().orElse(null))).sendPlayerAbilities();
+			}
 		}
 	}
 }

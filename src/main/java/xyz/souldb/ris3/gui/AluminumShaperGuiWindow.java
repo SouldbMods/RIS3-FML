@@ -48,11 +48,11 @@ public class AluminumShaperGuiWindow extends ContainerScreen<AluminumShaperGui.G
 		int l = (this.height - this.ySize) / 2;
 		this.blit(ms, k, l, 0, 0, this.xSize, this.ySize, this.xSize, this.ySize);
 		Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("ris3:textures/reforgealuminiumicon.png"));
-		this.blit(ms, this.guiLeft + 81, this.guiTop + 51, 0, 0, 16, 16, 16, 16);
+		this.blit(ms, this.guiLeft + 80, this.guiTop + 13, 0, 0, 16, 16, 16, 16);
 		Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("ris3:textures/fire.png"));
 		this.blit(ms, this.guiLeft + 24, this.guiTop + 32, 0, 0, 16, 16, 16, 16);
 		Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("ris3:textures/arrow.png"));
-		this.blit(ms, this.guiLeft + 45, this.guiTop + 33, 0, 0, 24, 16, 24, 16);
+		this.blit(ms, this.guiLeft + 47, this.guiTop + 32, 0, 0, 24, 16, 24, 16);
 		RenderSystem.disableBlend();
 	}
 

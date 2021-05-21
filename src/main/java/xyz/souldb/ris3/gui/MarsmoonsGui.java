@@ -2,6 +2,7 @@
 package xyz.souldb.ris3.gui;
 
 import xyz.souldb.ris3.procedures.GotoplanetsguiProcedure;
+import xyz.souldb.ris3.procedures.GoToMarsProcedure;
 import xyz.souldb.ris3.Ris3ModElements;
 
 import net.minecraftforge.items.ItemStackHandler;
@@ -175,6 +176,16 @@ public class MarsmoonsGui extends Ris3ModElements.ModElement {
 		// security measure to prevent arbitrary chunk generation
 		if (!world.isBlockLoaded(new BlockPos(x, y, z)))
 			return;
+		if (buttonID == 0) {
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("entity", entity);
+				$_dependencies.put("x", x);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				GoToMarsProcedure.executeProcedure($_dependencies);
+			}
+		}
 		if (buttonID == 3) {
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();

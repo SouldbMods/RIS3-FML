@@ -171,6 +171,9 @@
         "type": "button",
         "data": {
           "text": "Mars",
+          "onClick": {
+            "name": "GoToMarsSelectScreen"
+          },
           "width": 45,
           "height": 20,
           "name": "Mars",

@@ -1,5 +1,6 @@
 package xyz.souldb.ris3.procedures;
 
+import xyz.souldb.ris3.entity.RocketoneEntity;
 import xyz.souldb.ris3.Ris3ModElements;
 import xyz.souldb.ris3.Ris3Mod;
 
@@ -50,7 +51,7 @@ public class TakeOffBindTick1Procedure extends Ris3ModElements.ModElement {
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
-		if ((entity.isPassenger())) {
+		if ((entity instanceof PlayerEntity)) {
 			if ((((Entity) world
 					.getEntitiesWithinAABB(PlayerEntity.class,
 							new AxisAlignedBB(x - (4 / 2d), y - (4 / 2d), z - (4 / 2d), x + (4 / 2d), y + (4 / 2d), z + (4 / 2d)), null)
@@ -58,7 +59,7 @@ public class TakeOffBindTick1Procedure extends Ris3ModElements.ModElement {
 						Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
 							return Comparator.comparing((Function<Entity, Double>) (_entcnd -> _entcnd.getDistanceSq(_x, _y, _z)));
 						}
-					}.compareDistOf(x, y, z)).findFirst().orElse(null)) instanceof PlayerEntity)) {
+					}.compareDistOf(x, y, z)).findFirst().orElse(null)) instanceof RocketoneEntity.CustomEntity)) {
 				{
 					Map<String, Object> $_dependencies = new HashMap<>();
 					$_dependencies.put("entity", entity);
@@ -66,7 +67,7 @@ public class TakeOffBindTick1Procedure extends Ris3ModElements.ModElement {
 					$_dependencies.put("y", y);
 					$_dependencies.put("z", z);
 					$_dependencies.put("world", world);
-					TakeOffProcedure.executeProcedure($_dependencies);
+					CountdownProcedure.executeProcedure($_dependencies);
 				}
 			}
 		}

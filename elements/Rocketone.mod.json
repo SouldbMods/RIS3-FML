@@ -56,7 +56,7 @@
     "xpAmount": 0,
     "waterMob": false,
     "flyingMob": true,
-    "guiBoundTo": "PlanetSelectScreenClass",
+    "guiBoundTo": "<NONE>",
     "inventorySize": 0,
     "inventoryStackSize": 64,
     "disableCollisions": false,

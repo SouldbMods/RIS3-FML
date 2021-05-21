@@ -2,7 +2,6 @@ package xyz.souldb.ris3.procedures;
 
 import xyz.souldb.ris3.gui.PlanetSelectScreenClassGui;
 import xyz.souldb.ris3.entity.RocketoneEntity;
-import xyz.souldb.ris3.Ris3ModVariables;
 import xyz.souldb.ris3.Ris3ModElements;
 import xyz.souldb.ris3.Ris3Mod;
 
@@ -78,13 +77,6 @@ public class TakeOffProcedure extends Ris3ModElements.ModElement {
 		double Level = 0;
 		boolean LaunchStatus = false;
 		boolean thing = false;
-		{
-			boolean _setval = (boolean) (false);
-			entity.getCapability(Ris3ModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
-				capability.thing = _setval;
-				capability.syncPlayerVariables(entity);
-			});
-		}
 		if (((Entity) world
 				.getEntitiesWithinAABB(RocketoneEntity.CustomEntity.class,
 						new AxisAlignedBB(x - (4 / 2d), y - (4 / 2d), z - (4 / 2d), x + (4 / 2d), y + (4 / 2d), z + (4 / 2d)), null)

@@ -13,11 +13,11 @@
       {
         "type": "image",
         "data": {
-          "image": "selbackround.png",
+          "image": "selbackroundmain.png",
           "use1Xscale": false,
-          "name": "selbackround.png",
-          "x": -22,
-          "y": -5
+          "name": "selbackroundmain.png",
+          "x": -2,
+          "y": -3
         }
       },
       {

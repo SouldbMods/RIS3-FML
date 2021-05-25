@@ -1,0 +1,73 @@
+{
+  "_fv": 18,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 240,
+    "height": 85,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "text": "Are you sure you want to launch this rocket?",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Are you sure you want to launch this rocket?",
+          "x": 105,
+          "y": 89
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Yes",
+          "onClick": {
+            "name": "TakeOff"
+          },
+          "width": 40,
+          "height": 20,
+          "name": "Yes",
+          "x": 231,
+          "y": 115
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "No",
+          "width": 35,
+          "height": 20,
+          "name": "No",
+          "x": 159,
+          "y": 116
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ground.png",
+          "use1Xscale": false,
+          "name": "ground.png",
+          "x": 118,
+          "y": 137
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "rocketingui.png",
+          "use1Xscale": false,
+          "name": "rocketingui.png",
+          "x": 118,
+          "y": 130
+        }
+      }
+    ]
+  }
+}

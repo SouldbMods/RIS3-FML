@@ -1,0 +1,26 @@
+{
+  "_fv": 18,
+  "_type": "overlay",
+  "definition": {
+    "priority": "NORMAL",
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "text": "1",
+          "color": {
+            "value": -65536,
+            "falpha": 0.0
+          },
+          "name": "1",
+          "x": 211,
+          "y": 112
+        }
+      }
+    ],
+    "baseTexture": "",
+    "displayCondition": {
+      "name": "Cd10c"
+    }
+  }
+}

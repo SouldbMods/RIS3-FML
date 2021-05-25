@@ -18,6 +18,7 @@ import net.minecraft.entity.player.ServerPlayerEntity;
 import net.minecraft.entity.Entity;
 
 import java.util.Map;
+import java.util.HashMap;
 
 @Ris3ModElements.ModElement.Tag
 public class GoToMarsProcedure extends Ris3ModElements.ModElement {
@@ -50,6 +51,11 @@ public class GoToMarsProcedure extends Ris3ModElements.ModElement {
 		double x = dependencies.get("x") instanceof Integer ? (int) dependencies.get("x") : (double) dependencies.get("x");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
+		{
+			Map<String, Object> $_dependencies = new HashMap<>();
+			$_dependencies.put("entity", entity);
+			GravityPlanetOtherThanKryptonProcedure.executeProcedure($_dependencies);
+		}
 		{
 			Entity _ent = entity;
 			if (!_ent.world.isRemote && _ent instanceof ServerPlayerEntity) {

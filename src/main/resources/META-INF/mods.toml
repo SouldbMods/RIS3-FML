@@ -4,15 +4,12 @@ license="Creative Commons ShareAlike 4.0 International (CC BY-SA 4.0) "
 
 [[mods]]
 modId="ris3"
-version="b4"
+version="3.0.0"
 displayName="Really In Space 3 b4"
 credits="dragonmaster, mrscauthd, pylo, mystiryouswolf, drcrazy"
 displayURL="https://youtube.com/c/souldbminer"
 logoFile="logo.png"
 authors="Souldbminer"
-description='''
-Requires Geckolib 3.0 (My spellings suck)
-'''
 
 [[dependencies.ris3]]
     modId="minecraft"
@@ -23,10 +20,4 @@ Requires Geckolib 3.0 (My spellings suck)
 
 
 
-[[dependencies.ris3]]
-    modId="geckolib"
-    mandatory=false
-    versionRange="[0,)"
-    ordering="NONE"
-    side="BOTH"
 

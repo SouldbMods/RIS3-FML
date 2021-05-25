@@ -1,5 +1,6 @@
 package xyz.souldb.ris3.procedures;
 
+import xyz.souldb.ris3.Ris3ModVariables;
 import xyz.souldb.ris3.Ris3ModElements;
 import xyz.souldb.ris3.Ris3Mod;
 
@@ -50,6 +51,13 @@ public class CountdownProcedure extends Ris3ModElements.ModElement {
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
+		{
+			double _setval = (double) 0;
+			entity.getCapability(Ris3ModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+				capability.countdown = _setval;
+				capability.syncPlayerVariables(entity);
+			});
+		}
 		new Object() {
 			private int ticks = 0;
 			private float waitTicks;
@@ -71,368 +79,312 @@ public class CountdownProcedure extends Ris3ModElements.ModElement {
 
 			private void run() {
 				{
-					Entity _ent = entity;
-					if (!_ent.world.isRemote && _ent.world.getServer() != null) {
-						_ent.world.getServer().getCommandManager()
-								.handleCommand(_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4), "title @p title \u00A7a10");
-					}
+					double _setval = (double) 1;
+					entity.getCapability(Ris3ModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+						capability.countdown = _setval;
+						capability.syncPlayerVariables(entity);
+					});
 				}
-				new Object() {
-					private int ticks = 0;
-					private float waitTicks;
-					private IWorld world;
-					public void start(IWorld world, int waitTicks) {
-						this.waitTicks = waitTicks;
-						MinecraftForge.EVENT_BUS.register(this);
-						this.world = world;
-					}
+				MinecraftForge.EVENT_BUS.unregister(this);
+			}
+		}.start(world, (int) 20);
+		new Object() {
+			private int ticks = 0;
+			private float waitTicks;
+			private IWorld world;
+			public void start(IWorld world, int waitTicks) {
+				this.waitTicks = waitTicks;
+				MinecraftForge.EVENT_BUS.register(this);
+				this.world = world;
+			}
 
-					@SubscribeEvent
-					public void tick(TickEvent.ServerTickEvent event) {
-						if (event.phase == TickEvent.Phase.END) {
-							this.ticks += 1;
-							if (this.ticks >= this.waitTicks)
-								run();
-						}
-					}
+			@SubscribeEvent
+			public void tick(TickEvent.ServerTickEvent event) {
+				if (event.phase == TickEvent.Phase.END) {
+					this.ticks += 1;
+					if (this.ticks >= this.waitTicks)
+						run();
+				}
+			}
 
-					private void run() {
-						{
-							Entity _ent = entity;
-							if (!_ent.world.isRemote && _ent.world.getServer() != null) {
-								_ent.world.getServer().getCommandManager().handleCommand(
-										_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4), "title @p title \u00A7a9");
-							}
-						}
-						new Object() {
-							private int ticks = 0;
-							private float waitTicks;
-							private IWorld world;
-							public void start(IWorld world, int waitTicks) {
-								this.waitTicks = waitTicks;
-								MinecraftForge.EVENT_BUS.register(this);
-								this.world = world;
-							}
+			private void run() {
+				{
+					double _setval = (double) 2;
+					entity.getCapability(Ris3ModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+						capability.countdown = _setval;
+						capability.syncPlayerVariables(entity);
+					});
+				}
+				MinecraftForge.EVENT_BUS.unregister(this);
+			}
+		}.start(world, (int) 20);
+		new Object() {
+			private int ticks = 0;
+			private float waitTicks;
+			private IWorld world;
+			public void start(IWorld world, int waitTicks) {
+				this.waitTicks = waitTicks;
+				MinecraftForge.EVENT_BUS.register(this);
+				this.world = world;
+			}
 
-							@SubscribeEvent
-							public void tick(TickEvent.ServerTickEvent event) {
-								if (event.phase == TickEvent.Phase.END) {
-									this.ticks += 1;
-									if (this.ticks >= this.waitTicks)
-										run();
-								}
-							}
+			@SubscribeEvent
+			public void tick(TickEvent.ServerTickEvent event) {
+				if (event.phase == TickEvent.Phase.END) {
+					this.ticks += 1;
+					if (this.ticks >= this.waitTicks)
+						run();
+				}
+			}
 
-							private void run() {
-								{
-									Entity _ent = entity;
-									if (!_ent.world.isRemote && _ent.world.getServer() != null) {
-										_ent.world.getServer().getCommandManager().handleCommand(
-												_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4), "/title @p title \u00A7a8");
-									}
-								}
-								new Object() {
-									private int ticks = 0;
-									private float waitTicks;
-									private IWorld world;
-									public void start(IWorld world, int waitTicks) {
-										this.waitTicks = waitTicks;
-										MinecraftForge.EVENT_BUS.register(this);
-										this.world = world;
-									}
+			private void run() {
+				{
+					double _setval = (double) 3;
+					entity.getCapability(Ris3ModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+						capability.countdown = _setval;
+						capability.syncPlayerVariables(entity);
+					});
+				}
+				MinecraftForge.EVENT_BUS.unregister(this);
+			}
+		}.start(world, (int) 20);
+		new Object() {
+			private int ticks = 0;
+			private float waitTicks;
+			private IWorld world;
+			public void start(IWorld world, int waitTicks) {
+				this.waitTicks = waitTicks;
+				MinecraftForge.EVENT_BUS.register(this);
+				this.world = world;
+			}
 
-									@SubscribeEvent
-									public void tick(TickEvent.ServerTickEvent event) {
-										if (event.phase == TickEvent.Phase.END) {
-											this.ticks += 1;
-											if (this.ticks >= this.waitTicks)
-												run();
-										}
-									}
+			@SubscribeEvent
+			public void tick(TickEvent.ServerTickEvent event) {
+				if (event.phase == TickEvent.Phase.END) {
+					this.ticks += 1;
+					if (this.ticks >= this.waitTicks)
+						run();
+				}
+			}
 
-									private void run() {
-										{
-											Entity _ent = entity;
-											if (!_ent.world.isRemote && _ent.world.getServer() != null) {
-												_ent.world.getServer().getCommandManager().handleCommand(
-														_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
-														"/title @p title \u00A7a8");
-											}
-										}
-										new Object() {
-											private int ticks = 0;
-											private float waitTicks;
-											private IWorld world;
-											public void start(IWorld world, int waitTicks) {
-												this.waitTicks = waitTicks;
-												MinecraftForge.EVENT_BUS.register(this);
-												this.world = world;
-											}
+			private void run() {
+				{
+					double _setval = (double) 4;
+					entity.getCapability(Ris3ModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+						capability.countdown = _setval;
+						capability.syncPlayerVariables(entity);
+					});
+				}
+				MinecraftForge.EVENT_BUS.unregister(this);
+			}
+		}.start(world, (int) 20);
+		new Object() {
+			private int ticks = 0;
+			private float waitTicks;
+			private IWorld world;
+			public void start(IWorld world, int waitTicks) {
+				this.waitTicks = waitTicks;
+				MinecraftForge.EVENT_BUS.register(this);
+				this.world = world;
+			}
 
-											@SubscribeEvent
-											public void tick(TickEvent.ServerTickEvent event) {
-												if (event.phase == TickEvent.Phase.END) {
-													this.ticks += 1;
-													if (this.ticks >= this.waitTicks)
-														run();
-												}
-											}
+			@SubscribeEvent
+			public void tick(TickEvent.ServerTickEvent event) {
+				if (event.phase == TickEvent.Phase.END) {
+					this.ticks += 1;
+					if (this.ticks >= this.waitTicks)
+						run();
+				}
+			}
 
-											private void run() {
-												{
-													Entity _ent = entity;
-													if (!_ent.world.isRemote && _ent.world.getServer() != null) {
-														_ent.world.getServer().getCommandManager().handleCommand(
-																_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
-																"title @p title \u00A767");
-													}
-												}
-												new Object() {
-													private int ticks = 0;
-													private float waitTicks;
-													private IWorld world;
-													public void start(IWorld world, int waitTicks) {
-														this.waitTicks = waitTicks;
-														MinecraftForge.EVENT_BUS.register(this);
-														this.world = world;
-													}
+			private void run() {
+				{
+					double _setval = (double) 5;
+					entity.getCapability(Ris3ModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+						capability.countdown = _setval;
+						capability.syncPlayerVariables(entity);
+					});
+				}
+				MinecraftForge.EVENT_BUS.unregister(this);
+			}
+		}.start(world, (int) 20);
+		new Object() {
+			private int ticks = 0;
+			private float waitTicks;
+			private IWorld world;
+			public void start(IWorld world, int waitTicks) {
+				this.waitTicks = waitTicks;
+				MinecraftForge.EVENT_BUS.register(this);
+				this.world = world;
+			}
 
-													@SubscribeEvent
-													public void tick(TickEvent.ServerTickEvent event) {
-														if (event.phase == TickEvent.Phase.END) {
-															this.ticks += 1;
-															if (this.ticks >= this.waitTicks)
-																run();
-														}
-													}
+			@SubscribeEvent
+			public void tick(TickEvent.ServerTickEvent event) {
+				if (event.phase == TickEvent.Phase.END) {
+					this.ticks += 1;
+					if (this.ticks >= this.waitTicks)
+						run();
+				}
+			}
 
-													private void run() {
-														{
-															Entity _ent = entity;
-															if (!_ent.world.isRemote && _ent.world.getServer() != null) {
-																_ent.world.getServer().getCommandManager().handleCommand(
-																		_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
-																		"/title @p title \u00A766");
-															}
-														}
-														new Object() {
-															private int ticks = 0;
-															private float waitTicks;
-															private IWorld world;
-															public void start(IWorld world, int waitTicks) {
-																this.waitTicks = waitTicks;
-																MinecraftForge.EVENT_BUS.register(this);
-																this.world = world;
-															}
+			private void run() {
+				{
+					double _setval = (double) 6;
+					entity.getCapability(Ris3ModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+						capability.countdown = _setval;
+						capability.syncPlayerVariables(entity);
+					});
+				}
+				MinecraftForge.EVENT_BUS.unregister(this);
+			}
+		}.start(world, (int) 20);
+		new Object() {
+			private int ticks = 0;
+			private float waitTicks;
+			private IWorld world;
+			public void start(IWorld world, int waitTicks) {
+				this.waitTicks = waitTicks;
+				MinecraftForge.EVENT_BUS.register(this);
+				this.world = world;
+			}
 
-															@SubscribeEvent
-															public void tick(TickEvent.ServerTickEvent event) {
-																if (event.phase == TickEvent.Phase.END) {
-																	this.ticks += 1;
-																	if (this.ticks >= this.waitTicks)
-																		run();
-																}
-															}
+			@SubscribeEvent
+			public void tick(TickEvent.ServerTickEvent event) {
+				if (event.phase == TickEvent.Phase.END) {
+					this.ticks += 1;
+					if (this.ticks >= this.waitTicks)
+						run();
+				}
+			}
 
-															private void run() {
-																{
-																	Entity _ent = entity;
-																	if (!_ent.world.isRemote && _ent.world.getServer() != null) {
-																		_ent.world.getServer().getCommandManager().handleCommand(
-																				_ent.getCommandSource().withFeedbackDisabled().withPermissionLevel(4),
-																				"/title @p title \u00A7c5");
-																	}
-																}
-																new Object() {
-																	private int ticks = 0;
-																	private float waitTicks;
-																	private IWorld world;
-																	public void start(IWorld world, int waitTicks) {
-																		this.waitTicks = waitTicks;
-																		MinecraftForge.EVENT_BUS.register(this);
-																		this.world = world;
-																	}
+			private void run() {
+				{
+					double _setval = (double) 7;
+					entity.getCapability(Ris3ModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+						capability.countdown = _setval;
+						capability.syncPlayerVariables(entity);
+					});
+				}
+				MinecraftForge.EVENT_BUS.unregister(this);
+			}
+		}.start(world, (int) 20);
+		new Object() {
+			private int ticks = 0;
+			private float waitTicks;
+			private IWorld world;
+			public void start(IWorld world, int waitTicks) {
+				this.waitTicks = waitTicks;
+				MinecraftForge.EVENT_BUS.register(this);
+				this.world = world;
+			}
 
-																	@SubscribeEvent
-																	public void tick(TickEvent.ServerTickEvent event) {
-																		if (event.phase == TickEvent.Phase.END) {
-																			this.ticks += 1;
-																			if (this.ticks >= this.waitTicks)
-																				run();
-																		}
-																	}
+			@SubscribeEvent
+			public void tick(TickEvent.ServerTickEvent event) {
+				if (event.phase == TickEvent.Phase.END) {
+					this.ticks += 1;
+					if (this.ticks >= this.waitTicks)
+						run();
+				}
+			}
 
-																	private void run() {
-																		{
-																			Entity _ent = entity;
-																			if (!_ent.world.isRemote && _ent.world.getServer() != null) {
-																				_ent.world.getServer().getCommandManager()
-																						.handleCommand(
-																								_ent.getCommandSource().withFeedbackDisabled()
-																										.withPermissionLevel(4),
-																								"/title @p title \u00A7c4");
-																			}
-																		}
-																		new Object() {
-																			private int ticks = 0;
-																			private float waitTicks;
-																			private IWorld world;
-																			public void start(IWorld world, int waitTicks) {
-																				this.waitTicks = waitTicks;
-																				MinecraftForge.EVENT_BUS.register(this);
-																				this.world = world;
-																			}
+			private void run() {
+				{
+					double _setval = (double) 8;
+					entity.getCapability(Ris3ModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+						capability.countdown = _setval;
+						capability.syncPlayerVariables(entity);
+					});
+				}
+				MinecraftForge.EVENT_BUS.unregister(this);
+			}
+		}.start(world, (int) 20);
+		new Object() {
+			private int ticks = 0;
+			private float waitTicks;
+			private IWorld world;
+			public void start(IWorld world, int waitTicks) {
+				this.waitTicks = waitTicks;
+				MinecraftForge.EVENT_BUS.register(this);
+				this.world = world;
+			}
 
-																			@SubscribeEvent
-																			public void tick(TickEvent.ServerTickEvent event) {
-																				if (event.phase == TickEvent.Phase.END) {
-																					this.ticks += 1;
-																					if (this.ticks >= this.waitTicks)
-																						run();
-																				}
-																			}
+			@SubscribeEvent
+			public void tick(TickEvent.ServerTickEvent event) {
+				if (event.phase == TickEvent.Phase.END) {
+					this.ticks += 1;
+					if (this.ticks >= this.waitTicks)
+						run();
+				}
+			}
 
-																			private void run() {
-																				{
-																					Entity _ent = entity;
-																					if (!_ent.world.isRemote && _ent.world.getServer() != null) {
-																						_ent.world.getServer().getCommandManager().handleCommand(
-																								_ent.getCommandSource().withFeedbackDisabled()
-																										.withPermissionLevel(4),
-																								"/title @p title \u00A743");
-																					}
-																				}
-																				new Object() {
-																					private int ticks = 0;
-																					private float waitTicks;
-																					private IWorld world;
-																					public void start(IWorld world, int waitTicks) {
-																						this.waitTicks = waitTicks;
-																						MinecraftForge.EVENT_BUS.register(this);
-																						this.world = world;
-																					}
+			private void run() {
+				{
+					double _setval = (double) 9;
+					entity.getCapability(Ris3ModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+						capability.countdown = _setval;
+						capability.syncPlayerVariables(entity);
+					});
+				}
+				MinecraftForge.EVENT_BUS.unregister(this);
+			}
+		}.start(world, (int) 20);
+		new Object() {
+			private int ticks = 0;
+			private float waitTicks;
+			private IWorld world;
+			public void start(IWorld world, int waitTicks) {
+				this.waitTicks = waitTicks;
+				MinecraftForge.EVENT_BUS.register(this);
+				this.world = world;
+			}
 
-																					@SubscribeEvent
-																					public void tick(TickEvent.ServerTickEvent event) {
-																						if (event.phase == TickEvent.Phase.END) {
-																							this.ticks += 1;
-																							if (this.ticks >= this.waitTicks)
-																								run();
-																						}
-																					}
+			@SubscribeEvent
+			public void tick(TickEvent.ServerTickEvent event) {
+				if (event.phase == TickEvent.Phase.END) {
+					this.ticks += 1;
+					if (this.ticks >= this.waitTicks)
+						run();
+				}
+			}
 
-																					private void run() {
-																						{
-																							Entity _ent = entity;
-																							if (!_ent.world.isRemote
-																									&& _ent.world.getServer() != null) {
-																								_ent.world.getServer().getCommandManager()
-																										.handleCommand(
-																												_ent.getCommandSource()
-																														.withFeedbackDisabled()
-																														.withPermissionLevel(4),
-																												"/title @p title \u00A742");
-																							}
-																						}
-																						new Object() {
-																							private int ticks = 0;
-																							private float waitTicks;
-																							private IWorld world;
-																							public void start(IWorld world, int waitTicks) {
-																								this.waitTicks = waitTicks;
-																								MinecraftForge.EVENT_BUS.register(this);
-																								this.world = world;
-																							}
+			private void run() {
+				{
+					double _setval = (double) 10;
+					entity.getCapability(Ris3ModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+						capability.countdown = _setval;
+						capability.syncPlayerVariables(entity);
+					});
+				}
+				MinecraftForge.EVENT_BUS.unregister(this);
+			}
+		}.start(world, (int) 20);
+		new Object() {
+			private int ticks = 0;
+			private float waitTicks;
+			private IWorld world;
+			public void start(IWorld world, int waitTicks) {
+				this.waitTicks = waitTicks;
+				MinecraftForge.EVENT_BUS.register(this);
+				this.world = world;
+			}
 
-																							@SubscribeEvent
-																							public void tick(TickEvent.ServerTickEvent event) {
-																								if (event.phase == TickEvent.Phase.END) {
-																									this.ticks += 1;
-																									if (this.ticks >= this.waitTicks)
-																										run();
-																								}
-																							}
+			@SubscribeEvent
+			public void tick(TickEvent.ServerTickEvent event) {
+				if (event.phase == TickEvent.Phase.END) {
+					this.ticks += 1;
+					if (this.ticks >= this.waitTicks)
+						run();
+				}
+			}
 
-																							private void run() {
-																								{
-																									Entity _ent = entity;
-																									if (!_ent.world.isRemote
-																											&& _ent.world.getServer() != null) {
-																										_ent.world.getServer().getCommandManager()
-																												.handleCommand(_ent.getCommandSource()
-																														.withFeedbackDisabled()
-																														.withPermissionLevel(4),
-																														"/title @p title \u00A741");
-																									}
-																								}
-																								new Object() {
-																									private int ticks = 0;
-																									private float waitTicks;
-																									private IWorld world;
-																									public void start(IWorld world, int waitTicks) {
-																										this.waitTicks = waitTicks;
-																										MinecraftForge.EVENT_BUS.register(this);
-																										this.world = world;
-																									}
-
-																									@SubscribeEvent
-																									public void tick(
-																											TickEvent.ServerTickEvent event) {
-																										if (event.phase == TickEvent.Phase.END) {
-																											this.ticks += 1;
-																											if (this.ticks >= this.waitTicks)
-																												run();
-																										}
-																									}
-
-																									private void run() {
-																										{
-																											Entity _ent = entity;
-																											if (!_ent.world.isRemote && _ent.world
-																													.getServer() != null) {
-																												_ent.world.getServer()
-																														.getCommandManager()
-																														.handleCommand(_ent
-																																.getCommandSource()
-																																.withFeedbackDisabled()
-																																.withPermissionLevel(
-																																		4),
-																																"/title @p title \u00A740");
-																											}
-																										}
-																										MinecraftForge.EVENT_BUS.unregister(this);
-																									}
-																								}.start(world, (int) 20);
-																								MinecraftForge.EVENT_BUS.unregister(this);
-																							}
-																						}.start(world, (int) 20);
-																						MinecraftForge.EVENT_BUS.unregister(this);
-																					}
-																				}.start(world, (int) 20);
-																				MinecraftForge.EVENT_BUS.unregister(this);
-																			}
-																		}.start(world, (int) 20);
-																		MinecraftForge.EVENT_BUS.unregister(this);
-																	}
-																}.start(world, (int) 20);
-																MinecraftForge.EVENT_BUS.unregister(this);
-															}
-														}.start(world, (int) 20);
-														MinecraftForge.EVENT_BUS.unregister(this);
-													}
-												}.start(world, (int) 20);
-												MinecraftForge.EVENT_BUS.unregister(this);
-											}
-										}.start(world, (int) 20);
-										MinecraftForge.EVENT_BUS.unregister(this);
-									}
-								}.start(world, (int) 20);
-								MinecraftForge.EVENT_BUS.unregister(this);
-							}
-						}.start(world, (int) 20);
-						MinecraftForge.EVENT_BUS.unregister(this);
-					}
-				}.start(world, (int) 20);
+			private void run() {
+				{
+					double _setval = (double) 11;
+					entity.getCapability(Ris3ModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+						capability.countdown = _setval;
+						capability.syncPlayerVariables(entity);
+					});
+				}
 				MinecraftForge.EVENT_BUS.unregister(this);
 			}
 		}.start(world, (int) 20);

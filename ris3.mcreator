@@ -354,106 +354,6 @@
       "registry_name": "skeleton_entities"
     },
     {
-      "name": "Rocket1",
-      "type": "overlay",
-      "sortid": 33,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "rocket_1",
-      "path": "~/Boss-Tools killers"
-    },
-    {
-      "name": "Rocket2",
-      "type": "overlay",
-      "sortid": 34,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "rocket_2"
-    },
-    {
-      "name": "Rocket3",
-      "type": "overlay",
-      "sortid": 35,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "rocket_3"
-    },
-    {
-      "name": "Rocket4",
-      "type": "overlay",
-      "sortid": 36,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "rocket_4"
-    },
-    {
-      "name": "Rocket5",
-      "type": "overlay",
-      "sortid": 37,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "rocket_5"
-    },
-    {
-      "name": "Rocket6",
-      "type": "overlay",
-      "sortid": 38,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "rocket_6"
-    },
-    {
-      "name": "Rocket7",
-      "type": "overlay",
-      "sortid": 39,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "rocket_7"
-    },
-    {
-      "name": "Rocket8",
-      "type": "overlay",
-      "sortid": 40,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "rocket_8"
-    },
-    {
-      "name": "Rocket9",
-      "type": "overlay",
-      "sortid": 41,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "rocket_9"
-    },
-    {
-      "name": "Rocket10",
-      "type": "overlay",
-      "sortid": 42,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "rocket_10"
-    },
-    {
-      "name": "RIS3",
-      "type": "overlay",
-      "sortid": 43,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "ris_3"
-    },
-    {
       "name": "GalaxiumDust",
       "type": "item",
       "sortid": 44,
@@ -1751,126 +1651,6 @@
       "registry_name": "oxygen"
     },
     {
-      "name": "Oxygenlvl1",
-      "type": "overlay",
-      "sortid": 153,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "oxygenlvl_1",
-      "path": "~/OxygenUtils"
-    },
-    {
-      "name": "Oxygenunknown1",
-      "type": "overlay",
-      "sortid": 154,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "oxygenunknown_1",
-      "path": "~/OxygenUtils"
-    },
-    {
-      "name": "Oxygenunk11",
-      "type": "overlay",
-      "sortid": 155,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "oxygenunk_11",
-      "path": "~/OxygenUtils"
-    },
-    {
-      "name": "Oxygenlvl12",
-      "type": "overlay",
-      "sortid": 156,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "oxygenlvl_12",
-      "path": "~/OxygenUtils"
-    },
-    {
-      "name": "Oxygen2",
-      "type": "overlay",
-      "sortid": 157,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "oxygen_2",
-      "path": "~/OxygenUtils"
-    },
-    {
-      "name": "Oxygen22",
-      "type": "overlay",
-      "sortid": 158,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "oxygen_22",
-      "path": "~/OxygenUtils"
-    },
-    {
-      "name": "Oxygen3",
-      "type": "overlay",
-      "sortid": 159,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "oxygen_3",
-      "path": "~/OxygenUtils"
-    },
-    {
-      "name": "Oxygen33",
-      "type": "overlay",
-      "sortid": 160,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "oxygen_33",
-      "path": "~/OxygenUtils"
-    },
-    {
-      "name": "Oxygen4",
-      "type": "overlay",
-      "sortid": 161,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "oxygen_4",
-      "path": "~/OxygenUtils"
-    },
-    {
-      "name": "Oxygen44",
-      "type": "overlay",
-      "sortid": 162,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "oxygen_44",
-      "path": "~/OxygenUtils"
-    },
-    {
-      "name": "Oxygen5",
-      "type": "overlay",
-      "sortid": 163,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "oxygen_5",
-      "path": "~/OxygenUtils"
-    },
-    {
-      "name": "Oxygen55",
-      "type": "overlay",
-      "sortid": 164,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "oxygen_55",
-      "path": "~/OxygenUtils"
-    },
-    {
       "name": "OxygenSet",
       "type": "armor",
       "sortid": 165,
@@ -2638,6 +2418,466 @@
         ]
       },
       "path": "~/Dimensions"
+    },
+    {
+      "name": "Cd1",
+      "type": "overlay",
+      "sortid": 221,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cd_1"
+    },
+    {
+      "name": "Cd2",
+      "type": "overlay",
+      "sortid": 222,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cd_2"
+    },
+    {
+      "name": "Cd3",
+      "type": "overlay",
+      "sortid": 223,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cd_3"
+    },
+    {
+      "name": "Cd4",
+      "type": "overlay",
+      "sortid": 224,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cd_4"
+    },
+    {
+      "name": "Cd5",
+      "type": "overlay",
+      "sortid": 225,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cd_5"
+    },
+    {
+      "name": "Cd6",
+      "type": "overlay",
+      "sortid": 226,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cd_6"
+    },
+    {
+      "name": "Cd7",
+      "type": "overlay",
+      "sortid": 227,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cd_7"
+    },
+    {
+      "name": "Cd8",
+      "type": "overlay",
+      "sortid": 228,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cd_8"
+    },
+    {
+      "name": "Cd9",
+      "type": "overlay",
+      "sortid": 229,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cd_9"
+    },
+    {
+      "name": "Cd10",
+      "type": "overlay",
+      "sortid": 230,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cd_10"
+    },
+    {
+      "name": "Cd11",
+      "type": "overlay",
+      "sortid": 231,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cd_11"
+    },
+    {
+      "name": "Cd1c",
+      "type": "procedure",
+      "sortid": 232,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cd_1c",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Cd2c",
+      "type": "procedure",
+      "sortid": 233,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cd_2c",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Cd3c",
+      "type": "procedure",
+      "sortid": 234,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cd_3c",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Cd4c",
+      "type": "procedure",
+      "sortid": 235,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cd_4c",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Cd5c",
+      "type": "procedure",
+      "sortid": 236,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cd_5c",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Cd6c",
+      "type": "procedure",
+      "sortid": 237,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cd_6c",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Cd7c",
+      "type": "procedure",
+      "sortid": 238,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cd_7c",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Cd8c",
+      "type": "procedure",
+      "sortid": 239,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cd_8c",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Cd9c",
+      "type": "procedure",
+      "sortid": 240,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cd_9c",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Cd10c",
+      "type": "procedure",
+      "sortid": 241,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cd_10c",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Cd11c",
+      "type": "procedure",
+      "sortid": 242,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cd_11c",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Confermation",
+      "type": "gui",
+      "sortid": 243,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "confermation",
+      "path": "~/Boss-Tools killers"
+    },
+    {
+      "name": "HardStone",
+      "type": "block",
+      "sortid": 244,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "hard_stone",
+      "path": "~/Dimensions"
+    },
+    {
+      "name": "Mercuryhills",
+      "type": "biome",
+      "sortid": 245,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "mercuryhills",
+      "path": "~/Dimensions"
+    },
+    {
+      "name": "Mercury",
+      "type": "dimension",
+      "sortid": 244,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "mercury",
+      "metadata": {
+        "ep": false
+      },
+      "path": "~/Dimensions"
+    },
+    {
+      "name": "GoToEarth",
+      "type": "procedure",
+      "sortid": 246,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "go_to_earth",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Boss-Tools killers"
+    },
+    {
+      "name": "GoToVenus",
+      "type": "procedure",
+      "sortid": 247,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "go_to_venus",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Boss-Tools killers"
+    },
+    {
+      "name": "GoToMerc",
+      "type": "procedure",
+      "sortid": 248,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "go_to_merc",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Boss-Tools killers"
+    },
+    {
+      "name": "OpenEarthMoons",
+      "type": "procedure",
+      "sortid": 249,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "open_earth_moons",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Boss-Tools killers"
     }
   ],
   "variable_elements": [
@@ -2718,14 +2958,20 @@
       "type": "logic",
       "scope": "player_persistent",
       "value": "false"
+    },
+    {
+      "name": "countdown",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
     }
   ],
   "sound_elements": [],
   "language_map": {
     "en_us": {
       "item.minecraft.potion.effect.oxygen": "Oxygen",
-      "biome.ris3.mars_flat": "Mars Flat",
       "block.ris3.metorite_stone": "Metorite Stone",
+      "biome.ris3.mars_flat": "Mars Flat",
       "item.ris3.aluminium_hoe": "Aluminium Hoe",
       "itemGroup.tabris_items": "Really In Space Items",
       "item.ris3.light_tank": "Light Oxygen Tank",
@@ -2741,15 +2987,15 @@
       "item.ris3.aluminium_armor_leggings": "Aluminium Leggings",
       "itemGroup.tabris_armour": "Really In Space Armour",
       "item.ris3.fuel_tank": "Fuel Tank",
-      "entity.ris3.rocketone": "Tier One Rocket",
-      "effect.oxygen": "Oxygen",
       "item.ris3.kryptonyte_dust": "Kryptonyte",
+      "effect.oxygen": "Oxygen",
+      "entity.ris3.rocketone": "Tier One Rocket",
       "block.ris3.aluminium_block": "Block of Aluminium",
       "item.ris3.aluminium_axe": "Aluminium Axe",
       "block.ris3.mars_stone": "Mars Stone",
       "block.ris3.martian_sand": "Martian Sand",
-      "item.ris3.aluminium_ingot": "Aluminium",
       "item.ris3.space_suit_armor_leggings": "Space Suit Leggings",
+      "item.ris3.aluminium_ingot": "Aluminium",
       "block.ris3.kryptonian_fence": "Kryptonian Fence",
       "item.ris3.aluminium_shovel": "Aluminium Shovel",
       "item.ris3.aluminium_plate": "Aluminium Plate",
@@ -2764,6 +3010,7 @@
       "block.ris3.astroid_stone": "Astroid Stone",
       "item.ris3.rocketone_spawn_egg": "Tier One Rocket Spawn Egg",
       "item.ris3.fuel_pipe": "Fuel Pipe",
+      "biome.ris3.mercuryhills": "Mercuryhills",
       "block.ris3.kryptonian_log": "Kryptonian Log",
       "item.ris3.kryptonyte_armor_leggings": "Kryptonyte Leggings",
       "item.ris3.galaxium_dust": "Galaxium",
@@ -2783,8 +3030,10 @@
       "block.ris3.venus_soil": "Venus Soil",
       "item.ris3.galaxium_hoe": "Galaxium Hoe",
       "itemGroup.tabnatureris": "Really In Space Nature",
+      "item.ris3.mercury": "Mercury Portal Igniter",
       "item.ris3.galaxium_armor_leggings": "Galaxium Leggings",
       "itemGroup.tabrisores": "Really In Space Ores",
+      "block.ris3.hard_stone": "Hard Stone",
       "item.ris3.martian_sand_dust": "Martian Sand Dust",
       "item.ris3.kryptonyte_sword": "Kryptonyte Sword",
       "key.ris3.open_oxygen_suit": "Oxygen Tanks",
@@ -2865,8 +3114,7 @@
   "workspaceSettings": {
     "modid": "ris3",
     "modName": "Really In Space 3 b4",
-    "version": "b4",
-    "description": "Requires Geckolib 3.0 (My spellings suck)",
+    "version": "3.0.0",
     "author": "Souldbminer",
     "websiteURL": "https://youtube.com/c/souldbminer",
     "license": "Creative Commons ShareAlike 4.0 International (CC BY-SA 4.0) ",
@@ -2876,9 +3124,7 @@
     "requiredMods": [],
     "dependencies": [],
     "dependants": [],
-    "mcreatorDependencies": [
-      "geckolib"
-    ],
+    "mcreatorDependencies": [],
     "currentGenerator": "forge-1.16.5",
     "credits": "dragonmaster, mrscauthd, pylo, mystiryouswolf, drcrazy",
     "modElementsPackage": "xyz.souldb.ris3",

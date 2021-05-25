@@ -13,11 +13,11 @@
       {
         "type": "image",
         "data": {
-          "image": "selbackround.png",
+          "image": "selbackroundmain.png",
           "use1Xscale": false,
-          "name": "selbackround.png",
-          "x": -25,
-          "y": -6
+          "name": "selbackroundmain.png",
+          "x": -2,
+          "y": -4
         }
       },
       {
@@ -141,14 +141,17 @@
           "width": 120,
           "height": 20,
           "name": "<<< Back",
-          "x": -1,
-          "y": 219
+          "x": 2,
+          "y": 217
         }
       },
       {
         "type": "button",
         "data": {
           "text": "Earth",
+          "onClick": {
+            "name": "GoToEarth"
+          },
           "width": 50,
           "height": 20,
           "name": "Earth",

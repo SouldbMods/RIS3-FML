@@ -4,7 +4,7 @@
   "definition": {
     "name": "Venus",
     "groundBlock": {
-      "value": "CUSTOM:VenusSoil"
+      "value": "Blocks.MAGMA"
     },
     "undergroundBlock": {
       "value": "Blocks.CONCRETE#1"

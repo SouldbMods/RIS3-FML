@@ -1,7 +1,6 @@
 
 package xyz.souldb.ris3.world.biome;
 
-import xyz.souldb.ris3.block.VenusSoilBlock;
 import xyz.souldb.ris3.Ris3ModElements;
 
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
@@ -32,7 +31,7 @@ public class VenusBiome extends Ris3ModElements.ModElement {
 				BiomeAmbience effects = new BiomeAmbience.Builder().setFogColor(12638463).setWaterColor(4159204).setWaterFogColor(329011)
 						.withSkyColor(7972607).withFoliageColor(10387789).withGrassColor(9470285).build();
 				BiomeGenerationSettings.Builder biomeGenerationSettings = new BiomeGenerationSettings.Builder()
-						.withSurfaceBuilder(SurfaceBuilder.DEFAULT.func_242929_a(new SurfaceBuilderConfig(VenusSoilBlock.block.getDefaultState(),
+						.withSurfaceBuilder(SurfaceBuilder.DEFAULT.func_242929_a(new SurfaceBuilderConfig(Blocks.MAGMA_BLOCK.getDefaultState(),
 								Blocks.ORANGE_CONCRETE.getDefaultState(), Blocks.ORANGE_CONCRETE.getDefaultState())));
 				DefaultBiomeFeatures.withCavesAndCanyons(biomeGenerationSettings);
 				MobSpawnInfo.Builder mobSpawnInfo = new MobSpawnInfo.Builder().isValidSpawnBiomeForPlayer();

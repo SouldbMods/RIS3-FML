@@ -47,8 +47,8 @@ public class EarthMoonsGuiWindow extends ContainerScreen<EarthMoonsGui.GuiContai
 		RenderSystem.color4f(1, 1, 1, 1);
 		RenderSystem.enableBlend();
 		RenderSystem.defaultBlendFunc();
-		Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("ris3:textures/selbackround.png"));
-		this.blit(ms, this.guiLeft + -23, this.guiTop + -4, 0, 0, 854, 480, 854, 480);
+		Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("ris3:textures/selbackroundmain.png"));
+		this.blit(ms, this.guiLeft + 0, this.guiTop + -2, 0, 0, 431, 247, 431, 247);
 		Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("ris3:textures/mercorbitnew.png"));
 		this.blit(ms, this.guiLeft + 193, this.guiTop + 86, 0, 0, 64, 64, 64, 64);
 		Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("ris3:textures/mercury.png"));
@@ -106,7 +106,7 @@ public class EarthMoonsGuiWindow extends ContainerScreen<EarthMoonsGui.GuiContai
 				EarthMoonsGui.handleButtonAction(entity, 1, x, y, z);
 			}
 		}));
-		this.addButton(new Button(this.guiLeft + 1, this.guiTop + 220, 120, 20, new StringTextComponent("<<< Back"), e -> {
+		this.addButton(new Button(this.guiLeft + 4, this.guiTop + 218, 120, 20, new StringTextComponent("<<< Back"), e -> {
 			if (true) {
 				Ris3Mod.PACKET_HANDLER.sendToServer(new EarthMoonsGui.ButtonPressedMessage(2, x, y, z));
 				EarthMoonsGui.handleButtonAction(entity, 2, x, y, z);

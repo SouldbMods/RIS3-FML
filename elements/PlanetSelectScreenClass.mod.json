@@ -13,11 +13,11 @@
       {
         "type": "image",
         "data": {
-          "image": "selbackroundmain.png",
+          "image": "hugegui2.png",
           "use1Xscale": false,
-          "name": "selbackroundmain.png",
-          "x": -2,
-          "y": -4
+          "name": "hugegui2.png",
+          "x": -885,
+          "y": -905
         }
       },
       {
@@ -138,6 +138,9 @@
         "type": "button",
         "data": {
           "text": "Mercury",
+          "onClick": {
+            "name": "GoToMerc"
+          },
           "width": 60,
           "height": 20,
           "name": "Mercury",

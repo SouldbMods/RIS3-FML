@@ -1,0 +1,88 @@
+{
+  "_fv": 18,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 424,
+    "height": 238,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": true,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "text": "Really In Space Credits",
+          "color": {
+            "value": -65536,
+            "falpha": 0.0
+          },
+          "name": "Really In Space Credits",
+          "x": 159,
+          "y": 6
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Created by: Souldbminer, Custom sky and Rocket animations by MrScautHD",
+          "color": {
+            "value": -65536,
+            "falpha": 0.0
+          },
+          "name": "Created by: Souldbminer, Custom sky and Rocket animations by MrScautHD",
+          "x": 8,
+          "y": 20
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": " Created Using: MCreator by Pylo and Matej",
+          "color": {
+            "value": -16776961,
+            "falpha": 0.0
+          },
+          "name": " Created Using: MCreator by Pylo and Matej",
+          "x": 4,
+          "y": 33
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Texturer: Soulaw10X and Souldbminer",
+          "color": {
+            "value": -65281,
+            "falpha": 0.0
+          },
+          "name": "Texturer: Soulaw10X and Souldbminer",
+          "x": 8,
+          "y": 44
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Click to get Special creator items",
+          "width": 195,
+          "height": 20,
+          "name": "Click to get Special creator items",
+          "x": 5,
+          "y": 213
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "hugegui2.png",
+          "use1Xscale": false,
+          "name": "hugegui2.png",
+          "x": -617,
+          "y": -243
+        }
+      }
+    ]
+  }
+}

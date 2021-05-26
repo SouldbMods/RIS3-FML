@@ -1,30 +1,14 @@
 package xyz.souldb.ris3.procedures;
 
-import xyz.souldb.ris3.gui.ConfermationGui;
-import xyz.souldb.ris3.entity.RocketoneEntity;
 import xyz.souldb.ris3.Ris3ModElements;
 import xyz.souldb.ris3.Ris3Mod;
 
-import net.minecraftforge.fml.network.NetworkHooks;
-
 import net.minecraft.world.IWorld;
-import net.minecraft.util.text.StringTextComponent;
-import net.minecraft.util.text.ITextComponent;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.math.AxisAlignedBB;
-import net.minecraft.network.PacketBuffer;
-import net.minecraft.inventory.container.INamedContainerProvider;
-import net.minecraft.inventory.container.Container;
-import net.minecraft.entity.player.ServerPlayerEntity;
-import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.Entity;
 
-import java.util.function.Function;
 import java.util.Map;
-import java.util.Comparator;
-
-import io.netty.buffer.Unpooled;
+import java.util.HashMap;
 
 @Ris3ModElements.ModElement.Tag
 public class TakeOffBindTick1Procedure extends Ris3ModElements.ModElement {
@@ -64,54 +48,14 @@ public class TakeOffBindTick1Procedure extends Ris3ModElements.ModElement {
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
 		if ((entity instanceof PlayerEntity)) {
-			if ((((Entity) world
-					.getEntitiesWithinAABB(PlayerEntity.class,
-							new AxisAlignedBB(x - (4 / 2d), y - (4 / 2d), z - (4 / 2d), x + (4 / 2d), y + (4 / 2d), z + (4 / 2d)), null)
-					.stream().sorted(new Object() {
-						Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-							return Comparator.comparing((Function<Entity, Double>) (_entcnd -> _entcnd.getDistanceSq(_x, _y, _z)));
-						}
-					}.compareDistOf(x, y, z)).findFirst().orElse(null)) instanceof RocketoneEntity.CustomEntity)) {
-				if (((Entity) world
-						.getEntitiesWithinAABB(PlayerEntity.class,
-								new AxisAlignedBB(x - (4 / 2d), y - (4 / 2d), z - (4 / 2d), x + (4 / 2d), y + (4 / 2d), z + (4 / 2d)), null)
-						.stream().sorted(new Object() {
-							Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-								return Comparator.comparing((Function<Entity, Double>) (_entcnd -> _entcnd.getDistanceSq(_x, _y, _z)));
-							}
-						}.compareDistOf(x, y, z)).findFirst().orElse(null)) instanceof PlayerEntity)
-					((PlayerEntity) ((Entity) world
-							.getEntitiesWithinAABB(PlayerEntity.class,
-									new AxisAlignedBB(x - (4 / 2d), y - (4 / 2d), z - (4 / 2d), x + (4 / 2d), y + (4 / 2d), z + (4 / 2d)), null)
-							.stream().sorted(new Object() {
-								Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-									return Comparator.comparing((Function<Entity, Double>) (_entcnd -> _entcnd.getDistanceSq(_x, _y, _z)));
-								}
-							}.compareDistOf(x, y, z)).findFirst().orElse(null))).closeScreen();
-				{
-					Entity _ent = ((Entity) world
-							.getEntitiesWithinAABB(PlayerEntity.class,
-									new AxisAlignedBB(x - (4 / 2d), y - (4 / 2d), z - (4 / 2d), x + (4 / 2d), y + (4 / 2d), z + (4 / 2d)), null)
-							.stream().sorted(new Object() {
-								Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-									return Comparator.comparing((Function<Entity, Double>) (_entcnd -> _entcnd.getDistanceSq(_x, _y, _z)));
-								}
-							}.compareDistOf(x, y, z)).findFirst().orElse(null));
-					if (_ent instanceof ServerPlayerEntity) {
-						BlockPos _bpos = new BlockPos((int) x, (int) y, (int) z);
-						NetworkHooks.openGui((ServerPlayerEntity) _ent, new INamedContainerProvider() {
-							@Override
-							public ITextComponent getDisplayName() {
-								return new StringTextComponent("Confermation");
-							}
-
-							@Override
-							public Container createMenu(int id, PlayerInventory inventory, PlayerEntity player) {
-								return new ConfermationGui.GuiContainerMod(id, inventory, new PacketBuffer(Unpooled.buffer()).writeBlockPos(_bpos));
-							}
-						}, _bpos);
-					}
-				}
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("entity", entity);
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				TakeOffProcedure.executeProcedure($_dependencies);
 			}
 		}
 	}

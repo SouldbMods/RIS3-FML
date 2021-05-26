@@ -56,22 +56,6 @@ public class OpenEarthMoonsProcedure extends Ris3ModElements.ModElement {
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
-		if (((Entity) world
-				.getEntitiesWithinAABB(PlayerEntity.class,
-						new AxisAlignedBB(x - (4 / 2d), y - (4 / 2d), z - (4 / 2d), x + (4 / 2d), y + (4 / 2d), z + (4 / 2d)), null)
-				.stream().sorted(new Object() {
-					Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-						return Comparator.comparing((Function<Entity, Double>) (_entcnd -> _entcnd.getDistanceSq(_x, _y, _z)));
-					}
-				}.compareDistOf(x, y, z)).findFirst().orElse(null)) instanceof PlayerEntity)
-			((PlayerEntity) ((Entity) world
-					.getEntitiesWithinAABB(PlayerEntity.class,
-							new AxisAlignedBB(x - (4 / 2d), y - (4 / 2d), z - (4 / 2d), x + (4 / 2d), y + (4 / 2d), z + (4 / 2d)), null)
-					.stream().sorted(new Object() {
-						Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
-							return Comparator.comparing((Function<Entity, Double>) (_entcnd -> _entcnd.getDistanceSq(_x, _y, _z)));
-						}
-					}.compareDistOf(x, y, z)).findFirst().orElse(null))).closeScreen();
 		{
 			Entity _ent = ((Entity) world
 					.getEntitiesWithinAABB(PlayerEntity.class,

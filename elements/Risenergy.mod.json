@@ -4,7 +4,7 @@
   "definition": {
     "name": "Really In Space Energy & Macines",
     "icon": {
-      "value": "Items.REPEATER"
+      "value": "CUSTOM:Battery"
     },
     "showSearch": false
   }

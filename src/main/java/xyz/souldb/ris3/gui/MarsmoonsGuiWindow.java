@@ -50,8 +50,8 @@ public class MarsmoonsGuiWindow extends ContainerScreen<MarsmoonsGui.GuiContaine
 		RenderSystem.color4f(1, 1, 1, 1);
 		RenderSystem.enableBlend();
 		RenderSystem.defaultBlendFunc();
-		Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("ris3:textures/selbackroundmain.png"));
-		this.blit(ms, this.guiLeft + 1, this.guiTop + 0, 0, 0, 431, 247, 431, 247);
+		Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("ris3:textures/hugegui2.png"));
+		this.blit(ms, this.guiLeft + -901, this.guiTop + -897, 0, 0, 2048, 2048, 2048, 2048);
 		Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("ris3:textures/mars.png"));
 		this.blit(ms, this.guiLeft + 206, this.guiTop + 97, 0, 0, 16, 16, 16, 16);
 		Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("ris3:textures/mercorbitnew.png"));

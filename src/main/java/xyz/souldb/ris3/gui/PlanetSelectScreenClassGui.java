@@ -1,6 +1,7 @@
 
 package xyz.souldb.ris3.gui;
 
+import xyz.souldb.ris3.procedures.GoToMercProcedure;
 import xyz.souldb.ris3.procedures.GoToMarsSelectScreenProcedure;
 import xyz.souldb.ris3.Ris3ModElements;
 
@@ -175,6 +176,16 @@ public class PlanetSelectScreenClassGui extends Ris3ModElements.ModElement {
 		// security measure to prevent arbitrary chunk generation
 		if (!world.isBlockLoaded(new BlockPos(x, y, z)))
 			return;
+		if (buttonID == 1) {
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("entity", entity);
+				$_dependencies.put("x", x);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				GoToMercProcedure.executeProcedure($_dependencies);
+			}
+		}
 		if (buttonID == 4) {
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();

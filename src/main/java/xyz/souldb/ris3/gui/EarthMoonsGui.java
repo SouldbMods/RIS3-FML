@@ -1,8 +1,8 @@
 
 package xyz.souldb.ris3.gui;
 
-import xyz.souldb.ris3.procedures.GotoplanetsguiProcedure;
 import xyz.souldb.ris3.procedures.GoToEarthProcedure;
+import xyz.souldb.ris3.procedures.GoBackToMainGUISelectScreenProcedure;
 import xyz.souldb.ris3.Ris3ModElements;
 
 import net.minecraftforge.items.ItemStackHandler;
@@ -179,12 +179,11 @@ public class EarthMoonsGui extends Ris3ModElements.ModElement {
 		if (buttonID == 2) {
 			{
 				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("entity", entity);
 				$_dependencies.put("x", x);
 				$_dependencies.put("y", y);
 				$_dependencies.put("z", z);
 				$_dependencies.put("world", world);
-				GotoplanetsguiProcedure.executeProcedure($_dependencies);
+				GoBackToMainGUISelectScreenProcedure.executeProcedure($_dependencies);
 			}
 		}
 		if (buttonID == 3) {

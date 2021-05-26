@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "ris3:blocks/batterytopbottom",
+    "up": "ris3:blocks/batterytopbottom",
+    "north": "ris3:blocks/batterysides",
+    "east": "ris3:blocks/batterysides",
+    "south": "ris3:blocks/batterysides",
+    "west": "ris3:blocks/batterysides",
+    "particle": "ris3:blocks/batterytopbottom"
+  }
+}

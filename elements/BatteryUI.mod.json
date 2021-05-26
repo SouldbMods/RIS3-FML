@@ -1,0 +1,276 @@
+{
+  "_fv": 18,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 245,
+    "height": 229,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 32,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "text": "Battery",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Battery",
+          "x": 194,
+          "y": 10
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Transfer Rate- 128 E / Tick",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Transfer Rate- 128 E / Tick",
+          "x": 196,
+          "y": 89
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 0,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #0",
+          "x": 97,
+          "y": 53
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 1,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #1",
+          "x": 142,
+          "y": 53
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "arrow.png",
+          "use1Xscale": false,
+          "name": "arrow.png",
+          "x": 115,
+          "y": 53
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Quick charger",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Quick charger",
+          "x": 97,
+          "y": 26
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Charge",
+          "width": 55,
+          "height": 20,
+          "name": "Charge",
+          "x": 97,
+          "y": 80
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Charge Mode",
+          "color": {
+            "value": -16776961,
+            "falpha": 0.0
+          },
+          "name": "Charge Mode",
+          "x": 97,
+          "y": 35
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Discharge Mode",
+          "color": {
+            "value": -65536,
+            "falpha": 0.0
+          },
+          "name": "Discharge Mode",
+          "x": 97,
+          "y": 35
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Toggle Modes",
+          "width": 85,
+          "height": 20,
+          "name": "Toggle Modes",
+          "x": 97,
+          "y": 107
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 2,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #2",
+          "x": 313,
+          "y": 17
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 3,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #3",
+          "x": 313,
+          "y": 35
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 4,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #4",
+          "x": 313,
+          "y": 53
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "id": 5,
+          "disableStackInteraction": false,
+          "dropItemsWhenNotBound": true,
+          "name": "Slot #5",
+          "x": 313,
+          "y": 71
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "oxygen_not_equipped.png",
+          "use1Xscale": false,
+          "name": "oxygen_not_equipped.png",
+          "x": 286,
+          "y": 35
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "oxygen_lvl_1.png",
+          "use1Xscale": false,
+          "name": "oxygen_lvl_1.png",
+          "x": 286,
+          "y": 35
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "oxygen_2.png",
+          "use1Xscale": false,
+          "name": "oxygen_2.png",
+          "x": 286,
+          "y": 35
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "oxygen_3.png",
+          "use1Xscale": false,
+          "name": "oxygen_3.png",
+          "x": 286,
+          "y": 35
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "oxygen_4.png",
+          "use1Xscale": false,
+          "name": "oxygen_4.png",
+          "x": 286,
+          "y": 35
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "oxygen_5.png",
+          "use1Xscale": false,
+          "name": "oxygen_5.png",
+          "x": 286,
+          "y": 35
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "<energy> E / 60KE",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "<energy> E / 60KE",
+          "x": 223,
+          "y": 71
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "rocketingui.png",
+          "use1Xscale": false,
+          "name": "rocketingui.png",
+          "x": 313,
+          "y": 215
+        }
+      }
+    ]
+  }
+}

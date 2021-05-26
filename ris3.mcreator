@@ -2420,303 +2420,6 @@
       "path": "~/Dimensions"
     },
     {
-      "name": "Cd1",
-      "type": "overlay",
-      "sortid": 221,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "cd_1"
-    },
-    {
-      "name": "Cd2",
-      "type": "overlay",
-      "sortid": 222,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "cd_2"
-    },
-    {
-      "name": "Cd3",
-      "type": "overlay",
-      "sortid": 223,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "cd_3"
-    },
-    {
-      "name": "Cd4",
-      "type": "overlay",
-      "sortid": 224,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "cd_4"
-    },
-    {
-      "name": "Cd5",
-      "type": "overlay",
-      "sortid": 225,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "cd_5"
-    },
-    {
-      "name": "Cd6",
-      "type": "overlay",
-      "sortid": 226,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "cd_6"
-    },
-    {
-      "name": "Cd7",
-      "type": "overlay",
-      "sortid": 227,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "cd_7"
-    },
-    {
-      "name": "Cd8",
-      "type": "overlay",
-      "sortid": 228,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "cd_8"
-    },
-    {
-      "name": "Cd9",
-      "type": "overlay",
-      "sortid": 229,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "cd_9"
-    },
-    {
-      "name": "Cd10",
-      "type": "overlay",
-      "sortid": 230,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "cd_10"
-    },
-    {
-      "name": "Cd11",
-      "type": "overlay",
-      "sortid": 231,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "cd_11"
-    },
-    {
-      "name": "Cd1c",
-      "type": "procedure",
-      "sortid": 232,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "cd_1c",
-      "metadata": {
-        "return_type": "LOGIC",
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      }
-    },
-    {
-      "name": "Cd2c",
-      "type": "procedure",
-      "sortid": 233,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "cd_2c",
-      "metadata": {
-        "return_type": "LOGIC",
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      }
-    },
-    {
-      "name": "Cd3c",
-      "type": "procedure",
-      "sortid": 234,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "cd_3c",
-      "metadata": {
-        "return_type": "LOGIC",
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      }
-    },
-    {
-      "name": "Cd4c",
-      "type": "procedure",
-      "sortid": 235,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "cd_4c",
-      "metadata": {
-        "return_type": "LOGIC",
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      }
-    },
-    {
-      "name": "Cd5c",
-      "type": "procedure",
-      "sortid": 236,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "cd_5c",
-      "metadata": {
-        "return_type": "LOGIC",
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      }
-    },
-    {
-      "name": "Cd6c",
-      "type": "procedure",
-      "sortid": 237,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "cd_6c",
-      "metadata": {
-        "return_type": "LOGIC",
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      }
-    },
-    {
-      "name": "Cd7c",
-      "type": "procedure",
-      "sortid": 238,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "cd_7c",
-      "metadata": {
-        "return_type": "LOGIC",
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      }
-    },
-    {
-      "name": "Cd8c",
-      "type": "procedure",
-      "sortid": 239,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "cd_8c",
-      "metadata": {
-        "return_type": "LOGIC",
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      }
-    },
-    {
-      "name": "Cd9c",
-      "type": "procedure",
-      "sortid": 240,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "cd_9c",
-      "metadata": {
-        "return_type": "LOGIC",
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      }
-    },
-    {
-      "name": "Cd10c",
-      "type": "procedure",
-      "sortid": 241,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "cd_10c",
-      "metadata": {
-        "return_type": "LOGIC",
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      }
-    },
-    {
-      "name": "Cd11c",
-      "type": "procedure",
-      "sortid": 242,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "cd_11c",
-      "metadata": {
-        "return_type": "LOGIC",
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      }
-    },
-    {
       "name": "Confermation",
       "type": "gui",
       "sortid": 243,
@@ -2878,6 +2581,198 @@
         ]
       },
       "path": "~/Boss-Tools killers"
+    },
+    {
+      "name": "CloseGUI",
+      "type": "procedure",
+      "sortid": 250,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "close_gui",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Boss-Tools killers"
+    },
+    {
+      "name": "GenerateSmokeLakes",
+      "type": "gamerule",
+      "sortid": 251,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "generateSmokeLakes",
+      "metadata": {
+        "type": "boolean"
+      },
+      "path": "~/Dimensions"
+    },
+    {
+      "name": "GenerateSmokeLakesUpdateTick",
+      "type": "procedure",
+      "sortid": 252,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "generate_smoke_lakes_update_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dimensions"
+    },
+    {
+      "name": "Smoke",
+      "type": "fluid",
+      "sortid": 251,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "smoke",
+      "path": "~/Dimensions"
+    },
+    {
+      "name": "SmokeLakesGenCondition",
+      "type": "procedure",
+      "sortid": 253,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "smoke_lakes_gen_condition",
+      "metadata": {
+        "return_type": "LOGIC",
+        "dependencies": []
+      },
+      "path": "~/Dimensions"
+    },
+    {
+      "name": "EmpetySmokeCan",
+      "type": "item",
+      "sortid": 254,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "empety_smoke_can",
+      "path": "~/Dimensions"
+    },
+    {
+      "name": "SmokeCanSetSmoke",
+      "type": "procedure",
+      "sortid": 254,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "smoke_can_set_smoke",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Dimensions"
+    },
+    {
+      "name": "SmokeCan",
+      "type": "item",
+      "sortid": 254,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "smoke_can",
+      "path": "~/Dimensions"
+    },
+    {
+      "name": "BatteryUI",
+      "type": "gui",
+      "sortid": 255,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "battery_ui"
+    },
+    {
+      "name": "CreditsUI",
+      "type": "gui",
+      "sortid": 256,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "credits_ui"
+    },
+    {
+      "name": "GoBackToMainGUISelectScreen",
+      "type": "procedure",
+      "sortid": 257,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "go_back_to_main_gui_select_screen",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Boss-Tools killers"
+    },
+    {
+      "name": "Battery",
+      "type": "block",
+      "sortid": 255,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "battery"
     }
   ],
   "variable_elements": [
@@ -2964,6 +2859,12 @@
       "type": "number",
       "scope": "player_persistent",
       "value": "0"
+    },
+    {
+      "name": "SmokeLakesGen",
+      "type": "logic",
+      "scope": "map",
+      "value": "false"
     }
   ],
   "sound_elements": [],
@@ -2974,12 +2875,14 @@
       "biome.ris3.mars_flat": "Mars Flat",
       "item.ris3.aluminium_hoe": "Aluminium Hoe",
       "itemGroup.tabris_items": "Really In Space Items",
+      "item.ris3.empety_smoke_can": "Empty Can of smoke",
       "item.ris3.light_tank": "Light Oxygen Tank",
       "key.ris3.take_off_bind": "Take Off Tier 1 Rocket",
       "item.ris3.med_tank": "Medium Oxygen Tank",
       "item.ris3.kryptonyte_shovel": "Kryptonyte Shovel",
       "item.ris3.galaxium_armor_chestplate": "Galaxium Chestplate",
       "item.ris3.kryptonyte_armor_helmet": "Kryptonyte Helmet",
+      "gamerule.generateSmokeLakes": "Generate Smoke Lakes",
       "block.ris3.kryptonian_wood": "Kryptonian Wood",
       "block.ris3.tankfuel": "Fuel Tank",
       "item.ris3.oxygen_set_chestplate": "Oxygen Set",
@@ -3013,6 +2916,7 @@
       "biome.ris3.mercuryhills": "Mercuryhills",
       "block.ris3.kryptonian_log": "Kryptonian Log",
       "item.ris3.kryptonyte_armor_leggings": "Kryptonyte Leggings",
+      "block.ris3.battery": "Battery",
       "item.ris3.galaxium_dust": "Galaxium",
       "item.ris3.led": "LED",
       "block.ris3.kryptonian_planks": "Kryptonian Planks",
@@ -3021,6 +2925,7 @@
       "item.ris3.venus_dim": "Venus Dim Portal Igniter",
       "item.ris3.aluminium_armor_boots": "Aluminium Boots",
       "item.ris3.galaxium_armor_helmet": "Galaxium Helmet",
+      "gamerule.generateSmokeLakes.description": " [RIS3] Ganerate Lakes of smoke",
       "item.ris3.oxygen_set_helmet": "Oxygen Set Helmet",
       "biome.ris3.venus": "Venus",
       "block.ris3.kryptonyte_ore": "Kryptonyte Ore",
@@ -3061,6 +2966,7 @@
       "item.ris3.kryptonyte_armor_boots": "Kryptonyte Boots",
       "item.ris3.heavy_tank": "Huge Oxygen Tank",
       "item.ris3.space_suit_armor_boots": "Space Suit Boots",
+      "item.ris3.smoke_bucket": "Smoke Bucket",
       "itemGroup.tabris_combat": "Really In Space Combat",
       "block.ris3.cable_xdir": "Cable",
       "block.ris3.rocket_table": "Rocket Table",
@@ -3069,6 +2975,8 @@
       "item.ris3.iron_plate": "Iron Plate",
       "block.ris3.kryptonian_stairs": "Kryptonian Stairs",
       "itemGroup.tabrisenergy": "Really In Space Energy \u0026 Macines",
+      "fluid.smoke": "Smoke",
+      "item.ris3.smoke_can": "Can Of Smoke",
       "block.ris3.galaxium_block": "Block of Galaxium",
       "block.ris3.aluminium_ore": "Aluminium Ore",
       "item.ris3.aluminium_armor_chestplate": "Aluminium Chestplate"
@@ -3113,14 +3021,15 @@
   },
   "workspaceSettings": {
     "modid": "ris3",
-    "modName": "Really In Space 3 b4",
-    "version": "3.0.0",
+    "modName": "Really In Space 3",
+    "version": "3.0.0-RC-1",
+    "description": "Souldb\u0027s space mod",
     "author": "Souldbminer",
     "websiteURL": "https://youtube.com/c/souldbminer",
     "license": "Creative Commons ShareAlike 4.0 International (CC BY-SA 4.0) ",
     "disableForgeVersionCheck": true,
     "serverSideOnly": false,
-    "modPicture": "earth",
+    "modPicture": "modlogo",
     "requiredMods": [],
     "dependencies": [],
     "dependants": [],

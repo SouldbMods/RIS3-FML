@@ -112,6 +112,7 @@ public class Ris3ModVariables {
 		public double x1 = 0;
 		public double y1 = 0;
 		public double z1 = 0;
+		public boolean SmokeLakesGen = false;
 		public MapVariables() {
 			super(DATA_NAME);
 		}
@@ -130,6 +131,7 @@ public class Ris3ModVariables {
 			x1 = nbt.getDouble("x1");
 			y1 = nbt.getDouble("y1");
 			z1 = nbt.getDouble("z1");
+			SmokeLakesGen = nbt.getBoolean("SmokeLakesGen");
 		}
 
 		@Override
@@ -142,6 +144,7 @@ public class Ris3ModVariables {
 			nbt.putDouble("x1", x1);
 			nbt.putDouble("y1", y1);
 			nbt.putDouble("z1", z1);
+			nbt.putBoolean("SmokeLakesGen", SmokeLakesGen);
 			return nbt;
 		}
 

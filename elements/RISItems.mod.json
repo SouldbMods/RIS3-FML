@@ -4,7 +4,7 @@
   "definition": {
     "name": "Really In Space Items",
     "icon": {
-      "value": "Blocks.TORCH"
+      "value": "CUSTOM:MartianSandDust"
     },
     "showSearch": false
   }

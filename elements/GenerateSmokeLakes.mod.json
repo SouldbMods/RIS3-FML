@@ -1,0 +1,12 @@
+{
+  "_fv": 18,
+  "_type": "gamerule",
+  "definition": {
+    "type": "Logic",
+    "displayName": "Generate Smoke Lakes",
+    "description": " [RIS3] Ganerate Lakes of smoke",
+    "category": "MISC",
+    "defaultValueLogic": false,
+    "defaultValueNumber": 0
+  }
+}

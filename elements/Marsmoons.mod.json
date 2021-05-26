@@ -13,11 +13,11 @@
       {
         "type": "image",
         "data": {
-          "image": "selbackroundmain.png",
+          "image": "hugegui2.png",
           "use1Xscale": false,
-          "name": "selbackroundmain.png",
-          "x": -2,
-          "y": -3
+          "name": "hugegui2.png",
+          "x": -905,
+          "y": -900
         }
       },
       {
@@ -164,7 +164,7 @@
         "data": {
           "text": "<<< Back",
           "onClick": {
-            "name": "Gotoplanetsgui"
+            "name": "GoBackToMainGUISelectScreen"
           },
           "width": 65,
           "height": 20,

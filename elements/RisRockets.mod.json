@@ -4,7 +4,7 @@
   "definition": {
     "name": "Really In Space Discovery",
     "icon": {
-      "value": "Items.REDSTONE"
+      "value": "CUSTOM:Rocket"
     },
     "showSearch": false
   }

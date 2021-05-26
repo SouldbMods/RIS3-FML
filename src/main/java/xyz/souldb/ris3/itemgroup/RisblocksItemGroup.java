@@ -1,6 +1,7 @@
 
 package xyz.souldb.ris3.itemgroup;
 
+import xyz.souldb.ris3.block.MarsStoneBlock;
 import xyz.souldb.ris3.Ris3ModElements;
 
 import net.minecraftforge.api.distmarker.OnlyIn;
@@ -8,7 +9,6 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemGroup;
-import net.minecraft.block.Blocks;
 
 @Ris3ModElements.ModElement.Tag
 public class RisblocksItemGroup extends Ris3ModElements.ModElement {
@@ -22,7 +22,7 @@ public class RisblocksItemGroup extends Ris3ModElements.ModElement {
 			@OnlyIn(Dist.CLIENT)
 			@Override
 			public ItemStack createIcon() {
-				return new ItemStack(Blocks.ANCIENT_DEBRIS, (int) (1));
+				return new ItemStack(MarsStoneBlock.block, (int) (1));
 			}
 
 			@OnlyIn(Dist.CLIENT)

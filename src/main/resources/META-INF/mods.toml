@@ -4,12 +4,15 @@ license="Creative Commons ShareAlike 4.0 International (CC BY-SA 4.0) "
 
 [[mods]]
 modId="ris3"
-version="3.0.0"
-displayName="Really In Space 3 b4"
+version="3.0.0-RC-1"
+displayName="Really In Space 3"
 credits="dragonmaster, mrscauthd, pylo, mystiryouswolf, drcrazy"
 displayURL="https://youtube.com/c/souldbminer"
 logoFile="logo.png"
 authors="Souldbminer"
+description='''
+Souldb's space mod
+'''
 
 [[dependencies.ris3]]
     modId="minecraft"

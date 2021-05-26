@@ -1,12 +1,12 @@
 
 package xyz.souldb.ris3.itemgroup;
 
+import xyz.souldb.ris3.item.RocketItem;
 import xyz.souldb.ris3.Ris3ModElements;
 
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
-import net.minecraft.item.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemGroup;
 
@@ -22,7 +22,7 @@ public class RisRocketsItemGroup extends Ris3ModElements.ModElement {
 			@OnlyIn(Dist.CLIENT)
 			@Override
 			public ItemStack createIcon() {
-				return new ItemStack(Items.REDSTONE, (int) (1));
+				return new ItemStack(RocketItem.block, (int) (1));
 			}
 
 			@OnlyIn(Dist.CLIENT)

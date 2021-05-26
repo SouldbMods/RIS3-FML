@@ -50,8 +50,8 @@ public class PlanetSelectScreenClassGuiWindow extends ContainerScreen<PlanetSele
 		RenderSystem.color4f(1, 1, 1, 1);
 		RenderSystem.enableBlend();
 		RenderSystem.defaultBlendFunc();
-		Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("ris3:textures/selbackroundmain.png"));
-		this.blit(ms, this.guiLeft + 0, this.guiTop + 0, 0, 0, 431, 247, 431, 247);
+		Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("ris3:textures/hugegui2.png"));
+		this.blit(ms, this.guiLeft + -883, this.guiTop + -901, 0, 0, 2048, 2048, 2048, 2048);
 		Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("ris3:textures/orbit2.png"));
 		this.blit(ms, this.guiLeft + 118, this.guiTop + 21, 0, 0, 200, 200, 200, 200);
 		Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("ris3:textures/orbitone.png"));

@@ -1,6 +1,5 @@
 package xyz.souldb.ris3.procedures;
 
-import xyz.souldb.ris3.gui.PlanetSelectScreenClassGui;
 import xyz.souldb.ris3.gui.MarsmoonsGui;
 import xyz.souldb.ris3.Ris3ModElements;
 import xyz.souldb.ris3.Ris3Mod;
@@ -62,24 +61,6 @@ public class GoToMarsSelectScreenProcedure extends Ris3ModElements.ModElement {
 		IWorld world = (IWorld) dependencies.get("world");
 		if (entity instanceof PlayerEntity)
 			((PlayerEntity) entity).closeScreen();
-		{
-			Entity _ent = entity;
-			if (_ent instanceof ServerPlayerEntity) {
-				BlockPos _bpos = new BlockPos((int) x, (int) y, (int) z);
-				NetworkHooks.openGui((ServerPlayerEntity) _ent, new INamedContainerProvider() {
-					@Override
-					public ITextComponent getDisplayName() {
-						return new StringTextComponent("PlanetSelectScreenClass");
-					}
-
-					@Override
-					public Container createMenu(int id, PlayerInventory inventory, PlayerEntity player) {
-						return new PlanetSelectScreenClassGui.GuiContainerMod(id, inventory,
-								new PacketBuffer(Unpooled.buffer()).writeBlockPos(_bpos));
-					}
-				}, _bpos);
-			}
-		}
 		{
 			Entity _ent = entity;
 			if (_ent instanceof ServerPlayerEntity) {

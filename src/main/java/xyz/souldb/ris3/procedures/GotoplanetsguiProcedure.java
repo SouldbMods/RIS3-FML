@@ -10,6 +10,7 @@ import net.minecraft.world.IWorld;
 import net.minecraft.util.text.StringTextComponent;
 import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.network.PacketBuffer;
 import net.minecraft.inventory.container.INamedContainerProvider;
 import net.minecraft.inventory.container.Container;
@@ -18,7 +19,9 @@ import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.Entity;
 
+import java.util.function.Function;
 import java.util.Map;
+import java.util.Comparator;
 
 import io.netty.buffer.Unpooled;
 
@@ -29,11 +32,6 @@ public class GotoplanetsguiProcedure extends Ris3ModElements.ModElement {
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {
-		if (dependencies.get("entity") == null) {
-			if (!dependencies.containsKey("entity"))
-				Ris3Mod.LOGGER.warn("Failed to load dependency entity for procedure Gotoplanetsgui!");
-			return;
-		}
 		if (dependencies.get("x") == null) {
 			if (!dependencies.containsKey("x"))
 				Ris3Mod.LOGGER.warn("Failed to load dependency x for procedure Gotoplanetsgui!");
@@ -54,13 +52,35 @@ public class GotoplanetsguiProcedure extends Ris3ModElements.ModElement {
 				Ris3Mod.LOGGER.warn("Failed to load dependency world for procedure Gotoplanetsgui!");
 			return;
 		}
-		Entity entity = (Entity) dependencies.get("entity");
 		double x = dependencies.get("x") instanceof Integer ? (int) dependencies.get("x") : (double) dependencies.get("x");
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
+		if (((Entity) world
+				.getEntitiesWithinAABB(PlayerEntity.class,
+						new AxisAlignedBB(x - (4 / 2d), y - (4 / 2d), z - (4 / 2d), x + (4 / 2d), y + (4 / 2d), z + (4 / 2d)), null)
+				.stream().sorted(new Object() {
+					Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+						return Comparator.comparing((Function<Entity, Double>) (_entcnd -> _entcnd.getDistanceSq(_x, _y, _z)));
+					}
+				}.compareDistOf(x, y, z)).findFirst().orElse(null)) instanceof PlayerEntity)
+			((PlayerEntity) ((Entity) world
+					.getEntitiesWithinAABB(PlayerEntity.class,
+							new AxisAlignedBB(x - (4 / 2d), y - (4 / 2d), z - (4 / 2d), x + (4 / 2d), y + (4 / 2d), z + (4 / 2d)), null)
+					.stream().sorted(new Object() {
+						Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+							return Comparator.comparing((Function<Entity, Double>) (_entcnd -> _entcnd.getDistanceSq(_x, _y, _z)));
+						}
+					}.compareDistOf(x, y, z)).findFirst().orElse(null))).closeScreen();
 		{
-			Entity _ent = entity;
+			Entity _ent = ((Entity) world
+					.getEntitiesWithinAABB(PlayerEntity.class,
+							new AxisAlignedBB(x - (4 / 2d), y - (4 / 2d), z - (4 / 2d), x + (4 / 2d), y + (4 / 2d), z + (4 / 2d)), null)
+					.stream().sorted(new Object() {
+						Comparator<Entity> compareDistOf(double _x, double _y, double _z) {
+							return Comparator.comparing((Function<Entity, Double>) (_entcnd -> _entcnd.getDistanceSq(_x, _y, _z)));
+						}
+					}.compareDistOf(x, y, z)).findFirst().orElse(null));
 			if (_ent instanceof ServerPlayerEntity) {
 				BlockPos _bpos = new BlockPos((int) x, (int) y, (int) z);
 				NetworkHooks.openGui((ServerPlayerEntity) _ent, new INamedContainerProvider() {

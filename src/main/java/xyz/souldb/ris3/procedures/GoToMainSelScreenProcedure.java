@@ -26,30 +26,30 @@ import java.util.Comparator;
 import io.netty.buffer.Unpooled;
 
 @Ris3ModElements.ModElement.Tag
-public class GoBackToMainGUISelectScreenProcedure extends Ris3ModElements.ModElement {
-	public GoBackToMainGUISelectScreenProcedure(Ris3ModElements instance) {
+public class GoToMainSelScreenProcedure extends Ris3ModElements.ModElement {
+	public GoToMainSelScreenProcedure(Ris3ModElements instance) {
 		super(instance, 257);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("x") == null) {
 			if (!dependencies.containsKey("x"))
-				Ris3Mod.LOGGER.warn("Failed to load dependency x for procedure GoBackToMainGUISelectScreen!");
+				Ris3Mod.LOGGER.warn("Failed to load dependency x for procedure GoToMainSelScreen!");
 			return;
 		}
 		if (dependencies.get("y") == null) {
 			if (!dependencies.containsKey("y"))
-				Ris3Mod.LOGGER.warn("Failed to load dependency y for procedure GoBackToMainGUISelectScreen!");
+				Ris3Mod.LOGGER.warn("Failed to load dependency y for procedure GoToMainSelScreen!");
 			return;
 		}
 		if (dependencies.get("z") == null) {
 			if (!dependencies.containsKey("z"))
-				Ris3Mod.LOGGER.warn("Failed to load dependency z for procedure GoBackToMainGUISelectScreen!");
+				Ris3Mod.LOGGER.warn("Failed to load dependency z for procedure GoToMainSelScreen!");
 			return;
 		}
 		if (dependencies.get("world") == null) {
 			if (!dependencies.containsKey("world"))
-				Ris3Mod.LOGGER.warn("Failed to load dependency world for procedure GoBackToMainGUISelectScreen!");
+				Ris3Mod.LOGGER.warn("Failed to load dependency world for procedure GoToMainSelScreen!");
 			return;
 		}
 		double x = dependencies.get("x") instanceof Integer ? (int) dependencies.get("x") : (double) dependencies.get("x");

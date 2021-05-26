@@ -30,9 +30,6 @@
     "hasGlow": false,
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
-    "inventoryStackSize": 64,
-    "onRightClickedOnBlock": {
-      "name": "FlyController"
-    }
+    "inventoryStackSize": 64
   }
 }

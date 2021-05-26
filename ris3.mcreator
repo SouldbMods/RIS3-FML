@@ -1123,10 +1123,6 @@
       "metadata": {
         "dependencies": [
           {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
             "name": "x",
             "type": "number"
           },
@@ -2688,6 +2684,10 @@
       "metadata": {
         "dependencies": [
           {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
             "name": "x",
             "type": "number"
           },
@@ -2736,13 +2736,22 @@
       "registry_name": "credits_ui"
     },
     {
-      "name": "GoBackToMainGUISelectScreen",
+      "name": "Battery",
+      "type": "block",
+      "sortid": 255,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "battery"
+    },
+    {
+      "name": "GoToMainSelScreen",
       "type": "procedure",
       "sortid": 257,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "go_back_to_main_gui_select_screen",
+      "registry_name": "go_to_main_sel_screen",
       "metadata": {
         "dependencies": [
           {
@@ -2762,17 +2771,7 @@
             "type": "world"
           }
         ]
-      },
-      "path": "~/Boss-Tools killers"
-    },
-    {
-      "name": "Battery",
-      "type": "block",
-      "sortid": 255,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "battery"
+      }
     }
   ],
   "variable_elements": [
@@ -2897,8 +2896,8 @@
       "item.ris3.aluminium_axe": "Aluminium Axe",
       "block.ris3.mars_stone": "Mars Stone",
       "block.ris3.martian_sand": "Martian Sand",
-      "item.ris3.space_suit_armor_leggings": "Space Suit Leggings",
       "item.ris3.aluminium_ingot": "Aluminium",
+      "item.ris3.space_suit_armor_leggings": "Space Suit Leggings",
       "block.ris3.kryptonian_fence": "Kryptonian Fence",
       "item.ris3.aluminium_shovel": "Aluminium Shovel",
       "item.ris3.aluminium_plate": "Aluminium Plate",
@@ -3039,5 +3038,5 @@
     "modElementsPackage": "xyz.souldb.ris3",
     "lockBaseModFiles": false
   },
-  "mcreatorVersion": 202100116710
+  "mcreatorVersion": 202100118117
 }

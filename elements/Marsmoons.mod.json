@@ -164,7 +164,7 @@
         "data": {
           "text": "<<< Back",
           "onClick": {
-            "name": "GoBackToMainGUISelectScreen"
+            "name": "Gotoplanetsgui"
           },
           "width": 65,
           "height": 20,

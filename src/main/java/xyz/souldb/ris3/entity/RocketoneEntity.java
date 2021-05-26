@@ -38,7 +38,9 @@ import net.minecraft.block.BlockState;
 
 @Ris3ModElements.ModElement.Tag
 public class RocketoneEntity extends Ris3ModElements.ModElement {
-	public static EntityType entity = null;
+	public static EntityType entity = (EntityType.Builder.<CustomEntity>create(CustomEntity::new, EntityClassification.MONSTER)
+			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new).immuneToFire()
+			.size(0.6f, 1.8f)).build("rocketone").setRegistryName("rocketone");
 	public RocketoneEntity(Ris3ModElements instance) {
 		super(instance, 94);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new RocketoneRenderer.ModelRegisterHandler());
@@ -47,9 +49,6 @@ public class RocketoneEntity extends Ris3ModElements.ModElement {
 
 	@Override
 	public void initElements() {
-		entity = (EntityType.Builder.<CustomEntity>create(CustomEntity::new, EntityClassification.MONSTER).setShouldReceiveVelocityUpdates(true)
-				.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new).immuneToFire().size(0.6f, 1.8f))
-						.build("rocketone").setRegistryName("rocketone");
 		elements.entities.add(() -> entity);
 	}
 

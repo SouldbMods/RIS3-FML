@@ -37,7 +37,8 @@ public class KryptonianStairsBlock extends Ris3ModElements.ModElement {
 	}
 	public static class CustomBlock extends StairsBlock {
 		public CustomBlock() {
-			super(new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(30f, 20f)).getDefaultState(),
+			super(() -> new Block(Block.Properties.create(Material.WOOD).sound(SoundType.WOOD).hardnessAndResistance(30f, 20f).setLightLevel(s -> 0))
+					.getDefaultState(),
 					Block.Properties.create(Material.WOOD).sound(SoundType.WOOD).hardnessAndResistance(30f, 20f).setLightLevel(s -> 0));
 			setRegistryName("kryptonian_stairs");
 		}

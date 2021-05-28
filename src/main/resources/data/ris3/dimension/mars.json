@@ -57,10 +57,7 @@
         "Name": "ris3:martian_sand"
       },
       "default_fluid": {
-        "Name": "minecraft:frosted_ice",
-        "Properties": {
-          "age": "0"
-        }
+        "Name": "minecraft:packed_ice"
       },
       "noise": {
         "min_y": 0,

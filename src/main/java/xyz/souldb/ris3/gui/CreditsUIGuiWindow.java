@@ -57,7 +57,7 @@ public class CreditsUIGuiWindow extends ContainerScreen<CreditsUIGui.GuiContaine
 		int l = (this.height - this.ySize) / 2;
 		this.blit(ms, k, l, 0, 0, this.xSize, this.ySize, this.xSize, this.ySize);
 		Minecraft.getInstance().getTextureManager().bindTexture(new ResourceLocation("ris3:textures/hugegui2.png"));
-		this.blit(ms, this.guiLeft + -618, this.guiTop + -244, 0, 0, 2048, 2048, 2048, 2048);
+		this.blit(ms, this.guiLeft + -691, this.guiTop + -751, 0, 0, 2048, 2048, 2048, 2048);
 		RenderSystem.disableBlend();
 	}
 
@@ -80,7 +80,7 @@ public class CreditsUIGuiWindow extends ContainerScreen<CreditsUIGui.GuiContaine
 		this.font.drawString(ms, "Really In Space Credits", 157, 5, -65536);
 		this.font.drawString(ms, "Created by: Souldbminer, Custom sky and Rocket animations by MrScautHD", 6, 19, -65536);
 		this.font.drawString(ms, " Created Using: MCreator by Pylo and Matej", 2, 32, -16776961);
-		this.font.drawString(ms, "Texturer: Soulaw10X and Souldbminer", 6, 43, -65281);
+		this.font.drawString(ms, "Texturer: Soulaw10X and Souldbminer", 7, 44, -65281);
 	}
 
 	@Override

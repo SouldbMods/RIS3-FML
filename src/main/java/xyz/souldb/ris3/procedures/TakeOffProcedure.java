@@ -2,6 +2,7 @@ package xyz.souldb.ris3.procedures;
 
 import xyz.souldb.ris3.gui.PlanetSelectScreenClassGui;
 import xyz.souldb.ris3.entity.RocketoneEntity;
+import xyz.souldb.ris3.Ris3ModVariables;
 import xyz.souldb.ris3.Ris3ModElements;
 import xyz.souldb.ris3.Ris3Mod;
 
@@ -70,6 +71,14 @@ public class TakeOffProcedure extends Ris3ModElements.ModElement {
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
+		{
+			Map<String, Object> $_dependencies = new HashMap<>();
+			$_dependencies.put("x", x);
+			$_dependencies.put("y", y);
+			$_dependencies.put("z", z);
+			$_dependencies.put("world", world);
+			TakeOffParticlesProcedure.executeProcedure($_dependencies);
+		}
 		if (((Entity) world
 				.getEntitiesWithinAABB(RocketoneEntity.CustomEntity.class,
 						new AxisAlignedBB(x - (4 / 2d), y - (4 / 2d), z - (4 / 2d), x + (4 / 2d), y + (4 / 2d), z + (4 / 2d)), null)
@@ -87,14 +96,6 @@ public class TakeOffProcedure extends Ris3ModElements.ModElement {
 						}
 					}.compareDistOf(x, y, z)).findFirst().orElse(null)))
 							.addPotionEffect(new EffectInstance(Effects.LEVITATION, (int) 550, (int) 20, (true), (false)));
-		{
-			Map<String, Object> $_dependencies = new HashMap<>();
-			$_dependencies.put("x", x);
-			$_dependencies.put("y", y);
-			$_dependencies.put("z", z);
-			$_dependencies.put("world", world);
-			TakeOffParticlesProcedure.executeProcedure($_dependencies);
-		}
 		new Object() {
 			private int ticks = 0;
 			private float waitTicks;
@@ -132,6 +133,13 @@ public class TakeOffProcedure extends Ris3ModElements.ModElement {
 							}
 						}, _bpos);
 					}
+				}
+				{
+					boolean _setval = (boolean) (false);
+					entity.getCapability(Ris3ModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {
+						capability.RocketIsOn = _setval;
+						capability.syncPlayerVariables(entity);
+					});
 				}
 				MinecraftForge.EVENT_BUS.unregister(this);
 			}

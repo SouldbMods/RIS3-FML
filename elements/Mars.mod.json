@@ -12,7 +12,7 @@
       "value": "CUSTOM:MartianSand"
     },
     "fluidBlock": {
-      "value": "Blocks.FROSTED_ICE"
+      "value": "Blocks.PACKED_ICE"
     },
     "airColor": {
       "value": -16777216,

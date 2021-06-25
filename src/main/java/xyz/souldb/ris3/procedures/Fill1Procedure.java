@@ -3,7 +3,6 @@ package xyz.souldb.ris3.procedures;
 import xyz.souldb.ris3.item.MedTankItem;
 import xyz.souldb.ris3.item.LightTankItem;
 import xyz.souldb.ris3.item.HeavyTankItem;
-import xyz.souldb.ris3.Ris3ModElements;
 import xyz.souldb.ris3.Ris3Mod;
 
 import net.minecraft.util.text.StringTextComponent;
@@ -17,12 +16,7 @@ import net.minecraft.entity.Entity;
 import java.util.function.Supplier;
 import java.util.Map;
 
-@Ris3ModElements.ModElement.Tag
-public class Fill1Procedure extends Ris3ModElements.ModElement {
-	public Fill1Procedure(Ris3ModElements instance) {
-		super(instance, 174);
-	}
-
+public class Fill1Procedure {
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))

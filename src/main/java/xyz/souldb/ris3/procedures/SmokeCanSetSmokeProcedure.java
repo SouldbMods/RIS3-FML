@@ -2,7 +2,6 @@ package xyz.souldb.ris3.procedures;
 
 import xyz.souldb.ris3.item.EmpetySmokeCanItem;
 import xyz.souldb.ris3.block.SmokeBlock;
-import xyz.souldb.ris3.Ris3ModElements;
 import xyz.souldb.ris3.Ris3Mod;
 
 import net.minecraft.world.IWorld;
@@ -18,12 +17,7 @@ import net.minecraft.block.Blocks;
 
 import java.util.Map;
 
-@Ris3ModElements.ModElement.Tag
-public class SmokeCanSetSmokeProcedure extends Ris3ModElements.ModElement {
-	public SmokeCanSetSmokeProcedure(Ris3ModElements instance) {
-		super(instance, 254);
-	}
-
+public class SmokeCanSetSmokeProcedure {
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))

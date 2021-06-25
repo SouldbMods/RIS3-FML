@@ -1,10 +1,8 @@
 
 package xyz.souldb.ris3.potion;
 
-import xyz.souldb.ris3.Ris3ModElements;
-
 import net.minecraftforge.registries.ObjectHolder;
-import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.event.RegistryEvent;
 
@@ -13,17 +11,12 @@ import net.minecraft.potion.EffectType;
 import net.minecraft.potion.EffectInstance;
 import net.minecraft.potion.Effect;
 
-@Ris3ModElements.ModElement.Tag
-public class OxygenPotion extends Ris3ModElements.ModElement {
+@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
+public class OxygenPotion {
 	@ObjectHolder("ris3:oxygen")
 	public static final Effect potion = null;
-	public OxygenPotion(Ris3ModElements instance) {
-		super(instance, 152);
-		FMLJavaModLoadingContext.get().getModEventBus().register(this);
-	}
-
 	@SubscribeEvent
-	public void registerEffect(RegistryEvent.Register<Effect> event) {
+	public static void registerEffect(RegistryEvent.Register<Effect> event) {
 		event.getRegistry().register(new EffectCustom());
 	}
 	public static class EffectCustom extends Effect {

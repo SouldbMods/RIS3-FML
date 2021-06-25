@@ -1,0 +1,11 @@
+{
+  "_fv": 21,
+  "_type": "command",
+  "definition": {
+    "commandName": "cfg",
+    "permissionLevel": "No requirement",
+    "onCommandExecuted": {
+      "name": "OpenCfg"
+    }
+  }
+}

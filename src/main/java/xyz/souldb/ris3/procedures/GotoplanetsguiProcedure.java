@@ -1,7 +1,6 @@
 package xyz.souldb.ris3.procedures;
 
 import xyz.souldb.ris3.gui.PlanetSelectScreenClassGui;
-import xyz.souldb.ris3.Ris3ModElements;
 import xyz.souldb.ris3.Ris3Mod;
 
 import net.minecraftforge.fml.network.NetworkHooks;
@@ -25,12 +24,7 @@ import java.util.Comparator;
 
 import io.netty.buffer.Unpooled;
 
-@Ris3ModElements.ModElement.Tag
-public class GotoplanetsguiProcedure extends Ris3ModElements.ModElement {
-	public GotoplanetsguiProcedure(Ris3ModElements instance) {
-		super(instance, 108);
-	}
-
+public class GotoplanetsguiProcedure {
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("x") == null) {
 			if (!dependencies.containsKey("x"))

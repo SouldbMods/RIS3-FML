@@ -1,0 +1,57 @@
+{
+  "_fv": 21,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 138,
+    "height": 52,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "text": "Ask an admin",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Ask an admin",
+          "x": 184,
+          "y": 98
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Yes",
+          "width": 40,
+          "height": 20,
+          "name": "Yes",
+          "x": 149,
+          "y": 111
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "Cancel",
+          "width": 55,
+          "height": 20,
+          "name": "Cancel",
+          "x": 221,
+          "y": 111
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

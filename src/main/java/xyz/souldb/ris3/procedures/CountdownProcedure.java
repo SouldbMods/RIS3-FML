@@ -1,7 +1,6 @@
 package xyz.souldb.ris3.procedures;
 
 import xyz.souldb.ris3.Ris3ModVariables;
-import xyz.souldb.ris3.Ris3ModElements;
 import xyz.souldb.ris3.Ris3Mod;
 
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -14,12 +13,7 @@ import net.minecraft.entity.Entity;
 import java.util.Map;
 import java.util.HashMap;
 
-@Ris3ModElements.ModElement.Tag
-public class CountdownProcedure extends Ris3ModElements.ModElement {
-	public CountdownProcedure(Ris3ModElements instance) {
-		super(instance, 220);
-	}
-
+public class CountdownProcedure {
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))

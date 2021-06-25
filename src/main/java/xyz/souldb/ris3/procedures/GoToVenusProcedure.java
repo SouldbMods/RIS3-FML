@@ -1,6 +1,5 @@
 package xyz.souldb.ris3.procedures;
 
-import xyz.souldb.ris3.Ris3ModElements;
 import xyz.souldb.ris3.Ris3Mod;
 
 import net.minecraft.world.server.ServerWorld;
@@ -20,12 +19,7 @@ import net.minecraft.entity.Entity;
 import java.util.Map;
 import java.util.HashMap;
 
-@Ris3ModElements.ModElement.Tag
-public class GoToVenusProcedure extends Ris3ModElements.ModElement {
-	public GoToVenusProcedure(Ris3ModElements instance) {
-		super(instance, 247);
-	}
-
+public class GoToVenusProcedure {
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))

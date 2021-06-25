@@ -1,6 +1,5 @@
 package xyz.souldb.ris3.procedures;
 
-import xyz.souldb.ris3.Ris3ModElements;
 import xyz.souldb.ris3.Ris3Mod;
 
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -13,12 +12,7 @@ import net.minecraft.particles.ParticleTypes;
 
 import java.util.Map;
 
-@Ris3ModElements.ModElement.Tag
-public class TakeOffParticlesProcedure extends Ris3ModElements.ModElement {
-	public TakeOffParticlesProcedure(Ris3ModElements instance) {
-		super(instance, 216);
-	}
-
+public class TakeOffParticlesProcedure {
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("x") == null) {
 			if (!dependencies.containsKey("x"))

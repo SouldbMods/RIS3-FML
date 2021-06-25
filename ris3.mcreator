@@ -893,7 +893,7 @@
       "ids": {},
       "registry_name": "check_rocket_1",
       "metadata": {
-        "return_type": "LOGIC",
+        "return_type": "logic",
         "dependencies": [
           {
             "name": "world",
@@ -912,7 +912,7 @@
       "ids": {},
       "registry_name": "cr_2",
       "metadata": {
-        "return_type": "LOGIC",
+        "return_type": "logic",
         "dependencies": [
           {
             "name": "world",
@@ -931,7 +931,7 @@
       "ids": {},
       "registry_name": "cr_3",
       "metadata": {
-        "return_type": "LOGIC",
+        "return_type": "logic",
         "dependencies": [
           {
             "name": "world",
@@ -950,7 +950,7 @@
       "ids": {},
       "registry_name": "cr_4",
       "metadata": {
-        "return_type": "LOGIC",
+        "return_type": "logic",
         "dependencies": [
           {
             "name": "world",
@@ -969,7 +969,7 @@
       "ids": {},
       "registry_name": "cr_5",
       "metadata": {
-        "return_type": "LOGIC",
+        "return_type": "logic",
         "dependencies": [
           {
             "name": "world",
@@ -987,7 +987,7 @@
       "ids": {},
       "registry_name": "cr_6",
       "metadata": {
-        "return_type": "LOGIC",
+        "return_type": "logic",
         "dependencies": [
           {
             "name": "world",
@@ -1005,7 +1005,7 @@
       "ids": {},
       "registry_name": "cr_7",
       "metadata": {
-        "return_type": "LOGIC",
+        "return_type": "logic",
         "dependencies": [
           {
             "name": "world",
@@ -1023,7 +1023,7 @@
       "ids": {},
       "registry_name": "cr_8",
       "metadata": {
-        "return_type": "LOGIC",
+        "return_type": "logic",
         "dependencies": [
           {
             "name": "world",
@@ -1041,7 +1041,7 @@
       "ids": {},
       "registry_name": "cr_9",
       "metadata": {
-        "return_type": "LOGIC",
+        "return_type": "logic",
         "dependencies": [
           {
             "name": "world",
@@ -1059,7 +1059,7 @@
       "ids": {},
       "registry_name": "cr_10",
       "metadata": {
-        "return_type": "LOGIC",
+        "return_type": "logic",
         "dependencies": [
           {
             "name": "world",
@@ -2617,7 +2617,7 @@
       "ids": {},
       "registry_name": "generateSmokeLakes",
       "metadata": {
-        "type": "boolean"
+        "type": "logic"
       },
       "path": "~/Dimensions"
     },
@@ -2647,6 +2647,9 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "smoke",
+      "metadata": {
+        "gb": false
+      },
       "path": "~/Dimensions"
     },
     {
@@ -2658,7 +2661,7 @@
       "ids": {},
       "registry_name": "smoke_lakes_gen_condition",
       "metadata": {
-        "return_type": "LOGIC",
+        "return_type": "logic",
         "dependencies": []
       },
       "path": "~/Dimensions"
@@ -2772,6 +2775,89 @@
           }
         ]
       }
+    },
+    {
+      "name": "Sunflat",
+      "type": "biome",
+      "sortid": 258,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sunflat",
+      "path": "~/Dimensions"
+    },
+    {
+      "name": "TheSun",
+      "type": "dimension",
+      "sortid": 259,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "the_sun",
+      "metadata": {
+        "ep": false
+      },
+      "path": "~/Dimensions"
+    },
+    {
+      "name": "Config",
+      "type": "gui",
+      "sortid": 260,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "config"
+    },
+    {
+      "name": "AskAdmin",
+      "type": "gui",
+      "sortid": 261,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "ask_admin"
+    },
+    {
+      "name": "OpenCfg",
+      "type": "procedure",
+      "sortid": 262,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "open_cfg",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Cfg",
+      "type": "command",
+      "sortid": 262,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cfg"
     }
   ],
   "variable_elements": [
@@ -2902,8 +2988,9 @@
       "item.ris3.aluminium_axe": "Aluminium Axe",
       "block.ris3.mars_stone": "Mars Stone",
       "block.ris3.martian_sand": "Martian Sand",
-      "item.ris3.space_suit_armor_leggings": "Space Suit Leggings",
       "item.ris3.aluminium_ingot": "Aluminium",
+      "item.ris3.space_suit_armor_leggings": "Space Suit Leggings",
+      "block.ris3.smoke": "Smoke",
       "block.ris3.kryptonian_fence": "Kryptonian Fence",
       "item.ris3.aluminium_shovel": "Aluminium Shovel",
       "item.ris3.aluminium_plate": "Aluminium Plate",
@@ -2924,6 +3011,7 @@
       "block.ris3.battery": "Battery",
       "item.ris3.galaxium_dust": "Galaxium",
       "item.ris3.led": "LED",
+      "biome.ris3.sunflat": "Sun",
       "block.ris3.kryptonian_planks": "Kryptonian Planks",
       "item.ris3.galaxium_armor_boots": "Galaxium Boots",
       "item.ris3.aluminium_sword": "Aluminium Sword",
@@ -2976,10 +3064,12 @@
       "block.ris3.cable_xdir": "Cable",
       "block.ris3.rocket_table": "Rocket Table",
       "item.ris3.oxygen_set_boots": "Oxygen Set Boots",
+      "fluid.ris3.smoke": "Smoke",
       "item.ris3.engene": "Engine",
       "item.ris3.iron_plate": "Iron Plate",
       "block.ris3.kryptonian_stairs": "Kryptonian Stairs",
       "itemGroup.tabrisenergy": "Really In Space Energy \u0026 Macines",
+      "item.ris3.the_sun": "The Sun Portal Igniter",
       "fluid.smoke": "Smoke",
       "item.ris3.smoke_can": "Can Of Smoke",
       "block.ris3.galaxium_block": "Block of Galaxium",
@@ -3000,10 +3090,6 @@
       },
       {
         "name": "Blocks",
-        "children": []
-      },
-      {
-        "name": "Items",
         "children": []
       },
       {
@@ -3028,7 +3114,7 @@
     "modid": "ris3",
     "modName": "Really In Space 3",
     "version": "3.0.0-RC-1",
-    "description": "Souldb\u0027s space mod",
+    "description": "Requires Obfuscate. Updating to Caves and cliffs when part 2 is realeased",
     "author": "Souldbminer",
     "websiteURL": "https://youtube.com/c/souldbminer",
     "license": "Creative Commons ShareAlike 4.0 International (CC BY-SA 4.0) ",
@@ -3038,11 +3124,13 @@
     "requiredMods": [],
     "dependencies": [],
     "dependants": [],
-    "mcreatorDependencies": [],
+    "mcreatorDependencies": [
+      "obfuscate"
+    ],
     "currentGenerator": "forge-1.16.5",
-    "credits": "dragonmaster, mrscauthd, pylo, mystiryouswolf, drcrazy",
+    "credits": "Pylo, Matej, MrScautHD, Golodion, DrCrazy, MrCrayfish",
     "modElementsPackage": "xyz.souldb.ris3",
     "lockBaseModFiles": false
   },
-  "mcreatorVersion": 202100118117
+  "mcreatorVersion": 202100226215
 }

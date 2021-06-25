@@ -3,7 +3,6 @@ package xyz.souldb.ris3.procedures;
 import xyz.souldb.ris3.gui.PlanetSelectScreenClassGui;
 import xyz.souldb.ris3.entity.RocketoneEntity;
 import xyz.souldb.ris3.Ris3ModVariables;
-import xyz.souldb.ris3.Ris3ModElements;
 import xyz.souldb.ris3.Ris3Mod;
 
 import net.minecraftforge.fml.network.NetworkHooks;
@@ -34,12 +33,7 @@ import java.util.Comparator;
 
 import io.netty.buffer.Unpooled;
 
-@Ris3ModElements.ModElement.Tag
-public class TakeOffProcedure extends Ris3ModElements.ModElement {
-	public TakeOffProcedure(Ris3ModElements instance) {
-		super(instance, 107);
-	}
-
+public class TakeOffProcedure {
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))

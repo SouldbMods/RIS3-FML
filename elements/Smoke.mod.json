@@ -1,8 +1,9 @@
 {
-  "_fv": 18,
+  "_fv": 21,
   "_type": "fluid",
   "definition": {
     "name": "Smoke",
+    "bucketName": "Smoke Bucket",
     "textureStill": "smoke",
     "textureFlowing": "smoke",
     "luminosity": 0,
@@ -14,6 +15,14 @@
     "creativeTab": {
       "value": "No creative tab entry"
     },
+    "rarity": "COMMON",
+    "specialInfo": [],
+    "resistance": 100.0,
+    "luminance": 0,
+    "emissiveRendering": false,
+    "flammability": 0,
+    "fireSpreadSpeed": 0,
+    "colorOnMap": "DEFAULT",
     "frequencyOnChunks": 5,
     "spawnWorldTypes": [],
     "restrictionBiomes": [],

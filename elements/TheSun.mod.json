@@ -1,0 +1,48 @@
+{
+  "_fv": 21,
+  "_type": "dimension",
+  "definition": {
+    "biomesInDimension": [
+      {
+        "value": "CUSTOM:Sunflat"
+      }
+    ],
+    "worldGenType": "Normal world gen",
+    "mainFillerBlock": {
+      "value": "Blocks.MAGMA"
+    },
+    "fluidBlock": {
+      "value": "Blocks.FLOWING_LAVA"
+    },
+    "canRespawnHere": false,
+    "hasFog": false,
+    "isDark": false,
+    "doesWaterVaporize": false,
+    "sleepResult": "ALLOW",
+    "hasSkyLight": false,
+    "imitateOverworldBehaviour": false,
+    "onPlayerEntersDimension": {
+      "name": "GravityPlanetOtherThanKrypton"
+    },
+    "onPlayerLeavesDimension": {
+      "name": "ResetGravityAllPlanets"
+    },
+    "portalFrame": {
+      "value": ""
+    },
+    "portalParticles": {
+      "value": "CUSTOM:Dustmars"
+    },
+    "portalLuminance": 0,
+    "portalSound": {
+      "value": "block.portal.ambient"
+    },
+    "igniterName": "The Sun Portal Igniter",
+    "igniterTab": {
+      "value": "TOOLS"
+    },
+    "texture": "",
+    "portalTexture": "",
+    "enablePortal": false
+  }
+}

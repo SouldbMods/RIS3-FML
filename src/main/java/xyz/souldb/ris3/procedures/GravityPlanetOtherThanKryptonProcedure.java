@@ -1,6 +1,5 @@
 package xyz.souldb.ris3.procedures;
 
-import xyz.souldb.ris3.Ris3ModElements;
 import xyz.souldb.ris3.Ris3Mod;
 
 import net.minecraft.potion.Effects;
@@ -10,12 +9,7 @@ import net.minecraft.entity.Entity;
 
 import java.util.Map;
 
-@Ris3ModElements.ModElement.Tag
-public class GravityPlanetOtherThanKryptonProcedure extends Ris3ModElements.ModElement {
-	public GravityPlanetOtherThanKryptonProcedure(Ris3ModElements instance) {
-		super(instance, 90);
-	}
-
+public class GravityPlanetOtherThanKryptonProcedure {
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))

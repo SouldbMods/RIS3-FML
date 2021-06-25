@@ -1,5 +1,5 @@
 {
-  "_fv": 18,
+  "_fv": 21,
   "_type": "gui",
   "definition": {
     "type": 1,
@@ -32,8 +32,8 @@
             "falpha": 0.0
           },
           "name": "Transfer Rate- 128 E / Tick",
-          "x": 196,
-          "y": 89
+          "x": 132,
+          "y": 139
         }
       },
       {
@@ -142,8 +142,8 @@
           "disableStackInteraction": false,
           "dropItemsWhenNotBound": true,
           "name": "Slot #2",
-          "x": 313,
-          "y": 17
+          "x": 312,
+          "y": 134
         }
       },
       {
@@ -156,8 +156,8 @@
           "disableStackInteraction": false,
           "dropItemsWhenNotBound": true,
           "name": "Slot #3",
-          "x": 313,
-          "y": 35
+          "x": 312,
+          "y": 152
         }
       },
       {
@@ -170,8 +170,8 @@
           "disableStackInteraction": false,
           "dropItemsWhenNotBound": true,
           "name": "Slot #4",
-          "x": 313,
-          "y": 53
+          "x": 312,
+          "y": 170
         }
       },
       {
@@ -184,8 +184,8 @@
           "disableStackInteraction": false,
           "dropItemsWhenNotBound": true,
           "name": "Slot #5",
-          "x": 313,
-          "y": 71
+          "x": 312,
+          "y": 188
         }
       },
       {
@@ -270,7 +270,27 @@
           "x": 313,
           "y": 215
         }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Upgrades",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Upgrades",
+          "x": 294,
+          "y": 116
+        }
       }
-    ]
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
   }
 }

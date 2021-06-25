@@ -121,13 +121,13 @@ public class BatteryUIGui extends Ris3ModElements.ModElement {
 					return false;
 				}
 			}));
-			this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 223, 12) {
+			this.customSlots.put(2, this.addSlot(new SlotItemHandler(internal, 2, 222, 129) {
 			}));
-			this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 223, 30) {
+			this.customSlots.put(3, this.addSlot(new SlotItemHandler(internal, 3, 222, 147) {
 			}));
-			this.customSlots.put(4, this.addSlot(new SlotItemHandler(internal, 4, 223, 48) {
+			this.customSlots.put(4, this.addSlot(new SlotItemHandler(internal, 4, 222, 165) {
 			}));
-			this.customSlots.put(5, this.addSlot(new SlotItemHandler(internal, 5, 223, 66) {
+			this.customSlots.put(5, this.addSlot(new SlotItemHandler(internal, 5, 222, 183) {
 			}));
 			int si;
 			int sj;

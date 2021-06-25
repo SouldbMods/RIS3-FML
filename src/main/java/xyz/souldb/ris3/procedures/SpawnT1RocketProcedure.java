@@ -2,7 +2,6 @@ package xyz.souldb.ris3.procedures;
 
 import xyz.souldb.ris3.item.LEDItem;
 import xyz.souldb.ris3.entity.RocketoneEntity;
-import xyz.souldb.ris3.Ris3ModElements;
 import xyz.souldb.ris3.Ris3Mod;
 
 import net.minecraft.world.server.ServerWorld;
@@ -20,12 +19,7 @@ import net.minecraft.entity.Entity;
 
 import java.util.Map;
 
-@Ris3ModElements.ModElement.Tag
-public class SpawnT1RocketProcedure extends Ris3ModElements.ModElement {
-	public SpawnT1RocketProcedure(Ris3ModElements instance) {
-		super(instance, 150);
-	}
-
+public class SpawnT1RocketProcedure {
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))

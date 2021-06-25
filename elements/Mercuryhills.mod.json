@@ -1,5 +1,5 @@
 {
-  "_fv": 18,
+  "_fv": 21,
   "_type": "biome",
   "definition": {
     "name": "Mercuryhills",
@@ -48,7 +48,7 @@
     "gravelPatchesPerChunk": 0,
     "reedsPerChunk": 0,
     "cactiPerChunk": 0,
-    "treesPerChunk": 1,
+    "treesPerChunk": 0,
     "vanillaTreeType": "Default",
     "treeType": 0,
     "minHeight": 7,

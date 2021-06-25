@@ -1,7 +1,6 @@
 package xyz.souldb.ris3.procedures;
 
 import xyz.souldb.ris3.gui.EarthMoonsGui;
-import xyz.souldb.ris3.Ris3ModElements;
 import xyz.souldb.ris3.Ris3Mod;
 
 import net.minecraftforge.fml.network.NetworkHooks;
@@ -25,12 +24,7 @@ import java.util.Comparator;
 
 import io.netty.buffer.Unpooled;
 
-@Ris3ModElements.ModElement.Tag
-public class OpenEarthMoonsProcedure extends Ris3ModElements.ModElement {
-	public OpenEarthMoonsProcedure(Ris3ModElements instance) {
-		super(instance, 249);
-	}
-
+public class OpenEarthMoonsProcedure {
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("x") == null) {
 			if (!dependencies.containsKey("x"))

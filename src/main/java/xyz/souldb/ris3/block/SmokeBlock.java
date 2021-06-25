@@ -14,6 +14,7 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.util.ResourceLocation;
+import net.minecraft.item.Rarity;
 import net.minecraft.item.Item;
 import net.minecraft.fluid.Fluid;
 import net.minecraft.fluid.FlowingFluid;
@@ -54,10 +55,11 @@ public class SmokeBlock extends Ris3ModElements.ModElement {
 	public void initElements() {
 		fluidproperties = new ForgeFlowingFluid.Properties(() -> still, () -> flowing,
 				FluidAttributes.builder(new ResourceLocation("ris3:blocks/smoke"), new ResourceLocation("ris3:blocks/smoke")).luminosity(0)
-						.density(-10).viscosity(1).gaseous()).block(() -> block);
+						.density(-10).viscosity(1).gaseous().rarity(Rarity.COMMON)).explosionResistance(100f).block(() -> block);
 		still = (FlowingFluid) new ForgeFlowingFluid.Source(fluidproperties).setRegistryName("smoke");
 		flowing = (FlowingFluid) new ForgeFlowingFluid.Flowing(fluidproperties).setRegistryName("smoke_flowing");
-		elements.blocks.add(() -> new FlowingFluidBlock(still, Block.Properties.create(Material.WATER)) {
-		}.setRegistryName("smoke"));
+		elements.blocks
+				.add(() -> new FlowingFluidBlock(still, Block.Properties.create(Material.WATER).hardnessAndResistance(100f).setLightLevel(s -> 0)) {
+				}.setRegistryName("smoke"));
 	}
 }

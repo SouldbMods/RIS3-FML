@@ -1,7 +1,6 @@
 package xyz.souldb.ris3.procedures;
 
 import xyz.souldb.ris3.Ris3ModVariables;
-import xyz.souldb.ris3.Ris3ModElements;
 import xyz.souldb.ris3.Ris3Mod;
 
 import net.minecraft.world.IWorld;
@@ -13,12 +12,7 @@ import java.util.function.Function;
 import java.util.Map;
 import java.util.Comparator;
 
-@Ris3ModElements.ModElement.Tag
-public class WingedSwordFlightTickProcedure extends Ris3ModElements.ModElement {
-	public WingedSwordFlightTickProcedure(Ris3ModElements instance) {
-		super(instance, 188);
-	}
-
+public class WingedSwordFlightTickProcedure {
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))
@@ -52,7 +46,7 @@ public class WingedSwordFlightTickProcedure extends Ris3ModElements.ModElement {
 		IWorld world = (IWorld) dependencies.get("world");
 		Ris3ModVariables.MapVariables.get(world).wingsword = (boolean) (true);
 		Ris3ModVariables.MapVariables.get(world).syncData(world);
-		if (((Ris3ModVariables.MapVariables.get(world).wingsword) == (true))) {
+		if ((Ris3ModVariables.MapVariables.get(world).wingsword == (true))) {
 			if (entity instanceof PlayerEntity) {
 				((PlayerEntity) entity).abilities.setFlySpeed((float) 1F);
 			}

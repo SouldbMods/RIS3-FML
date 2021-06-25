@@ -17,6 +17,8 @@ import net.minecraft.client.gui.widget.TextFieldWidget;
 import net.minecraft.client.gui.screen.inventory.ContainerScreen;
 import net.minecraft.client.Minecraft;
 
+import java.util.HashMap;
+
 import com.mojang.blaze3d.systems.RenderSystem;
 import com.mojang.blaze3d.matrix.MatrixStack;
 
@@ -25,6 +27,7 @@ public class PlanetSelectScreenClassGuiWindow extends ContainerScreen<PlanetSele
 	private World world;
 	private int x, y, z;
 	private PlayerEntity entity;
+	private final static HashMap guistate = PlanetSelectScreenClassGui.guistate;
 	TextFieldWidget SearchPlanets;
 	public PlanetSelectScreenClassGuiWindow(PlanetSelectScreenClassGui.GuiContainerMod container, PlayerInventory inventory, ITextComponent text) {
 		super(container, inventory, text);
@@ -174,7 +177,7 @@ public class PlanetSelectScreenClassGuiWindow extends ContainerScreen<PlanetSele
 					setSuggestion(null);
 			}
 		};
-		PlanetSelectScreenClassGui.guistate.put("text:SearchPlanets", SearchPlanets);
+		guistate.put("text:SearchPlanets", SearchPlanets);
 		SearchPlanets.setMaxStringLength(32767);
 		this.children.add(this.SearchPlanets);
 	}

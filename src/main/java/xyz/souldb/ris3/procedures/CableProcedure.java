@@ -1,6 +1,5 @@
 package xyz.souldb.ris3.procedures;
 
-import xyz.souldb.ris3.Ris3ModElements;
 import xyz.souldb.ris3.Ris3Mod;
 
 import net.minecraftforge.energy.CapabilityEnergy;
@@ -12,12 +11,7 @@ import net.minecraft.tileentity.TileEntity;
 import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.Map;
 
-@Ris3ModElements.ModElement.Tag
-public class CableProcedure extends Ris3ModElements.ModElement {
-	public CableProcedure(Ris3ModElements instance) {
-		super(instance, 2);
-	}
-
+public class CableProcedure {
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("x") == null) {
 			if (!dependencies.containsKey("x"))

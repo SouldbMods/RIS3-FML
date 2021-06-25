@@ -1,6 +1,5 @@
 package xyz.souldb.ris3.procedures;
 
-import xyz.souldb.ris3.Ris3ModElements;
 import xyz.souldb.ris3.Ris3Mod;
 
 import net.minecraft.world.IWorld;
@@ -12,12 +11,7 @@ import java.util.function.Function;
 import java.util.Map;
 import java.util.Comparator;
 
-@Ris3ModElements.ModElement.Tag
-public class CloseGUIProcedure extends Ris3ModElements.ModElement {
-	public CloseGUIProcedure(Ris3ModElements instance) {
-		super(instance, 250);
-	}
-
+public class CloseGUIProcedure {
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("x") == null) {
 			if (!dependencies.containsKey("x"))

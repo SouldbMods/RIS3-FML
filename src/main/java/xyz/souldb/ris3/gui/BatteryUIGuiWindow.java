@@ -20,6 +20,7 @@ import net.minecraft.client.gui.screen.inventory.ContainerScreen;
 import net.minecraft.client.Minecraft;
 
 import java.util.concurrent.atomic.AtomicInteger;
+import java.util.HashMap;
 
 import com.mojang.blaze3d.systems.RenderSystem;
 import com.mojang.blaze3d.matrix.MatrixStack;
@@ -29,6 +30,7 @@ public class BatteryUIGuiWindow extends ContainerScreen<BatteryUIGui.GuiContaine
 	private World world;
 	private int x, y, z;
 	private PlayerEntity entity;
+	private final static HashMap guistate = BatteryUIGui.guistate;
 	public BatteryUIGuiWindow(BatteryUIGui.GuiContainerMod container, PlayerInventory inventory, ITextComponent text) {
 		super(container, inventory, text);
 		this.world = container.world;
@@ -92,7 +94,7 @@ public class BatteryUIGuiWindow extends ContainerScreen<BatteryUIGui.GuiContaine
 	@Override
 	protected void drawGuiContainerForegroundLayer(MatrixStack ms, int mouseX, int mouseY) {
 		this.font.drawString(ms, "Battery", 103, 4, -12829636);
-		this.font.drawString(ms, "Transfer Rate- 128 E / Tick", 105, 83, -12829636);
+		this.font.drawString(ms, "Transfer Rate- 128 E / Tick", 41, 133, -12829636);
 		this.font.drawString(ms, "Quick charger", 6, 20, -12829636);
 		this.font.drawString(ms, "Charge Mode", 6, 29, -16776961);
 		this.font.drawString(ms, "Discharge Mode", 6, 29, -65536);
@@ -105,6 +107,7 @@ public class BatteryUIGuiWindow extends ContainerScreen<BatteryUIGui.GuiContaine
 				return _retval.get();
 			}
 		}.getEnergyStored(new BlockPos((int) x, (int) y, (int) z))) + " E / 60KE", 132, 65, -12829636);
+		this.font.drawString(ms, "Upgrades", 203, 110, -12829636);
 	}
 
 	@Override

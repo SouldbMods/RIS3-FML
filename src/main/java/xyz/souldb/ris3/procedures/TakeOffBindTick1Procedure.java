@@ -1,7 +1,6 @@
 package xyz.souldb.ris3.procedures;
 
 import xyz.souldb.ris3.entity.RocketoneEntity;
-import xyz.souldb.ris3.Ris3ModElements;
 import xyz.souldb.ris3.Ris3Mod;
 
 import net.minecraft.world.IWorld;
@@ -14,12 +13,7 @@ import java.util.Map;
 import java.util.HashMap;
 import java.util.Comparator;
 
-@Ris3ModElements.ModElement.Tag
-public class TakeOffBindTick1Procedure extends Ris3ModElements.ModElement {
-	public TakeOffBindTick1Procedure(Ris3ModElements instance) {
-		super(instance, 217);
-	}
-
+public class TakeOffBindTick1Procedure {
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))

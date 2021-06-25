@@ -17,6 +17,8 @@ import net.minecraft.client.gui.widget.TextFieldWidget;
 import net.minecraft.client.gui.screen.inventory.ContainerScreen;
 import net.minecraft.client.Minecraft;
 
+import java.util.HashMap;
+
 import com.mojang.blaze3d.systems.RenderSystem;
 import com.mojang.blaze3d.matrix.MatrixStack;
 
@@ -25,6 +27,7 @@ public class MarsmoonsGuiWindow extends ContainerScreen<MarsmoonsGui.GuiContaine
 	private World world;
 	private int x, y, z;
 	private PlayerEntity entity;
+	private final static HashMap guistate = MarsmoonsGui.guistate;
 	TextFieldWidget SearchMoons;
 	public MarsmoonsGuiWindow(MarsmoonsGui.GuiContainerMod container, PlayerInventory inventory, ITextComponent text) {
 		super(container, inventory, text);
@@ -138,7 +141,7 @@ public class MarsmoonsGuiWindow extends ContainerScreen<MarsmoonsGui.GuiContaine
 					setSuggestion(null);
 			}
 		};
-		MarsmoonsGui.guistate.put("text:SearchMoons", SearchMoons);
+		guistate.put("text:SearchMoons", SearchMoons);
 		SearchMoons.setMaxStringLength(32767);
 		this.children.add(this.SearchMoons);
 		this.addButton(new Button(this.guiLeft + 4, this.guiTop + 221, 65, 20, new StringTextComponent("<<< Back"), e -> {

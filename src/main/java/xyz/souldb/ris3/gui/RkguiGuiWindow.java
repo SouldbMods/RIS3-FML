@@ -16,6 +16,8 @@ import net.minecraft.client.gui.widget.button.Button;
 import net.minecraft.client.gui.screen.inventory.ContainerScreen;
 import net.minecraft.client.Minecraft;
 
+import java.util.HashMap;
+
 import com.mojang.blaze3d.systems.RenderSystem;
 import com.mojang.blaze3d.matrix.MatrixStack;
 
@@ -24,6 +26,7 @@ public class RkguiGuiWindow extends ContainerScreen<RkguiGui.GuiContainerMod> {
 	private World world;
 	private int x, y, z;
 	private PlayerEntity entity;
+	private final static HashMap guistate = RkguiGui.guistate;
 	public RkguiGuiWindow(RkguiGui.GuiContainerMod container, PlayerInventory inventory, ITextComponent text) {
 		super(container, inventory, text);
 		this.world = container.world;
@@ -88,7 +91,7 @@ public class RkguiGuiWindow extends ContainerScreen<RkguiGui.GuiContainerMod> {
 	public void init(Minecraft minecraft, int width, int height) {
 		super.init(minecraft, width, height);
 		minecraft.keyboardListener.enableRepeatEvents(true);
-		this.addButton(new Button(this.guiLeft + 133, this.guiTop + 82, 50, 20, new StringTextComponent("Craft"), e -> {
+		this.addButton(new Button(this.guiLeft + 136, this.guiTop + 82, 50, 20, new StringTextComponent("Craft"), e -> {
 			if (true) {
 				Ris3Mod.PACKET_HANDLER.sendToServer(new RkguiGui.ButtonPressedMessage(0, x, y, z));
 				RkguiGui.handleButtonAction(entity, 0, x, y, z);

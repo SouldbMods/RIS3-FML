@@ -1,7 +1,6 @@
 package xyz.souldb.ris3.procedures;
 
 import xyz.souldb.ris3.gui.RkguiGui;
-import xyz.souldb.ris3.Ris3ModElements;
 import xyz.souldb.ris3.Ris3Mod;
 
 import net.minecraftforge.fml.network.NetworkHooks;
@@ -22,12 +21,7 @@ import java.util.Map;
 
 import io.netty.buffer.Unpooled;
 
-@Ris3ModElements.ModElement.Tag
-public class FixRkTableProcedure extends Ris3ModElements.ModElement {
-	public FixRkTableProcedure(Ris3ModElements instance) {
-		super(instance, 111);
-	}
-
+public class FixRkTableProcedure {
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))

@@ -1,19 +1,13 @@
 package xyz.souldb.ris3.procedures;
 
 import xyz.souldb.ris3.Ris3ModVariables;
-import xyz.souldb.ris3.Ris3ModElements;
 import xyz.souldb.ris3.Ris3Mod;
 
 import net.minecraft.world.IWorld;
 
 import java.util.Map;
 
-@Ris3ModElements.ModElement.Tag
-public class Cr3Procedure extends Ris3ModElements.ModElement {
-	public Cr3Procedure(Ris3ModElements instance) {
-		super(instance, 98);
-	}
-
+public class Cr3Procedure {
 	public static boolean executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("world") == null) {
 			if (!dependencies.containsKey("world"))
@@ -21,6 +15,6 @@ public class Cr3Procedure extends Ris3ModElements.ModElement {
 			return false;
 		}
 		IWorld world = (IWorld) dependencies.get("world");
-		return ((Ris3ModVariables.MapVariables.get(world).RocketGUIState) > 128);
+		return (Ris3ModVariables.MapVariables.get(world).RocketGUIState > 128);
 	}
 }

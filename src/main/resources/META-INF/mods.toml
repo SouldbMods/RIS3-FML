@@ -6,12 +6,12 @@ license="Creative Commons ShareAlike 4.0 International (CC BY-SA 4.0) "
 modId="ris3"
 version="3.0.0-RC-1"
 displayName="Really In Space 3"
-credits="dragonmaster, mrscauthd, pylo, mystiryouswolf, drcrazy"
+credits="Pylo, Matej, MrScautHD, Golodion, DrCrazy, MrCrayfish"
 displayURL="https://youtube.com/c/souldbminer"
 logoFile="logo.png"
 authors="Souldbminer"
 description='''
-Souldb's space mod
+Requires Obfuscate. Updating to Caves and cliffs when part 2 is realeased
 '''
 
 [[dependencies.ris3]]
@@ -23,4 +23,10 @@ Souldb's space mod
 
 
 
+[[dependencies.ris3]]
+    modId="obfuscate"
+    mandatory=false
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
 

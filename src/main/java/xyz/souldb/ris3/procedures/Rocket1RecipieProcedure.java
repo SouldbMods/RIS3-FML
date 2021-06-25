@@ -7,7 +7,6 @@ import xyz.souldb.ris3.item.FuelPipeItem;
 import xyz.souldb.ris3.item.EngeneItem;
 import xyz.souldb.ris3.item.AluminiumrodItem;
 import xyz.souldb.ris3.item.AluminiumPlateItem;
-import xyz.souldb.ris3.Ris3ModElements;
 import xyz.souldb.ris3.Ris3Mod;
 
 import net.minecraftforge.items.IItemHandlerModifiable;
@@ -26,12 +25,7 @@ import net.minecraft.entity.Entity;
 import java.util.function.Supplier;
 import java.util.Map;
 
-@Ris3ModElements.ModElement.Tag
-public class Rocket1RecipieProcedure extends Ris3ModElements.ModElement {
-	public Rocket1RecipieProcedure(Ris3ModElements instance) {
-		super(instance, 122);
-	}
-
+public class Rocket1RecipieProcedure {
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))

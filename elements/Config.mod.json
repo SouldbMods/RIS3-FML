@@ -1,0 +1,195 @@
+{
+  "_fv": 21,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 193,
+    "height": 212,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "text": "Config",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Config",
+          "x": 198,
+          "y": 18
+        }
+      },
+      {
+        "type": "checkbox",
+        "data": {
+          "text": "Gravity Disabled",
+          "name": "ge",
+          "x": 125,
+          "y": 35
+        }
+      },
+      {
+        "type": "checkbox",
+        "data": {
+          "text": "Rockets disabled",
+          "name": "rke",
+          "x": 125,
+          "y": 60
+        }
+      },
+      {
+        "type": "checkbox",
+        "data": {
+          "text": "LAN Enabled",
+          "name": "mps",
+          "x": 125,
+          "y": 86
+        }
+      },
+      {
+        "type": "checkbox",
+        "data": {
+          "text": "Cosmetics Disabled",
+          "name": "ce",
+          "x": 124,
+          "y": 112
+        }
+      },
+      {
+        "type": "checkbox",
+        "data": {
+          "text": "Custom main menu disabled",
+          "name": "cmmd",
+          "x": 125,
+          "y": 139
+        }
+      },
+      {
+        "type": "checkbox",
+        "data": {
+          "text": "Trashslot Enabled",
+          "name": "te",
+          "x": 126,
+          "y": 167
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Client side  = ",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Client side  = ",
+          "x": 125,
+          "y": 191
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "cs.png",
+          "use1Xscale": false,
+          "name": "cs.png",
+          "x": 202,
+          "y": 184
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "text": "Server Side =",
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "name": "Server Side =",
+          "x": 125,
+          "y": 204
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ss.png",
+          "use1Xscale": false,
+          "name": "ss.png",
+          "x": 193,
+          "y": 202
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ss.png",
+          "use1Xscale": false,
+          "name": "ss.png",
+          "x": 238,
+          "y": 38
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ss.png",
+          "use1Xscale": false,
+          "name": "ss.png",
+          "x": 237,
+          "y": 61
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "ss.png",
+          "use1Xscale": false,
+          "name": "ss.png",
+          "x": 211,
+          "y": 87
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "cs.png",
+          "use1Xscale": false,
+          "name": "cs.png",
+          "x": 244,
+          "y": 114
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "cs.png",
+          "use1Xscale": false,
+          "name": "cs.png",
+          "x": 279,
+          "y": 140
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "cs.png",
+          "use1Xscale": false,
+          "name": "cs.png",
+          "x": 240,
+          "y": 169
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

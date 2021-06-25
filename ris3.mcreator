@@ -2858,6 +2858,15 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "cfg"
+    },
+    {
+      "name": "CapeStaff",
+      "type": "mob",
+      "sortid": 263,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cape_staff"
     }
   ],
   "variable_elements": [
@@ -2988,9 +2997,9 @@
       "item.ris3.aluminium_axe": "Aluminium Axe",
       "block.ris3.mars_stone": "Mars Stone",
       "block.ris3.martian_sand": "Martian Sand",
-      "item.ris3.aluminium_ingot": "Aluminium",
-      "item.ris3.space_suit_armor_leggings": "Space Suit Leggings",
       "block.ris3.smoke": "Smoke",
+      "item.ris3.space_suit_armor_leggings": "Space Suit Leggings",
+      "item.ris3.aluminium_ingot": "Aluminium",
       "block.ris3.kryptonian_fence": "Kryptonian Fence",
       "item.ris3.aluminium_shovel": "Aluminium Shovel",
       "item.ris3.aluminium_plate": "Aluminium Plate",
@@ -3012,6 +3021,7 @@
       "item.ris3.galaxium_dust": "Galaxium",
       "item.ris3.led": "LED",
       "biome.ris3.sunflat": "Sun",
+      "item.ris3.cape_staff_spawn_egg": "Cape Staff Spawn Egg",
       "block.ris3.kryptonian_planks": "Kryptonian Planks",
       "item.ris3.galaxium_armor_boots": "Galaxium Boots",
       "item.ris3.aluminium_sword": "Aluminium Sword",
@@ -3023,6 +3033,7 @@
       "biome.ris3.venus": "Venus",
       "block.ris3.kryptonyte_ore": "Kryptonyte Ore",
       "itemGroup.tabrisblocks": "Really in space Blocks",
+      "entity.ris3.cape_staff": "Cape Staff",
       "item.ris3.rocket": "Tier 1 Rocket",
       "item.ris3.aluminiumrod": "Aluminium rod",
       "block.ris3.venus_soil": "Venus Soil",
@@ -3124,9 +3135,7 @@
     "requiredMods": [],
     "dependencies": [],
     "dependants": [],
-    "mcreatorDependencies": [
-      "obfuscate"
-    ],
+    "mcreatorDependencies": [],
     "currentGenerator": "forge-1.16.5",
     "credits": "Pylo, Matej, MrScautHD, Golodion, DrCrazy, MrCrayfish",
     "modElementsPackage": "xyz.souldb.ris3",

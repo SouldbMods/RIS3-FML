@@ -2867,6 +2867,68 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "cape_staff"
+    },
+    {
+      "name": "SummonCape",
+      "type": "procedure",
+      "sortid": 264,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "summon_cape",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "StaffCapeRender",
+      "type": "procedure",
+      "sortid": 264,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "staff_cape_render",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [
@@ -3021,7 +3083,7 @@
       "item.ris3.galaxium_dust": "Galaxium",
       "item.ris3.led": "LED",
       "biome.ris3.sunflat": "Sun",
-      "item.ris3.cape_staff_spawn_egg": "Cape Staff Spawn Egg",
+      "item.ris3.cape_staff_spawn_egg": "entity.ris3.cape Spawn Egg",
       "block.ris3.kryptonian_planks": "Kryptonian Planks",
       "item.ris3.galaxium_armor_boots": "Galaxium Boots",
       "item.ris3.aluminium_sword": "Aluminium Sword",
@@ -3033,7 +3095,7 @@
       "biome.ris3.venus": "Venus",
       "block.ris3.kryptonyte_ore": "Kryptonyte Ore",
       "itemGroup.tabrisblocks": "Really in space Blocks",
-      "entity.ris3.cape_staff": "Cape Staff",
+      "entity.ris3.cape_staff": "entity.ris3.cape",
       "item.ris3.rocket": "Tier 1 Rocket",
       "item.ris3.aluminiumrod": "Aluminium rod",
       "block.ris3.venus_soil": "Venus Soil",
